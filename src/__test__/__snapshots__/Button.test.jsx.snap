@@ -1,0 +1,13 @@
+exports[`<Button /> renders correctly 1`] = `
+<div
+  className="undefined ">
+  <button
+    className="undefined "
+    onClick={[Function]}>
+    <i
+      aria-hidden="true"
+      className="undefined undefined" />
+    Search
+  </button>
+</div>
+`;

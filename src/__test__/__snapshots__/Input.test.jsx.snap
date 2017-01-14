@@ -1,0 +1,13 @@
+exports[`<Input /> renders correctly 1`] = `
+<div
+  className="undefined ">
+  <input
+    onBlur={[Function]}
+    onChange={[Function]}
+    placeholder=""
+    value="" />
+  <i
+    aria-hidden="true"
+    className="undefined undefined undefined" />
+</div>
+`;

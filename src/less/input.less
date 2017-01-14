@@ -1,0 +1,66 @@
+@import "variables.less";
+@import "animations.less";
+
+.container{
+	position: relative;
+	width: 100%;
+	padding: 1.75em;
+	height: 1em;
+}
+
+.input{
+	position: absolute;
+	color: @primary-text-color;
+  height: 2.75em;
+	border-style: solid;
+	border-color: @primary-border-color;
+	border-radius: 3px;
+	border-width: 2px;
+	background-color: @primary-backward-color;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 0;
+	box-sizing: border-box;
+	padding-left: 2em;
+	transition-property: border;
+  transition-duration: 0.4s;
+	outline: none;
+	font-size: 1.25em;
+}
+
+.prefix{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: 0;
+	color: @primary-border-color;
+	margin-left: 0.75em;
+	transition-property: transform;
+	transition-duration: 0.4s;
+	font-size: 1.25em;
+	transform: translateY(-50%) rotateX(0deg);
+}
+
+
+.input::-webkit-input-placeholder,
+.input:-ms-input-placeholder,
+.input::-moz-placeholder {
+  color: @primary-border-color;
+}
+
+.input:focus{
+	border-color: @primary-focused-border-color;
+	transition-property: border, transform;
+	transition-duration: 0.4s;
+}
+
+.input:focus,
+.prefix{
+	z-index: 1;
+}
+
+.input:focus + .prefix{
+	color: @primary-focused-border-color;
+	transform: translateY(-50%) rotateX(360deg);
+}

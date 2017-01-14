@@ -1,0 +1,34 @@
+@import "variables.less";
+@import "animations.less";
+@import "button.less";
+@import "input.less";
+
+.prefix {
+	z-index: 0;
+}
+
+.focused .prefix{
+	z-index: 1;
+}
+
+.clicked {
+	.input {
+		animation: flip 0.3s ease-out;
+		animation-fill-mode: forwards;
+		z-index: 1;
+	}
+	.prefix {
+		z-index: 1;
+	}
+}
+
+.escaped {
+	.input {
+		animation: flip-revert 0.3s ease-out;
+		animation-fill-mode: forwards;
+		z-index: 0;
+	}
+	.prefix {
+		z-index: 0;
+	}
+}
