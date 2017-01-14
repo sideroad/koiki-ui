@@ -5,7 +5,7 @@ import Button from '../src/Button';
 import customized from './less/button.less';
 
 setAddon(infoAddon);
-const actionLogger = action('clicked');
+const actionLogger = action();
 
 storiesOf('Button', module)
   .addWithInfo('with basic usage', () => (
@@ -21,15 +21,11 @@ storiesOf('Button', module)
       />
     </div>
   ))
-  .addWithInfo('with onClick handling', () => (
+  .addWithInfo('with event handling', () => (
     <div className="button-wrap">
       <Button
         text="Search"
-        onClick={
-          () => {
-            actionLogger();
-          }
-        }
+        onClick={() => actionLogger('clicked')}
       />
     </div>
   ))

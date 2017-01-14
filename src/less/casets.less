@@ -1,0 +1,182 @@
+@import "variables.less";
+
+.casets{
+  display: flex;
+  width: 100%;
+  margin: 0;
+  flex-flow: row wrap;
+  padding: 0;
+  justify-content: center;
+  list-style-type: none;
+  align-content: flex-start;
+}
+
+.casets.hasSpace{
+  justify-content: space-between;
+}
+
+.casets.hasSpace .item{
+  margin: 50px auto;
+}
+
+.item{
+  width: 250px;
+  height: 200px;
+  position: relative;
+}
+
+.unclickable{
+  pointer-events: none;
+}
+
+.link{
+  width: 100%;
+  height: 100%;
+}
+
+.back{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+
+.unveil .item .link.selected .back,
+.cover .item .link.selected .back,
+.unveil .item:nth-child(odd) .link.selected .back,
+.cover .item:nth-child(odd) .link.selected:hover .back{
+  transition-property: filter;
+  transition-duration: 0.4s;
+	filter: grayscale(100%) brightness(0.2);
+}
+
+.unveil .link:hover .back,
+.unveil .item:nth-child(odd) .link:hover .back,
+.cover .back{
+  filter: none;
+}
+
+.unveil.classic .back,
+.cover.classic .link:hover .back{
+  filter: grayscale(100%);
+}
+
+.unveil.classic .item:nth-child(odd) .back,
+.cover.classic .item:nth-child(odd) .link:hover .back{
+  filter: sepia(100%) brightness(0.7);
+}
+
+.unveil.pop .back,
+.cover.pop .link:hover .back{
+  filter: sepia(100%) saturate(2) hue-rotate(190deg) brightness(100%);
+}
+
+.unveil.pop .item:nth-child(odd) .back,
+.cover.pop .item:nth-child(odd) .link:hover .back{
+  filter: sepia(100%) saturate(2) hue-rotate(280deg) brightness(100%);
+}
+
+.outline{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: @primary-backward-color;
+  transition-property: top, opacity, height, margin;
+  transition-duration: 0.4s;
+  font-size: 1.5em;
+}
+
+.unveil .none.outline,
+.cover .none.outline{
+  height: 0;
+}
+
+.unveil .outline,
+.cover .link:hover .outline{
+  top: 0;
+  opacity: 0;
+  height: 100%;
+  margin-top: 0;
+}
+
+.unveil .link:hover .outline,
+.cover .outline{
+  opacity: 0.75;
+  height: 35px;
+}
+
+.middle.unveil .link:hover .outline,
+.middle.cover .outline{
+  top: 50%;
+  margin-top: -17.5px;
+}
+
+.bottom.unveil .link:hover .outline,
+.bottom.cover .outline{
+  top: 100%;
+  margin-top: -35px;
+}
+
+.top.unveil .link:hover .outline,
+.top.cover .outline{
+  top: 0%;
+  margin-top: 0px;
+}
+
+.text{
+  position: absolute;
+  font-size: 1.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition-property: color;
+  transition-duration: 0.4s;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.middle .text{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bottom .text{
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+.top .text{
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.pop.unveil .text,
+.pop.cover .link:hover .text{
+  color: @primary-casets-pop-hover-color;
+}
+
+.pop.unveil .link:hover .text,
+.pop.cover .text{
+  color: @primary-casets-pop-color;
+  opacity: 0.8;
+}
+
+.classic.unveil .text,
+.classic.cover .link:hover .text{
+  color: @primary-casets-classic-hover-color;
+}
+
+.classic.unveil .link:hover .text,
+.classic.cover .text{
+  color: @primary-casets-classic-color;
+  opacity: 0.8;
+}
