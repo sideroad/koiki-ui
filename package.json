@@ -3,6 +3,7 @@
   "version": "0.0.2",
   "devDependencies": {
     "@kadira/storybook": "^2.21.0",
+    "@kadira/storybook-deployer": "^1.2.0",
     "babel-core": "6.17.0",
     "babel-eslint": "7.1.1",
     "babel-jest": "17.0.2",
@@ -43,11 +44,12 @@
     "test-update": "jest -u",
     "lint": "eslint src",
     "build": "webpack --config .storybook/webpack.config.js",
-    "pub-patch": "npm ls && npm run lint && npm run test && npm run build && npm version patch && npm publish .",
-    "pub-minor": "npm ls && npm run lint && npm run test && npm run build && npm version minor && npm publish .",
-    "pub-major": "npm ls && npm run lint && npm run test && npm run build && npm version major && npm publish .",
+    "pub-patch": "npm ls && npm run lint && npm run test && npm run build && npm version patch && npm publish . && storybook-to-ghpages",
+    "pub-minor": "npm ls && npm run lint && npm run test && npm run build && npm version minor && npm publish . && storybook-to-ghpages",
+    "pub-major": "npm ls && npm run lint && npm run test && npm run build && npm version major && npm publish . && storybook-to-ghpages",
     "storybook": "start-storybook -p 6006 -s .storybook/public",
-    "build-storybook": "build-storybook"
+    "deploy-storybook": "storybook-to-ghpages",
+    "build-storybook": "build-storybook -s .storybook/public"
   },
   "eslintConfig": {
     "extends": "react-app"
