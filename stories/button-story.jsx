@@ -1,17 +1,19 @@
 import React from 'react';
-import { storiesOf, action } from '@kadira/storybook';
+import { storiesOf, action, setAddon } from '@kadira/storybook';
+import infoAddon from '@kadira/react-storybook-addon-info';
 import Button from '../src/Button';
 import customized from './less/button.less';
 
+setAddon(infoAddon);
 const actionLogger = action('clicked');
 
 storiesOf('Button', module)
-  .add('with basic usage', () => (
+  .addWithInfo('with basic usage', () => (
     <div className="button-wrap">
       <Button text="Search" />
     </div>
   ))
-  .add('with customize icon', () => (
+  .addWithInfo('with customize icon', () => (
     <div className="button-wrap">
       <Button
         text="Edit"
@@ -19,7 +21,7 @@ storiesOf('Button', module)
       />
     </div>
   ))
-  .add('with onClick handling', () => (
+  .addWithInfo('with onClick handling', () => (
     <div className="button-wrap">
       <Button
         text="Search"
@@ -31,7 +33,7 @@ storiesOf('Button', module)
       />
     </div>
   ))
-  .add('with disabled', () => (
+  .addWithInfo('with disabled', () => (
     <div className="button-wrap">
       <Button
         text="Search"
@@ -39,7 +41,7 @@ storiesOf('Button', module)
       />
     </div>
   ))
-  .add('with customize styles', () => (
+  .addWithInfo('with customize styles', () => (
     <div className="button-wrap">
       <Button
         text="Search"

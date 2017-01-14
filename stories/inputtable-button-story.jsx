@@ -1,19 +1,21 @@
 import React from 'react';
-import { storiesOf, action } from '@kadira/storybook';
+import { storiesOf, action, setAddon } from '@kadira/storybook';
+import infoAddon from '@kadira/react-storybook-addon-info';
 import InputtableButton from '../src/InputtableButton';
 import customized from './less/inputtable-button.less';
 
+setAddon(infoAddon);
 const actionLogger = action();
 
 storiesOf('InputtableButton', module)
-  .add('with basic usage', () => (
+  .addWithInfo('with basic usage', () => (
     <div className="input-wrap">
       <InputtableButton
         text="Search"
       />
     </div>
   ))
-  .add('with placeholder', () => (
+  .addWithInfo('with placeholder', () => (
     <div className="input-wrap">
       <InputtableButton
         text="Search"
@@ -21,7 +23,7 @@ storiesOf('InputtableButton', module)
       />
     </div>
   ))
-  .add('with customize icon', () => (
+  .addWithInfo('with customize icon', () => (
     <div className="input-wrap">
       <InputtableButton
         text="Search"
@@ -29,7 +31,7 @@ storiesOf('InputtableButton', module)
       />
     </div>
   ))
-  .add('with default value', () => (
+  .addWithInfo('with default value', () => (
     <div className="input-wrap">
       <InputtableButton
         text="Search"
@@ -37,7 +39,7 @@ storiesOf('InputtableButton', module)
       />
     </div>
   ))
-  .add('with focused', () => (
+  .addWithInfo('with focused', () => (
     <div className="input-wrap">
       <InputtableButton
         text="Search"
@@ -45,7 +47,7 @@ storiesOf('InputtableButton', module)
       />
     </div>
   ))
-  .add('with event handler', () => (
+  .addWithInfo('with event handler', () => (
     <div className="input-wrap">
       <InputtableButton
         text="Search"
@@ -54,7 +56,7 @@ storiesOf('InputtableButton', module)
       />
     </div>
   ))
-  .add('with customize styles', () => (
+  .addWithInfo('with customize styles', () => (
     <div className="input-wrap">
       <InputtableButton
         text="Search"

@@ -21,8 +21,9 @@ class Input extends Component {
   render() {
     return (
       <div
-        className={`${this.props.styles.container} ${this.state.clicked ? this.props.styles.clicked :
-                                                     this.state.escaped ? this.props.styles.escaped : ''}`}
+        className={`${this.props.styles.container}
+                    ${this.state.clicked ? this.props.styles.clicked :
+                      this.state.escaped ? this.props.styles.escaped : ''}`}
       >
         <input
           className={this.props.styles.input}

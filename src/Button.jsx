@@ -14,8 +14,9 @@ class Button extends Component {
   render() {
     return (
       <div
-        className={`${this.props.styles.container} ${this.state.clicked ? this.props.styles.clicked :
-                                                     this.state.escaped ? this.props.styles.escaped : ''}`}
+        className={`${this.props.styles.container}
+                    ${this.state.clicked ? this.props.styles.clicked :
+                      this.state.escaped ? this.props.styles.escaped : ''}`}
       >
         <button
           className={`${this.props.styles.button} ${this.props.disabled ? this.props.styles.disabled : ''}`}
