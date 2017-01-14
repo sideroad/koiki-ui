@@ -10,22 +10,22 @@ const items = [
   {
     id: 'corkboard',
     name: 'Cork Board',
-    image: '/images/corkboard.jpg'
+    image: './images/corkboard.jpg'
   },
   {
     id: 'blueboard',
     name: 'Blue Board',
-    image: '/images/blueboard.jpg'
+    image: './images/blueboard.jpg'
   },
   {
     id: 'stripe',
     name: 'Stripe',
-    image: '/images/stripe.jpg'
+    image: './images/stripe.jpg'
   },
   {
     id: 'goldgrazing',
     name: 'Gold Grazing',
-    image: '/images/goldgrazing.jpg'
+    image: './images/goldgrazing.jpg'
   }
 ];
 
