@@ -1,6 +1,6 @@
 {
   "name": "koiki-ui",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "devDependencies": {
     "@kadira/storybook": "^2.21.0",
     "@kadira/storybook-deployer": "^1.2.0",
