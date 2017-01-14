@@ -1,6 +1,6 @@
 # Koiki UI
 
-Sets of Koiki React Components
+Unit of Koiki React Components
 
 ## Install
 
