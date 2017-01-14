@@ -27,6 +27,7 @@
     "less-loader": "^2.2.3",
     "postcss-less": "^0.15.0",
     "react-addons-test-utils": "^15.4.2",
+    "storyshots": "^3.2.0",
     "style-loader": "0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "1.14.0",
@@ -39,9 +40,8 @@
   },
   "scripts": {
     "start": "start-storybook -p 9009 -s public",
-    "test": "jest",
-    "echo": "echo $#",
-    "test-update": "jest -u",
+    "test": "jest --config .jestrc",
+    "test-update": "jest --config .jestrc -u",
     "lint": "eslint src",
     "build": "webpack --config .storybook/webpack.config.js",
     "pub-patch": "npm ls && npm run lint && npm run test && npm run build && npm version patch && npm publish . && storybook-to-ghpages",
@@ -53,12 +53,6 @@
   },
   "eslintConfig": {
     "extends": "react-app"
-  },
-  "jest": {
-    "transform": {
-      "^.+\\.(js|jsx)$": "<rootDir>/node_modules/babel-jest",
-      "^.+\\.less$": "<rootDir>/jest-processor.js"
-    }
   },
   "main": "build/index.js",
   "files": [

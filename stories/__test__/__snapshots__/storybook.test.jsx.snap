@@ -1,0 +1,381 @@
+exports[`Storyshots Button with basic usage 1`] = `
+<div
+  className="button-wrap">
+  <div
+    className="undefined ">
+    <button
+      className="undefined "
+      onClick={[Function]}>
+      <i
+        aria-hidden="true"
+        className="undefined undefined" />
+      Search
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button with customize icon 1`] = `
+<div
+  className="button-wrap">
+  <div
+    className="undefined ">
+    <button
+      className="undefined "
+      onClick={[Function]}>
+      <i
+        aria-hidden="true"
+        className="undefined undefined" />
+      Edit
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button with customize styles 1`] = `
+<div
+  className="button-wrap">
+  <div
+    className="undefined ">
+    <button
+      className="undefined "
+      onClick={[Function]}>
+      <i
+        aria-hidden="true"
+        className="undefined undefined" />
+      Search
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button with disabled 1`] = `
+<div
+  className="button-wrap">
+  <div
+    className="undefined ">
+    <button
+      className="undefined undefined"
+      onClick={[Function]}>
+      <i
+        aria-hidden="true"
+        className="undefined undefined" />
+      Search
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Button with onClick handling 1`] = `
+<div
+  className="button-wrap">
+  <div
+    className="undefined ">
+    <button
+      className="undefined "
+      onClick={[Function]}>
+      <i
+        aria-hidden="true"
+        className="undefined undefined" />
+      Search
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Input with basic usage 1`] = `
+<div
+  className="input-wrap">
+  <div
+    className="undefined ">
+    <input
+      className={undefined}
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder=""
+      value="" />
+    <i
+      aria-hidden="true"
+      className="undefined undefined undefined" />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Input with customize icon 1`] = `
+<div
+  className="input-wrap">
+  <div
+    className="undefined ">
+    <input
+      className={undefined}
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder=""
+      value="" />
+    <i
+      aria-hidden="true"
+      className="undefined undefined undefined" />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Input with customize styles 1`] = `
+<div
+  className="input-wrap">
+  <div
+    className="undefined ">
+    <input
+      className={undefined}
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder=""
+      value="" />
+    <i
+      aria-hidden="true"
+      className="undefined undefined undefined" />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Input with default value 1`] = `
+<div
+  className="input-wrap">
+  <div
+    className="undefined ">
+    <input
+      className={undefined}
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder=""
+      value="FooBar" />
+    <i
+      aria-hidden="true"
+      className="undefined undefined undefined" />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Input with event handler 1`] = `
+<div
+  className="input-wrap">
+  <div
+    className="undefined ">
+    <input
+      className={undefined}
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder=""
+      value="" />
+    <i
+      aria-hidden="true"
+      className="undefined undefined undefined" />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Input with placeholder 1`] = `
+<div
+  className="input-wrap">
+  <div
+    className="undefined ">
+    <input
+      className={undefined}
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder="Find something"
+      value="" />
+    <i
+      aria-hidden="true"
+      className="undefined undefined undefined" />
+  </div>
+</div>
+`;
+
+exports[`Storyshots InputtableButton with basic usage 1`] = `
+<div
+  className="input-wrap">
+  <div
+    className="undefined
+                      ">
+    <button
+      className={undefined}
+      onClick={[Function]}>
+      <i
+        aria-hidden="true"
+        className="undefined undefined" />
+      Search
+    </button>
+    <input
+      className={undefined}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      placeholder="" />
+    <i
+      aria-hidden="true"
+      className="undefined undefined undefined" />
+  </div>
+</div>
+`;
+
+exports[`Storyshots InputtableButton with customize icon 1`] = `
+<div
+  className="input-wrap">
+  <div
+    className="undefined
+                      ">
+    <button
+      className={undefined}
+      onClick={[Function]}>
+      <i
+        aria-hidden="true"
+        className="undefined undefined" />
+      Search
+    </button>
+    <input
+      className={undefined}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      placeholder="" />
+    <i
+      aria-hidden="true"
+      className="undefined undefined undefined" />
+  </div>
+</div>
+`;
+
+exports[`Storyshots InputtableButton with customize styles 1`] = `
+<div
+  className="input-wrap">
+  <div
+    className="undefined
+                      ">
+    <button
+      className={undefined}
+      onClick={[Function]}>
+      <i
+        aria-hidden="true"
+        className="undefined undefined" />
+      Search
+    </button>
+    <input
+      className={undefined}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      placeholder="" />
+    <i
+      aria-hidden="true"
+      className="undefined undefined undefined" />
+  </div>
+</div>
+`;
+
+exports[`Storyshots InputtableButton with default value 1`] = `
+<div
+  className="input-wrap">
+  <div
+    className="undefined
+                      ">
+    <button
+      className={undefined}
+      onClick={[Function]}>
+      <i
+        aria-hidden="true"
+        className="undefined undefined" />
+      Search
+    </button>
+    <input
+      className={undefined}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      placeholder="" />
+    <i
+      aria-hidden="true"
+      className="undefined undefined undefined" />
+  </div>
+</div>
+`;
+
+exports[`Storyshots InputtableButton with event handler 1`] = `
+<div
+  className="input-wrap">
+  <div
+    className="undefined
+                      ">
+    <button
+      className={undefined}
+      onClick={[Function]}>
+      <i
+        aria-hidden="true"
+        className="undefined undefined" />
+      Search
+    </button>
+    <input
+      className={undefined}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      placeholder="" />
+    <i
+      aria-hidden="true"
+      className="undefined undefined undefined" />
+  </div>
+</div>
+`;
+
+exports[`Storyshots InputtableButton with focused 1`] = `
+<div
+  className="input-wrap">
+  <div
+    className="undefined
+                      undefined">
+    <button
+      className={undefined}
+      onClick={[Function]}>
+      <i
+        aria-hidden="true"
+        className="undefined undefined" />
+      Search
+    </button>
+    <input
+      className={undefined}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      placeholder="" />
+    <i
+      aria-hidden="true"
+      className="undefined undefined undefined" />
+  </div>
+</div>
+`;
+
+exports[`Storyshots InputtableButton with placeholder 1`] = `
+<div
+  className="input-wrap">
+  <div
+    className="undefined
+                      ">
+    <button
+      className={undefined}
+      onClick={[Function]}>
+      <i
+        aria-hidden="true"
+        className="undefined undefined" />
+      Search
+    </button>
+    <input
+      className={undefined}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      placeholder="Find something" />
+    <i
+      aria-hidden="true"
+      className="undefined undefined undefined" />
+  </div>
+</div>
+`;

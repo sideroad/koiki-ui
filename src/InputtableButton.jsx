@@ -13,7 +13,8 @@ class InputtableButton extends Component {
   }
 
   componentDidMount() {
-    if (this.props.focused) {
+    if (this.props.focused &&
+        this.inputDOM) {
       this.inputDOM.focus();
     }
   }
