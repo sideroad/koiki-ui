@@ -2338,7 +2338,7 @@ exports[`Storyshots Casets with basic usage 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/corkboard.jpg)",
+                  "backgroundImage": "url(./images/corkboard.jpg)",
                 }
               } />
             <div
@@ -2365,7 +2365,7 @@ exports[`Storyshots Casets with basic usage 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/blueboard.jpg)",
+                  "backgroundImage": "url(./images/blueboard.jpg)",
                 }
               } />
             <div
@@ -2392,7 +2392,7 @@ exports[`Storyshots Casets with basic usage 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/stripe.jpg)",
+                  "backgroundImage": "url(./images/stripe.jpg)",
                 }
               } />
             <div
@@ -2419,7 +2419,7 @@ exports[`Storyshots Casets with basic usage 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/goldgrazing.jpg)",
+                  "backgroundImage": "url(./images/goldgrazing.jpg)",
                 }
               } />
             <div
@@ -2721,7 +2721,7 @@ exports[`Storyshots Casets with basic usage 1`] = `
                                     }
                                   }>
                                   \"
-                                  /images/corkboard.jpg
+                                  ./images/corkboard.jpg
                                   \"
                                 </span>
                                 }
@@ -2797,7 +2797,7 @@ exports[`Storyshots Casets with basic usage 1`] = `
                                     }
                                   }>
                                   \"
-                                  /images/blueboard.jpg
+                                  ./images/blueboard.jpg
                                   \"
                                 </span>
                                 }
@@ -2873,7 +2873,7 @@ exports[`Storyshots Casets with basic usage 1`] = `
                                     }
                                   }>
                                   \"
-                                  /images/stripe.jpg
+                                  ./images/stripe.jpg
                                   \"
                                 </span>
                                 }
@@ -3256,7 +3256,7 @@ exports[`Storyshots Casets with bottom position text 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/corkboard.jpg)",
+                  "backgroundImage": "url(./images/corkboard.jpg)",
                 }
               } />
             <div
@@ -3283,7 +3283,7 @@ exports[`Storyshots Casets with bottom position text 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/blueboard.jpg)",
+                  "backgroundImage": "url(./images/blueboard.jpg)",
                 }
               } />
             <div
@@ -3310,7 +3310,7 @@ exports[`Storyshots Casets with bottom position text 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/stripe.jpg)",
+                  "backgroundImage": "url(./images/stripe.jpg)",
                 }
               } />
             <div
@@ -3337,7 +3337,7 @@ exports[`Storyshots Casets with bottom position text 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/goldgrazing.jpg)",
+                  "backgroundImage": "url(./images/goldgrazing.jpg)",
                 }
               } />
             <div
@@ -3639,7 +3639,7 @@ exports[`Storyshots Casets with bottom position text 1`] = `
                                     }
                                   }>
                                   \"
-                                  /images/corkboard.jpg
+                                  ./images/corkboard.jpg
                                   \"
                                 </span>
                                 }
@@ -3715,7 +3715,7 @@ exports[`Storyshots Casets with bottom position text 1`] = `
                                     }
                                   }>
                                   \"
-                                  /images/blueboard.jpg
+                                  ./images/blueboard.jpg
                                   \"
                                 </span>
                                 }
@@ -3791,7 +3791,7 @@ exports[`Storyshots Casets with bottom position text 1`] = `
                                     }
                                   }>
                                   \"
-                                  /images/stripe.jpg
+                                  ./images/stripe.jpg
                                   \"
                                 </span>
                                 }
@@ -4198,7 +4198,7 @@ exports[`Storyshots Casets with classic theme 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/corkboard.jpg)",
+                  "backgroundImage": "url(./images/corkboard.jpg)",
                 }
               } />
             <div
@@ -4225,7 +4225,7 @@ exports[`Storyshots Casets with classic theme 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/blueboard.jpg)",
+                  "backgroundImage": "url(./images/blueboard.jpg)",
                 }
               } />
             <div
@@ -4252,7 +4252,7 @@ exports[`Storyshots Casets with classic theme 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/stripe.jpg)",
+                  "backgroundImage": "url(./images/stripe.jpg)",
                 }
               } />
             <div
@@ -4279,7 +4279,7 @@ exports[`Storyshots Casets with classic theme 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/goldgrazing.jpg)",
+                  "backgroundImage": "url(./images/goldgrazing.jpg)",
                 }
               } />
             <div
@@ -4581,7 +4581,7 @@ exports[`Storyshots Casets with classic theme 1`] = `
                                     }
                                   }>
                                   \"
-                                  /images/corkboard.jpg
+                                  ./images/corkboard.jpg
                                   \"
                                 </span>
                                 }
@@ -4657,7 +4657,7 @@ exports[`Storyshots Casets with classic theme 1`] = `
                                     }
                                   }>
                                   \"
-                                  /images/blueboard.jpg
+                                  ./images/blueboard.jpg
                                   \"
                                 </span>
                                 }
@@ -4733,7 +4733,7 @@ exports[`Storyshots Casets with classic theme 1`] = `
                                     }
                                   }>
                                   \"
-                                  /images/stripe.jpg
+                                  ./images/stripe.jpg
                                   \"
                                 </span>
                                 }
@@ -5140,7 +5140,7 @@ exports[`Storyshots Casets with cover interaction 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/corkboard.jpg)",
+                  "backgroundImage": "url(./images/corkboard.jpg)",
                 }
               } />
             <div
@@ -5167,7 +5167,7 @@ exports[`Storyshots Casets with cover interaction 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/blueboard.jpg)",
+                  "backgroundImage": "url(./images/blueboard.jpg)",
                 }
               } />
             <div
@@ -5194,7 +5194,7 @@ exports[`Storyshots Casets with cover interaction 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/stripe.jpg)",
+                  "backgroundImage": "url(./images/stripe.jpg)",
                 }
               } />
             <div
@@ -5221,7 +5221,7 @@ exports[`Storyshots Casets with cover interaction 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/goldgrazing.jpg)",
+                  "backgroundImage": "url(./images/goldgrazing.jpg)",
                 }
               } />
             <div
@@ -5523,7 +5523,7 @@ exports[`Storyshots Casets with cover interaction 1`] = `
                                     }
                                   }>
                                   \"
-                                  /images/corkboard.jpg
+                                  ./images/corkboard.jpg
                                   \"
                                 </span>
                                 }
@@ -5599,7 +5599,7 @@ exports[`Storyshots Casets with cover interaction 1`] = `
                                     }
                                   }>
                                   \"
-                                  /images/blueboard.jpg
+                                  ./images/blueboard.jpg
                                   \"
                                 </span>
                                 }
@@ -5675,7 +5675,7 @@ exports[`Storyshots Casets with cover interaction 1`] = `
                                     }
                                   }>
                                   \"
-                                  /images/stripe.jpg
+                                  ./images/stripe.jpg
                                   \"
                                 </span>
                                 }
@@ -6687,7 +6687,7 @@ exports[`Storyshots Casets with event handling 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/corkboard.jpg)",
+                  "backgroundImage": "url(./images/corkboard.jpg)",
                 }
               } />
             <div
@@ -6714,7 +6714,7 @@ exports[`Storyshots Casets with event handling 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/blueboard.jpg)",
+                  "backgroundImage": "url(./images/blueboard.jpg)",
                 }
               } />
             <div
@@ -6741,7 +6741,7 @@ exports[`Storyshots Casets with event handling 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/stripe.jpg)",
+                  "backgroundImage": "url(./images/stripe.jpg)",
                 }
               } />
             <div
@@ -6768,7 +6768,7 @@ exports[`Storyshots Casets with event handling 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/goldgrazing.jpg)",
+                  "backgroundImage": "url(./images/goldgrazing.jpg)",
                 }
               } />
             <div
@@ -7070,7 +7070,7 @@ exports[`Storyshots Casets with event handling 1`] = `
                                     }
                                   }>
                                   \"
-                                  /images/corkboard.jpg
+                                  ./images/corkboard.jpg
                                   \"
                                 </span>
                                 }
@@ -7146,7 +7146,7 @@ exports[`Storyshots Casets with event handling 1`] = `
                                     }
                                   }>
                                   \"
-                                  /images/blueboard.jpg
+                                  ./images/blueboard.jpg
                                   \"
                                 </span>
                                 }
@@ -7222,7 +7222,7 @@ exports[`Storyshots Casets with event handling 1`] = `
                                     }
                                   }>
                                   \"
-                                  /images/stripe.jpg
+                                  ./images/stripe.jpg
                                   \"
                                 </span>
                                 }
@@ -7655,7 +7655,7 @@ exports[`Storyshots Casets with selected caset 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/corkboard.jpg)",
+                  "backgroundImage": "url(./images/corkboard.jpg)",
                 }
               } />
             <div
@@ -7682,7 +7682,7 @@ exports[`Storyshots Casets with selected caset 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/blueboard.jpg)",
+                  "backgroundImage": "url(./images/blueboard.jpg)",
                 }
               } />
             <div
@@ -7709,7 +7709,7 @@ exports[`Storyshots Casets with selected caset 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/stripe.jpg)",
+                  "backgroundImage": "url(./images/stripe.jpg)",
                 }
               } />
             <div
@@ -7736,7 +7736,7 @@ exports[`Storyshots Casets with selected caset 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/goldgrazing.jpg)",
+                  "backgroundImage": "url(./images/goldgrazing.jpg)",
                 }
               } />
             <div
@@ -8038,7 +8038,7 @@ exports[`Storyshots Casets with selected caset 1`] = `
                                     }
                                   }>
                                   \"
-                                  /images/corkboard.jpg
+                                  ./images/corkboard.jpg
                                   \"
                                 </span>
                                 , 
@@ -8116,7 +8116,7 @@ exports[`Storyshots Casets with selected caset 1`] = `
                                     }
                                   }>
                                   \"
-                                  /images/blueboard.jpg
+                                  ./images/blueboard.jpg
                                   \"
                                 </span>
                                 , 
@@ -8194,7 +8194,7 @@ exports[`Storyshots Casets with selected caset 1`] = `
                                     }
                                   }>
                                   \"
-                                  /images/stripe.jpg
+                                  ./images/stripe.jpg
                                   \"
                                 </span>
                                 , 
@@ -8579,7 +8579,7 @@ exports[`Storyshots Casets with spacing casets 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/corkboard.jpg)",
+                  "backgroundImage": "url(./images/corkboard.jpg)",
                 }
               } />
             <div
@@ -8606,7 +8606,7 @@ exports[`Storyshots Casets with spacing casets 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/blueboard.jpg)",
+                  "backgroundImage": "url(./images/blueboard.jpg)",
                 }
               } />
             <div
@@ -8633,7 +8633,7 @@ exports[`Storyshots Casets with spacing casets 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/stripe.jpg)",
+                  "backgroundImage": "url(./images/stripe.jpg)",
                 }
               } />
             <div
@@ -8660,7 +8660,7 @@ exports[`Storyshots Casets with spacing casets 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/goldgrazing.jpg)",
+                  "backgroundImage": "url(./images/goldgrazing.jpg)",
                 }
               } />
             <div
@@ -8962,7 +8962,7 @@ exports[`Storyshots Casets with spacing casets 1`] = `
                                     }
                                   }>
                                   \"
-                                  /images/corkboard.jpg
+                                  ./images/corkboard.jpg
                                   \"
                                 </span>
                                 }
@@ -9038,7 +9038,7 @@ exports[`Storyshots Casets with spacing casets 1`] = `
                                     }
                                   }>
                                   \"
-                                  /images/blueboard.jpg
+                                  ./images/blueboard.jpg
                                   \"
                                 </span>
                                 }
@@ -9114,7 +9114,7 @@ exports[`Storyshots Casets with spacing casets 1`] = `
                                     }
                                   }>
                                   \"
-                                  /images/stripe.jpg
+                                  ./images/stripe.jpg
                                   \"
                                 </span>
                                 }
@@ -9504,7 +9504,7 @@ exports[`Storyshots Casets with top position text 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/corkboard.jpg)",
+                  "backgroundImage": "url(./images/corkboard.jpg)",
                 }
               } />
             <div
@@ -9531,7 +9531,7 @@ exports[`Storyshots Casets with top position text 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/blueboard.jpg)",
+                  "backgroundImage": "url(./images/blueboard.jpg)",
                 }
               } />
             <div
@@ -9558,7 +9558,7 @@ exports[`Storyshots Casets with top position text 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/stripe.jpg)",
+                  "backgroundImage": "url(./images/stripe.jpg)",
                 }
               } />
             <div
@@ -9585,7 +9585,7 @@ exports[`Storyshots Casets with top position text 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/goldgrazing.jpg)",
+                  "backgroundImage": "url(./images/goldgrazing.jpg)",
                 }
               } />
             <div
@@ -9887,7 +9887,7 @@ exports[`Storyshots Casets with top position text 1`] = `
                                     }
                                   }>
                                   \"
-                                  /images/corkboard.jpg
+                                  ./images/corkboard.jpg
                                   \"
                                 </span>
                                 }
@@ -9963,7 +9963,7 @@ exports[`Storyshots Casets with top position text 1`] = `
                                     }
                                   }>
                                   \"
-                                  /images/blueboard.jpg
+                                  ./images/blueboard.jpg
                                   \"
                                 </span>
                                 }
@@ -10039,7 +10039,7 @@ exports[`Storyshots Casets with top position text 1`] = `
                                     }
                                   }>
                                   \"
-                                  /images/stripe.jpg
+                                  ./images/stripe.jpg
                                   \"
                                 </span>
                                 }
@@ -10446,7 +10446,7 @@ exports[`Storyshots Casets with unclickable 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/corkboard.jpg)",
+                  "backgroundImage": "url(./images/corkboard.jpg)",
                 }
               } />
             <div
@@ -10473,7 +10473,7 @@ exports[`Storyshots Casets with unclickable 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/blueboard.jpg)",
+                  "backgroundImage": "url(./images/blueboard.jpg)",
                 }
               } />
             <div
@@ -10500,7 +10500,7 @@ exports[`Storyshots Casets with unclickable 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/stripe.jpg)",
+                  "backgroundImage": "url(./images/stripe.jpg)",
                 }
               } />
             <div
@@ -10527,7 +10527,7 @@ exports[`Storyshots Casets with unclickable 1`] = `
               className={undefined}
               style={
                 Object {
-                  "backgroundImage": "url(/images/goldgrazing.jpg)",
+                  "backgroundImage": "url(./images/goldgrazing.jpg)",
                 }
               } />
             <div
@@ -10829,7 +10829,7 @@ exports[`Storyshots Casets with unclickable 1`] = `
                                     }
                                   }>
                                   \"
-                                  /images/corkboard.jpg
+                                  ./images/corkboard.jpg
                                   \"
                                 </span>
                                 }
@@ -10905,7 +10905,7 @@ exports[`Storyshots Casets with unclickable 1`] = `
                                     }
                                   }>
                                   \"
-                                  /images/blueboard.jpg
+                                  ./images/blueboard.jpg
                                   \"
                                 </span>
                                 }
@@ -10981,7 +10981,7 @@ exports[`Storyshots Casets with unclickable 1`] = `
                                     }
                                   }>
                                   \"
-                                  /images/stripe.jpg
+                                  ./images/stripe.jpg
                                   \"
                                 </span>
                                 }
