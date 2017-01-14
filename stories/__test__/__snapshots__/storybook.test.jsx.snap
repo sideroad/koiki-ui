@@ -2689,7 +2689,7 @@ exports[`Storyshots Casets with basic usage 1`] = `
                                       "color": "#666",
                                     }
                                   }>
-                                  name
+                                  title
                                 </span>
                                 : 
                                 <span
@@ -2765,7 +2765,7 @@ exports[`Storyshots Casets with basic usage 1`] = `
                                       "color": "#666",
                                     }
                                   }>
-                                  name
+                                  title
                                 </span>
                                 : 
                                 <span
@@ -2841,7 +2841,7 @@ exports[`Storyshots Casets with basic usage 1`] = `
                                       "color": "#666",
                                     }
                                   }>
-                                  name
+                                  title
                                 </span>
                                 : 
                                 <span
@@ -3607,7 +3607,7 @@ exports[`Storyshots Casets with bottom position text 1`] = `
                                       "color": "#666",
                                     }
                                   }>
-                                  name
+                                  title
                                 </span>
                                 : 
                                 <span
@@ -3683,7 +3683,7 @@ exports[`Storyshots Casets with bottom position text 1`] = `
                                       "color": "#666",
                                     }
                                   }>
-                                  name
+                                  title
                                 </span>
                                 : 
                                 <span
@@ -3759,7 +3759,7 @@ exports[`Storyshots Casets with bottom position text 1`] = `
                                       "color": "#666",
                                     }
                                   }>
-                                  name
+                                  title
                                 </span>
                                 : 
                                 <span
@@ -4549,7 +4549,7 @@ exports[`Storyshots Casets with classic theme 1`] = `
                                       "color": "#666",
                                     }
                                   }>
-                                  name
+                                  title
                                 </span>
                                 : 
                                 <span
@@ -4625,7 +4625,7 @@ exports[`Storyshots Casets with classic theme 1`] = `
                                       "color": "#666",
                                     }
                                   }>
-                                  name
+                                  title
                                 </span>
                                 : 
                                 <span
@@ -4701,7 +4701,7 @@ exports[`Storyshots Casets with classic theme 1`] = `
                                       "color": "#666",
                                     }
                                   }>
-                                  name
+                                  title
                                 </span>
                                 : 
                                 <span
@@ -5491,7 +5491,7 @@ exports[`Storyshots Casets with cover interaction 1`] = `
                                       "color": "#666",
                                     }
                                   }>
-                                  name
+                                  title
                                 </span>
                                 : 
                                 <span
@@ -5567,7 +5567,7 @@ exports[`Storyshots Casets with cover interaction 1`] = `
                                       "color": "#666",
                                     }
                                   }>
-                                  name
+                                  title
                                 </span>
                                 : 
                                 <span
@@ -5643,7 +5643,7 @@ exports[`Storyshots Casets with cover interaction 1`] = `
                                       "color": "#666",
                                     }
                                   }>
-                                  name
+                                  title
                                 </span>
                                 : 
                                 <span
@@ -7038,7 +7038,7 @@ exports[`Storyshots Casets with event handling 1`] = `
                                       "color": "#666",
                                     }
                                   }>
-                                  name
+                                  title
                                 </span>
                                 : 
                                 <span
@@ -7114,7 +7114,7 @@ exports[`Storyshots Casets with event handling 1`] = `
                                       "color": "#666",
                                     }
                                   }>
-                                  name
+                                  title
                                 </span>
                                 : 
                                 <span
@@ -7190,7 +7190,7 @@ exports[`Storyshots Casets with event handling 1`] = `
                                       "color": "#666",
                                     }
                                   }>
-                                  name
+                                  title
                                 </span>
                                 : 
                                 <span
@@ -7627,7 +7627,830 @@ exports[`Storyshots Casets with event handling 1`] = `
 </div>
 `;
 
-exports[`Storyshots Casets with selected caset 1`] = `
+exports[`Storyshots Casets with no title item caset 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "position": "relative",
+        "zIndex": 0,
+      }
+    }>
+    <div
+      className="casets-wrap">
+      <ul
+        className="undefined
+                      undefined
+                      undefined
+                      undefined
+                      ">
+        <li
+          className={undefined}>
+          <button
+            className="undefined
+                                  
+                                  "
+            onClick={[Function]}>
+            <div
+              className={undefined}
+              style={
+                Object {
+                  "backgroundImage": "url(./images/corkboard.jpg)",
+                }
+              } />
+            <div
+              className="undefined undefined" />
+            
+          </button>
+        </li>
+        <li
+          className={undefined}>
+          <button
+            className="undefined
+                                  
+                                  "
+            onClick={[Function]}>
+            <div
+              className={undefined}
+              style={
+                Object {
+                  "backgroundImage": "url(./images/blueboard.jpg)",
+                }
+              } />
+            <div
+              className="undefined undefined" />
+            
+          </button>
+        </li>
+        <li
+          className={undefined}>
+          <button
+            className="undefined
+                                  
+                                  "
+            onClick={[Function]}>
+            <div
+              className={undefined}
+              style={
+                Object {
+                  "backgroundImage": "url(./images/stripe.jpg)",
+                }
+              } />
+            <div
+              className="undefined undefined" />
+            
+          </button>
+        </li>
+        <li
+          className={undefined}>
+          <button
+            className="undefined
+                                  
+                                  "
+            onClick={[Function]}>
+            <div
+              className={undefined}
+              style={
+                Object {
+                  "backgroundImage": "url(./images/goldgrazing.jpg)",
+                }
+              } />
+            <div
+              className="undefined undefined" />
+            
+          </button>
+        </li>
+        <li>
+          <span />
+        </li>
+      </ul>
+    </div>
+  </div>
+  <a
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "#28c",
+        "borderRadius": "0 0 0 5px",
+        "color": "#fff",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "fontSize": 12,
+        "padding": "5px 15px",
+        "position": "fixed",
+        "right": 0,
+        "textDecoration": "none",
+        "top": 0,
+      }
+    }>
+    ?
+  </a>
+  <div
+    style={
+      Object {
+        "background": "white",
+        "bottom": 0,
+        "display": "none",
+        "left": 0,
+        "overflow": "auto",
+        "padding": "0 40px",
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }>
+    <a
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "#28c",
+          "borderRadius": "0 0 0 5px",
+          "color": "#fff",
+          "cursor": "pointer",
+          "display": "block",
+          "fontFamily": "sans-serif",
+          "fontSize": 12,
+          "padding": "5px 15px",
+          "position": "fixed",
+          "right": 0,
+          "textDecoration": "none",
+          "top": 0,
+        }
+      }>
+      ×
+    </a>
+    <div
+      style={undefined}>
+      <div
+        style={
+          Object {
+            "WebkitFontSmoothing": "antialiased",
+            "color": "#444",
+            "fontFamily": "
+              -apple-system, \".SFNSText-Regular\", \"San Francisco\", \"Roboto\",
+              \"Segoe UI\", \"Helvetica Neue\", \"Lucida Grande\", sans-serif
+            ",
+            "fontSize": 15,
+            "fontWeight": 300,
+            "lineHeight": 1.45,
+          }
+        }>
+        <div
+          style={
+            Object {
+              "borderBottom": "1px solid #eee",
+              "marginBottom": 10,
+            }
+          }>
+          <h1
+            style={
+              Object {
+                "fontSize": 35,
+                "margin": "20px 0 0 0",
+                "padding": 0,
+              }
+            }>
+            Casets
+          </h1>
+          <h2
+            style={
+              Object {
+                "fontSize": 22,
+                "fontWeight": 400,
+                "margin": "0 0 10px 0",
+                "padding": 0,
+              }
+            }>
+            with no title item caset
+          </h2>
+        </div>
+        
+        <div>
+          <h1
+            style={
+              Object {
+                "borderBottom": "1px solid #EEE",
+                "fontSize": 25,
+                "margin": "20px 0 0 0",
+                "padding": "0 0 5px 0",
+              }
+            }>
+            Story Source
+          </h1>
+          <pre
+            style={
+              Object {
+                "backgroundColor": "#fafafa",
+                "fontFamily": "Menlo, Monaco, \"Courier New\", monospace",
+                "fontSize": ".88em",
+                "lineHeight": 1.5,
+                "overflowX": "scroll",
+                "padding": ".5rem",
+              }
+            }>
+            <div>
+              <div
+                style={
+                  Object {
+                    "paddingLeft": 18,
+                    "paddingRight": 3,
+                  }
+                }>
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }>
+                  <
+                  div
+                </span>
+                <span>
+                  <span>
+                     
+                    <span
+                      style={Object {}}>
+                      className
+                    </span>
+                    <span>
+                      =
+                      <span
+                        style={Object {}}>
+                        <span
+                          style={
+                            Object {
+                              "color": "#22a",
+                              "wordBreak": "break-word",
+                            }
+                          }>
+                          \"
+                          casets-wrap
+                          \"
+                        </span>
+                      </span>
+                    </span>
+                    
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }>
+                  >
+                </span>
+              </div>
+              <div
+                style={
+                  Object {
+                    "paddingLeft": 33,
+                    "paddingRight": 3,
+                  }
+                }>
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }>
+                  <
+                  Casets
+                </span>
+                <span>
+                  <span>
+                     
+                    <span
+                      style={Object {}}>
+                      items
+                    </span>
+                    <span>
+                      =
+                      <span
+                        style={Object {}}>
+                        <span>
+                          {
+                          <span
+                            style={
+                              Object {
+                                "color": "#666",
+                              }
+                            }>
+                            [
+                            <span>
+                              {
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#666",
+                                  }
+                                }>
+                                {
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#666",
+                                    }
+                                  }>
+                                  id
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }>
+                                  \"
+                                  corkboard
+                                  \"
+                                </span>
+                                , 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#666",
+                                    }
+                                  }>
+                                  image
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }>
+                                  \"
+                                  ./images/corkboard.jpg
+                                  \"
+                                </span>
+                                }
+                              </span>
+                              }
+                            </span>
+                            , 
+                            <span>
+                              {
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#666",
+                                  }
+                                }>
+                                {
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#666",
+                                    }
+                                  }>
+                                  id
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }>
+                                  \"
+                                  blueboard
+                                  \"
+                                </span>
+                                , 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#666",
+                                    }
+                                  }>
+                                  image
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }>
+                                  \"
+                                  ./images/blueboard.jpg
+                                  \"
+                                </span>
+                                }
+                              </span>
+                              }
+                            </span>
+                            , 
+                            <span>
+                              {
+                              <span
+                                style={
+                                  Object {
+                                    "color": "#666",
+                                  }
+                                }>
+                                {
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#666",
+                                    }
+                                  }>
+                                  id
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }>
+                                  \"
+                                  stripe
+                                  \"
+                                </span>
+                                , 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#666",
+                                    }
+                                  }>
+                                  image
+                                </span>
+                                : 
+                                <span
+                                  style={
+                                    Object {
+                                      "color": "#22a",
+                                      "wordBreak": "break-word",
+                                    }
+                                  }>
+                                  \"
+                                  ./images/stripe.jpg
+                                  \"
+                                </span>
+                                }
+                              </span>
+                              }
+                            </span>
+                            , 
+                            …
+                            ]
+                          </span>
+                          }
+                        </span>
+                      </span>
+                    </span>
+                     
+                  </span>
+                </span>
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }>
+                  />
+                </span>
+              </div>
+              <div
+                style={
+                  Object {
+                    "paddingLeft": 18,
+                    "paddingRight": 3,
+                  }
+                }>
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }>
+                  </
+                  div
+                  >
+                </span>
+              </div>
+            </div>
+          </pre>
+        </div>
+        <div>
+          <h1
+            style={
+              Object {
+                "borderBottom": "1px solid #EEE",
+                "fontSize": 25,
+                "margin": "20px 0 0 0",
+                "padding": "0 0 5px 0",
+              }
+            }>
+            Prop Types
+          </h1>
+          <div>
+            <h2
+              style={
+                Object {
+                  "margin": "20px 0 0 0",
+                }
+              }>
+              \"
+              Casets
+              \" Component
+            </h2>
+            <table
+              style={
+                Object {
+                  "borderCollapse": "separate",
+                  "borderSpacing": "10px 5px",
+                  "marginLeft": -10,
+                }
+              }>
+              <thead>
+                <tr>
+                  <th>
+                    property
+                  </th>
+                  <th>
+                    propType
+                  </th>
+                  <th>
+                    required
+                  </th>
+                  <th>
+                    default
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    clickable
+                  </td>
+                  <td>
+                    bool
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span>
+                      {
+                      <span
+                        style={
+                          Object {
+                            "color": "#a11",
+                          }
+                        }>
+                        true
+                      </span>
+                      }
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    hasSpace
+                  </td>
+                  <td>
+                    bool
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span>
+                      {
+                      <span
+                        style={
+                          Object {
+                            "color": "#a11",
+                          }
+                        }>
+                        false
+                      </span>
+                      }
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    hover
+                  </td>
+                  <td>
+                    other
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }>
+                      \"
+                      unveil
+                      \"
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    items
+                  </td>
+                  <td>
+                    array
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span>
+                      {
+                      <span
+                        style={
+                          Object {
+                            "color": "#666",
+                          }
+                        }>
+                        [
+                        ]
+                      </span>
+                      }
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    nowrap
+                  </td>
+                  <td>
+                    bool
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span>
+                      {
+                      <span
+                        style={
+                          Object {
+                            "color": "#a11",
+                          }
+                        }>
+                        true
+                      </span>
+                      }
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    onClick
+                  </td>
+                  <td>
+                    func
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span>
+                      {
+                      <span
+                        style={
+                          Object {
+                            "color": "#170",
+                          }
+                        }>
+                        onClick()
+                      </span>
+                      }
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    onReachToBottom
+                  </td>
+                  <td>
+                    func
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span>
+                      {
+                      <span
+                        style={
+                          Object {
+                            "color": "#170",
+                          }
+                        }>
+                        onReachToBottom()
+                      </span>
+                      }
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    position
+                  </td>
+                  <td>
+                    other
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }>
+                      \"
+                      middle
+                      \"
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    styles
+                  </td>
+                  <td>
+                    object
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span>
+                      {
+                      <span
+                        style={
+                          Object {
+                            "color": "#666",
+                          }
+                        }>
+                        {
+                        }
+                      </span>
+                      }
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    theme
+                  </td>
+                  <td>
+                    other
+                  </td>
+                  <td>
+                    no
+                  </td>
+                  <td>
+                    <span
+                      style={
+                        Object {
+                          "color": "#22a",
+                          "wordBreak": "break-word",
+                        }
+                      }>
+                      \"
+                      pop
+                      \"
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Casets with selected item caset 1`] = `
 <div>
   <div
     style={
@@ -7854,7 +8677,7 @@ exports[`Storyshots Casets with selected caset 1`] = `
                 "padding": 0,
               }
             }>
-            with selected caset
+            with selected item caset
           </h2>
         </div>
         
@@ -8006,7 +8829,7 @@ exports[`Storyshots Casets with selected caset 1`] = `
                                       "color": "#666",
                                     }
                                   }>
-                                  name
+                                  title
                                 </span>
                                 : 
                                 <span
@@ -8084,7 +8907,7 @@ exports[`Storyshots Casets with selected caset 1`] = `
                                       "color": "#666",
                                     }
                                   }>
-                                  name
+                                  title
                                 </span>
                                 : 
                                 <span
@@ -8162,7 +8985,7 @@ exports[`Storyshots Casets with selected caset 1`] = `
                                       "color": "#666",
                                     }
                                   }>
-                                  name
+                                  title
                                 </span>
                                 : 
                                 <span
@@ -8930,7 +9753,7 @@ exports[`Storyshots Casets with spacing casets 1`] = `
                                       "color": "#666",
                                     }
                                   }>
-                                  name
+                                  title
                                 </span>
                                 : 
                                 <span
@@ -9006,7 +9829,7 @@ exports[`Storyshots Casets with spacing casets 1`] = `
                                       "color": "#666",
                                     }
                                   }>
-                                  name
+                                  title
                                 </span>
                                 : 
                                 <span
@@ -9082,7 +9905,7 @@ exports[`Storyshots Casets with spacing casets 1`] = `
                                       "color": "#666",
                                     }
                                   }>
-                                  name
+                                  title
                                 </span>
                                 : 
                                 <span
@@ -9855,7 +10678,7 @@ exports[`Storyshots Casets with top position text 1`] = `
                                       "color": "#666",
                                     }
                                   }>
-                                  name
+                                  title
                                 </span>
                                 : 
                                 <span
@@ -9931,7 +10754,7 @@ exports[`Storyshots Casets with top position text 1`] = `
                                       "color": "#666",
                                     }
                                   }>
-                                  name
+                                  title
                                 </span>
                                 : 
                                 <span
@@ -10007,7 +10830,7 @@ exports[`Storyshots Casets with top position text 1`] = `
                                       "color": "#666",
                                     }
                                   }>
-                                  name
+                                  title
                                 </span>
                                 : 
                                 <span
@@ -10797,7 +11620,7 @@ exports[`Storyshots Casets with unclickable 1`] = `
                                       "color": "#666",
                                     }
                                   }>
-                                  name
+                                  title
                                 </span>
                                 : 
                                 <span
@@ -10873,7 +11696,7 @@ exports[`Storyshots Casets with unclickable 1`] = `
                                       "color": "#666",
                                     }
                                   }>
-                                  name
+                                  title
                                 </span>
                                 : 
                                 <span
@@ -10949,7 +11772,7 @@ exports[`Storyshots Casets with unclickable 1`] = `
                                       "color": "#666",
                                     }
                                   }>
-                                  name
+                                  title
                                 </span>
                                 : 
                                 <span

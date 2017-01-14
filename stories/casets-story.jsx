@@ -9,22 +9,22 @@ const actionLogger = action();
 const items = [
   {
     id: 'corkboard',
-    name: 'Cork Board',
+    title: 'Cork Board',
     image: './images/corkboard.jpg'
   },
   {
     id: 'blueboard',
-    name: 'Blue Board',
+    title: 'Blue Board',
     image: './images/blueboard.jpg'
   },
   {
     id: 'stripe',
-    name: 'Stripe',
+    title: 'Stripe',
     image: './images/stripe.jpg'
   },
   {
     id: 'goldgrazing',
-    name: 'Gold Grazing',
+    title: 'Gold Grazing',
     image: './images/goldgrazing.jpg'
   }
 ];
@@ -94,15 +94,27 @@ storiesOf('Casets', module)
       />
     </div>
   ))
-  .addWithInfo('with selected caset', () => (
+  .addWithInfo('with selected item caset', () => (
     <div className="casets-wrap">
       <Casets
         items={items.map((item, index) =>
           ({
             id: item.id,
-            name: item.name,
+            title: item.title,
             image: item.image,
             selected: index % 2
+          })
+        )}
+      />
+    </div>
+  ))
+  .addWithInfo('with no title item caset', () => (
+    <div className="casets-wrap">
+      <Casets
+        items={items.map(item =>
+          ({
+            id: item.id,
+            image: item.image
           })
         )}
       />

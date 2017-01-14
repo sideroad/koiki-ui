@@ -41,16 +41,16 @@ const Casets = ({
               style={{ backgroundImage: `url(${item.image})` }}
             />
             <div
-              className={`${styles.outline} ${item.name ? '' : styles.none}`}
+              className={`${styles.outline} ${item.title ? '' : styles.none}`}
             />
             {
-              item.name ?
+              item.title ?
                 <div
                   className={styles.text}
                   style={{
                     whiteSpace: nowrap ? 'nowrap' : ''
                   }}
-                >{item.name}</div> : ''
+                >{item.title}</div> : ''
             }
           </button>
         </li>
