@@ -26,9 +26,9 @@ https://sideroad.github.io/koiki-ui/
 ## Contribution
 
 ### Components
-Every components should have `styles` props to be able to customize style of component.
-Base styles should be put under `src/less` directory and load as `defaultProps`
+Every components have `styles` props to be able to customize style of component.
+Base styles should be put under `src/less` directory and load styles as `defaultProps`
 
 ### Storybook
-Components storybook should put under `stories` directory.
+Component storybooks are under `stories` directory.
 stories will be use as snapshot testing with using storyshots
