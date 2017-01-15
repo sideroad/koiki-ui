@@ -1,3 +1,4 @@
+@import "variables.less";
 
 @keyframes flip {
   0% {
@@ -68,5 +69,99 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes loading-with-middle {
+  0% {
+    transform: translateY(-50%) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-50%) rotate(180deg);
+  }
+  100% {
+    transform: translateY(-50%) rotate(360deg);
+  }
+}
+
+@keyframes finished-with-middle {
+  0% {
+    transform: translateY(-50%) rotate(0deg) scale(1);
+  }
+  25% {
+    transform: translateY(-50%) rotate(90deg) scale(0);
+  }
+  26% {
+    transform: translateY(-50%) scale(0);
+  }
+  90% {
+    transform: translateY(-50%) scale(1.3);
+  }
+  100% {
+    transform: translateY(-50%) scale(1);
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes finished {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(90deg) scale(0);
+  }
+  26% {
+    transform: scale(0);
+  }
+  90% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes success {
+  0% {
+    content: '\f110';
+  }
+  25% {
+    content: '\f110';
+  }
+  26% {
+    content: '\f058';
+    color: @primary-success-color;
+  }
+  100% {
+    content: '\f058';
+    color: @primary-success-color;
+  }
+}
+
+@keyframes error {
+  0% {
+    content: '\f110';
+  }
+  25% {
+    content: '\f110';
+  }
+  26% {
+    content: '\f071';
+    color: @primary-error-color;
+  }
+  100% {
+    content: '\f071';
+    color: @primary-error-color;
   }
 }

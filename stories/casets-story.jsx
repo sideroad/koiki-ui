@@ -1,10 +1,16 @@
 import React from 'react';
 import { storiesOf, action, setAddon } from '@kadira/storybook';
 import infoAddon from '@kadira/react-storybook-addon-info';
+import mockedInfoAddon from './react-storybook-addon-info-mock';
 import Casets from '../src/Casets';
 import customized from './less/button.less';
 
-setAddon(infoAddon);
+if (process.env.NODE_ENV !== 'test') {
+  setAddon(infoAddon);
+} else {
+  setAddon(mockedInfoAddon);
+}
+
 const actionLogger = action();
 const items = [
   {

@@ -1,10 +1,16 @@
 import React from 'react';
 import { storiesOf, action, setAddon } from '@kadira/storybook';
 import infoAddon from '@kadira/react-storybook-addon-info';
+import mockedInfoAddon from './react-storybook-addon-info-mock';
 import Input from '../src/Input';
 import customized from './less/input.less';
 
-setAddon(infoAddon);
+if (process.env.NODE_ENV !== 'test') {
+  setAddon(infoAddon);
+} else {
+  setAddon(mockedInfoAddon);
+}
+
 const actionLogger = action();
 
 storiesOf('Input', module)
@@ -31,6 +37,34 @@ storiesOf('Input', module)
     <div className="input-wrap">
       <Input
         value="FooBar"
+      />
+    </div>
+  ))
+  .addWithInfo('with focused', () => (
+    <div className="input-wrap">
+      <Input
+        focused
+      />
+    </div>
+  ))
+  .addWithInfo('with progress loading', () => (
+    <div className="input-wrap">
+      <Input
+        progress="loading"
+      />
+    </div>
+  ))
+  .addWithInfo('with progress success', () => (
+    <div className="input-wrap">
+      <Input
+        progress="success"
+      />
+    </div>
+  ))
+  .addWithInfo('with progress error', () => (
+    <div className="input-wrap">
+      <Input
+        progress="error"
       />
     </div>
   ))

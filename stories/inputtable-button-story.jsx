@@ -1,10 +1,16 @@
 import React from 'react';
 import { storiesOf, action, setAddon } from '@kadira/storybook';
 import infoAddon from '@kadira/react-storybook-addon-info';
+import mockedInfoAddon from './react-storybook-addon-info-mock';
 import InputtableButton from '../src/InputtableButton';
 import customized from './less/inputtable-button.less';
 
-setAddon(infoAddon);
+if (process.env.NODE_ENV !== 'test') {
+  setAddon(infoAddon);
+} else {
+  setAddon(mockedInfoAddon);
+}
+
 const actionLogger = action();
 
 storiesOf('InputtableButton', module)

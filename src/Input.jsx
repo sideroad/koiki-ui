@@ -8,8 +8,16 @@ class Input extends Component {
     this.state = {
       clicked: false,
       escaped: false,
+      focused: props.focused,
       value: props.value
     };
+  }
+
+  componentDidMount() {
+    if (this.props.focused &&
+        this.inputDOM) {
+      this.inputDOM.focus();
+    }
   }
 
   componentWillReceiveProps(props) {
@@ -19,6 +27,7 @@ class Input extends Component {
   }
 
   render() {
+    const progress = `progress-${this.props.progress}-with-middle`;
     return (
       <div
         className={`${this.props.styles.container}
@@ -26,6 +35,7 @@ class Input extends Component {
                       this.state.escaped ? this.props.styles.escaped : ''}`}
       >
         <input
+          ref={(elem) => { this.inputDOM = elem; }}
           className={this.props.styles.input}
           placeholder={this.props.placeholder}
           value={this.state.value}
@@ -37,7 +47,15 @@ class Input extends Component {
           }}
           onBlur={evt => this.props.onBlur(evt)}
         />
-        <i className={`${fa.fa} ${fa[this.props.icon]} ${this.props.styles.prefix}`} aria-hidden="true" />
+        <i
+          className={`
+            ${fa.fa}
+            ${fa[this.props.icon]}
+            ${this.props.styles.prefix}
+            ${this.props.styles[progress]}
+          `}
+          aria-hidden="true"
+        />
       </div>
     );
   }
@@ -48,8 +66,10 @@ Input.propTypes = {
   placeholder: PropTypes.string,
   value: PropTypes.string,
   icon: PropTypes.string,
+  focused: PropTypes.bool,
+  progress: PropTypes.oneOf(['none', 'loading', 'success', 'error']),
   onBlur: PropTypes.func,
-  onChange: PropTypes.func
+  onChange: PropTypes.func,
 };
 
 Input.defaultProps = {
@@ -57,6 +77,8 @@ Input.defaultProps = {
   placeholder: '',
   value: '',
   icon: 'fa-search',
+  focused: false,
+  progress: 'none',
   onBlur: () => {},
   onChange: () => {}
 };

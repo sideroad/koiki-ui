@@ -12,6 +12,7 @@ class Button extends Component {
   }
 
   render() {
+    const progress = `progress-${this.props.progress}`;
     return (
       <div
         className={`${this.props.styles.container}
@@ -30,7 +31,15 @@ class Button extends Component {
             }
           }}
         >
-          <i className={`${fa.fa} ${fa[this.props.icon]}`} aria-hidden="true" />{this.props.text}
+          <i
+            className={`
+              ${fa.fa}
+              ${fa[this.props.icon]}
+              ${this.props.styles[progress]}
+            `}
+            aria-hidden="true"
+          />
+          {this.props.text}
         </button>
       </div>
     );
@@ -42,6 +51,7 @@ Button.propTypes = {
   icon: PropTypes.string,
   text: PropTypes.string.isRequired,
   onClick: PropTypes.func,
+  progress: PropTypes.oneOf(['none', 'loading', 'success', 'error']),
   styles: PropTypes.object
 };
 
@@ -49,6 +59,7 @@ Button.defaultProps = {
   styles: require('./less/button.less'),
   disabled: false,
   icon: 'fa-search',
+  progress: 'none',
   onClick: () => {}
 };
 

@@ -1,0 +1,42 @@
+
+.progress-loading{
+	animation: loading 1s linear;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+}
+
+.progress-loading-with-middle{
+	animation: loading-with-middle 1s linear;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+}
+
+.progress-loading:before,
+.progress-loading-with-middle:before
+{
+  content: "\f110";
+}
+
+.progress-success-with-middle,
+.progress-error-with-middle{
+	animation: finished-with-middle 0.5s ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+.progress-success,
+.progress-error{
+	animation: finished 0.5s ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+.progress-success:before,
+.progress-success-with-middle:before{
+	animation: success 0.5s ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+.progress-error:before,
+.progress-error-with-middle:before{
+	animation: error 0.5s ease-in-out;
+	animation-fill-mode: forwards;
+}
