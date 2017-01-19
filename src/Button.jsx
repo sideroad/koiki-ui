@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react';
-import fa from '../less/fa/less/font-awesome.less';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class Button extends Component {
@@ -33,8 +32,8 @@ class Button extends Component {
         >
           <i
             className={`
-              ${fa.fa}
-              ${fa[this.props.icon]}
+              ${this.props.fa.fa}
+              ${this.props.fa[this.props.icon]}
               ${this.props.styles[progress]}
             `}
             aria-hidden="true"
@@ -47,6 +46,7 @@ class Button extends Component {
 }
 
 Button.propTypes = {
+  fa: PropTypes.object,
   disabled: PropTypes.bool,
   icon: PropTypes.string,
   text: PropTypes.string.isRequired,
@@ -56,6 +56,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
+  fa: require('../less/fa/less/font-awesome.less'),
   styles: require('../less/button.less'),
   disabled: false,
   icon: 'fa-search',

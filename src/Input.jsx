@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react';
-import fa from '../less/fa/less/font-awesome.less';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class Input extends Component {
@@ -49,8 +48,8 @@ class Input extends Component {
         />
         <i
           className={`
-            ${fa.fa}
-            ${fa[this.props.icon]}
+            ${this.props.fa.fa}
+            ${this.props.fa[this.props.icon]}
             ${this.props.styles.prefix}
             ${this.props.styles[progress]}
           `}
@@ -62,6 +61,7 @@ class Input extends Component {
 }
 
 Input.propTypes = {
+  fa: PropTypes.object,
   styles: PropTypes.object,
   placeholder: PropTypes.string,
   value: PropTypes.string,
@@ -73,6 +73,7 @@ Input.propTypes = {
 };
 
 Input.defaultProps = {
+  fa: require('../less/fa/less/font-awesome.less'),
   styles: require('../less/input.less'),
   placeholder: '',
   value: '',

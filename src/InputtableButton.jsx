@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react';
-import fa from '../less/fa/less/font-awesome.less';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class InputtableButton extends Component {
@@ -51,7 +50,7 @@ class InputtableButton extends Component {
             this.props.onClick(evt);
           }}
         >
-          <i className={`${fa.fa} ${fa[this.props.icon]}`} aria-hidden="true" />{this.props.text}
+          <i className={`${this.props.fa.fa} ${this.props.fa[this.props.icon]}`} aria-hidden="true" />{this.props.text}
         </button>
         <input
           ref={(elem) => { this.inputDOM = elem; }}
@@ -68,13 +67,14 @@ class InputtableButton extends Component {
           onChange={evt => this.props.onChange(evt)}
           onBlur={evt => blur(evt)}
         />
-        <i className={`${fa.fa} ${fa[this.props.icon]} ${this.props.styles.prefix}`} aria-hidden="true" />
+        <i className={`${this.props.fa.fa} ${this.props.fa[this.props.icon]} ${this.props.styles.prefix}`} aria-hidden="true" />
       </div>
     );
   }
 }
 
 InputtableButton.propTypes = {
+  fa: PropTypes.object,
   styles: PropTypes.object,
   icon: PropTypes.string,
   text: PropTypes.string.isRequired,
@@ -86,6 +86,7 @@ InputtableButton.propTypes = {
 };
 
 InputtableButton.defaultProps = {
+  fa: require('../less/fa/less/font-awesome.less'),
   icon: 'fa-search',
   placeholder: '',
   onClick: () => {},
