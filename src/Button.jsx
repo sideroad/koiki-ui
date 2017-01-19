@@ -16,7 +16,8 @@ class Button extends Component {
       <div
         className={`${this.props.styles.container}
                     ${this.state.clicked ? this.props.styles.clicked :
-                      this.state.escaped ? this.props.styles.escaped : ''}`}
+                      this.state.escaped ? this.props.styles.escaped : ''}
+                    ${this.props.className}`}
       >
         <button
           className={`${this.props.styles.button} ${this.props.disabled ? this.props.styles.disabled : ''}`}
@@ -46,6 +47,7 @@ class Button extends Component {
 }
 
 Button.propTypes = {
+  className: PropTypes.string,
   fa: PropTypes.object,
   disabled: PropTypes.bool,
   icon: PropTypes.string,
@@ -56,6 +58,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
+  className: '',
   fa: require('../less/fa/less/font-awesome.less'),
   styles: require('../less/button.less'),
   disabled: false,

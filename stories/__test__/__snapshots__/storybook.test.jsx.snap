@@ -1,8 +1,32 @@
+exports[`Storyshots Button with append className 1`] = `
+<div
+  className="button-wrap">
+  <div
+    className="undefined
+                      
+                      foobar">
+    <button
+      className="undefined "
+      onClick={[Function]}>
+      <i
+        aria-hidden="true"
+        className="
+                    undefined
+                    undefined
+                    undefined
+                  " />
+      Search
+    </button>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Button with basic usage 1`] = `
 <div
   className="button-wrap">
   <div
     className="undefined
+                      
                       ">
     <button
       className="undefined "
@@ -25,6 +49,7 @@ exports[`Storyshots Button with customize icon 1`] = `
   className="button-wrap">
   <div
     className="undefined
+                      
                       ">
     <button
       className="undefined "
@@ -47,6 +72,7 @@ exports[`Storyshots Button with customize styles 1`] = `
   className="button-wrap">
   <div
     className="undefined
+                      
                       ">
     <button
       className="undefined "
@@ -69,6 +95,7 @@ exports[`Storyshots Button with disabled 1`] = `
   className="button-wrap">
   <div
     className="undefined
+                      
                       ">
     <button
       className="undefined undefined"
@@ -91,6 +118,7 @@ exports[`Storyshots Button with event handling 1`] = `
   className="button-wrap">
   <div
     className="undefined
+                      
                       ">
     <button
       className="undefined "
@@ -113,6 +141,7 @@ exports[`Storyshots Button with progress error 1`] = `
   className="button-wrap">
   <div
     className="undefined
+                      
                       ">
     <button
       className="undefined "
@@ -135,6 +164,7 @@ exports[`Storyshots Button with progress loading 1`] = `
   className="button-wrap">
   <div
     className="undefined
+                      
                       ">
     <button
       className="undefined "
@@ -157,6 +187,7 @@ exports[`Storyshots Button with progress success 1`] = `
   className="button-wrap">
   <div
     className="undefined
+                      
                       ">
     <button
       className="undefined "
@@ -174,6 +205,131 @@ exports[`Storyshots Button with progress success 1`] = `
 </div>
 `;
 
+exports[`Storyshots Casets with append className 1`] = `
+<div
+  className="casets-wrap">
+  <ul
+    className="undefined
+                  undefined
+                  undefined
+                  undefined
+                  
+                  foobar">
+    <li
+      className={undefined}>
+      <button
+        className="undefined
+                              
+                              "
+        onClick={[Function]}>
+        <div
+          className={undefined}
+          style={
+            Object {
+              "backgroundImage": "url(./images/corkboard.jpg)",
+            }
+          } />
+        <div
+          className="undefined " />
+        <div
+          className={undefined}
+          style={
+            Object {
+              "whiteSpace": "nowrap",
+            }
+          }>
+          Cork Board
+        </div>
+      </button>
+    </li>
+    <li
+      className={undefined}>
+      <button
+        className="undefined
+                              
+                              "
+        onClick={[Function]}>
+        <div
+          className={undefined}
+          style={
+            Object {
+              "backgroundImage": "url(./images/blueboard.jpg)",
+            }
+          } />
+        <div
+          className="undefined " />
+        <div
+          className={undefined}
+          style={
+            Object {
+              "whiteSpace": "nowrap",
+            }
+          }>
+          Blue Board
+        </div>
+      </button>
+    </li>
+    <li
+      className={undefined}>
+      <button
+        className="undefined
+                              
+                              "
+        onClick={[Function]}>
+        <div
+          className={undefined}
+          style={
+            Object {
+              "backgroundImage": "url(./images/stripe.jpg)",
+            }
+          } />
+        <div
+          className="undefined " />
+        <div
+          className={undefined}
+          style={
+            Object {
+              "whiteSpace": "nowrap",
+            }
+          }>
+          Stripe
+        </div>
+      </button>
+    </li>
+    <li
+      className={undefined}>
+      <button
+        className="undefined
+                              
+                              "
+        onClick={[Function]}>
+        <div
+          className={undefined}
+          style={
+            Object {
+              "backgroundImage": "url(./images/goldgrazing.jpg)",
+            }
+          } />
+        <div
+          className="undefined " />
+        <div
+          className={undefined}
+          style={
+            Object {
+              "whiteSpace": "nowrap",
+            }
+          }>
+          Gold Grazing
+        </div>
+      </button>
+    </li>
+    <li>
+      <span />
+    </li>
+  </ul>
+</div>
+`;
+
 exports[`Storyshots Casets with basic usage 1`] = `
 <div
   className="casets-wrap">
@@ -182,6 +338,7 @@ exports[`Storyshots Casets with basic usage 1`] = `
                   undefined
                   undefined
                   undefined
+                  
                   ">
     <li
       className={undefined}>
@@ -306,6 +463,7 @@ exports[`Storyshots Casets with bottom position text 1`] = `
                   undefined
                   undefined
                   undefined
+                  
                   ">
     <li
       className={undefined}>
@@ -430,6 +588,7 @@ exports[`Storyshots Casets with classic theme 1`] = `
                   undefined
                   undefined
                   undefined
+                  
                   ">
     <li
       className={undefined}>
@@ -554,6 +713,7 @@ exports[`Storyshots Casets with cover interaction 1`] = `
                   undefined
                   undefined
                   undefined
+                  
                   ">
     <li
       className={undefined}>
@@ -678,6 +838,7 @@ exports[`Storyshots Casets with customize styles 1`] = `
                   undefined
                   undefined
                   undefined
+                  
                   ">
     <li>
       <span />
@@ -694,6 +855,7 @@ exports[`Storyshots Casets with event handling 1`] = `
                   undefined
                   undefined
                   undefined
+                  
                   ">
     <li
       className={undefined}>
@@ -818,6 +980,7 @@ exports[`Storyshots Casets with no title item caset 1`] = `
                   undefined
                   undefined
                   undefined
+                  
                   ">
     <li
       className={undefined}>
@@ -910,6 +1073,7 @@ exports[`Storyshots Casets with selected item caset 1`] = `
                   undefined
                   undefined
                   undefined
+                  
                   ">
     <li
       className={undefined}>
@@ -1034,7 +1198,8 @@ exports[`Storyshots Casets with spacing casets 1`] = `
                   undefined
                   undefined
                   undefined
-                  undefined">
+                  undefined
+                  ">
     <li
       className={undefined}>
       <button
@@ -1158,6 +1323,7 @@ exports[`Storyshots Casets with top position text 1`] = `
                   undefined
                   undefined
                   undefined
+                  
                   ">
     <li
       className={undefined}>
@@ -1282,6 +1448,7 @@ exports[`Storyshots Casets with unclickable 1`] = `
                   undefined
                   undefined
                   undefined
+                  
                   ">
     <li
       className={undefined}>
@@ -1398,11 +1565,37 @@ exports[`Storyshots Casets with unclickable 1`] = `
 </div>
 `;
 
+exports[`Storyshots Input with append className 1`] = `
+<div
+  className="input-wrap">
+  <div
+    className="undefined
+                      
+                      foobar">
+    <input
+      className={undefined}
+      onBlur={[Function]}
+      onChange={[Function]}
+      placeholder=""
+      value="" />
+    <i
+      aria-hidden="true"
+      className="
+                undefined
+                undefined
+                undefined
+                undefined
+              " />
+  </div>
+</div>
+`;
+
 exports[`Storyshots Input with basic usage 1`] = `
 <div
   className="input-wrap">
   <div
     className="undefined
+                      
                       ">
     <input
       className={undefined}
@@ -1427,6 +1620,7 @@ exports[`Storyshots Input with customize icon 1`] = `
   className="input-wrap">
   <div
     className="undefined
+                      
                       ">
     <input
       className={undefined}
@@ -1451,6 +1645,7 @@ exports[`Storyshots Input with customize styles 1`] = `
   className="input-wrap">
   <div
     className="undefined
+                      
                       ">
     <input
       className={undefined}
@@ -1475,6 +1670,7 @@ exports[`Storyshots Input with default value 1`] = `
   className="input-wrap">
   <div
     className="undefined
+                      
                       ">
     <input
       className={undefined}
@@ -1499,6 +1695,7 @@ exports[`Storyshots Input with event handler 1`] = `
   className="input-wrap">
   <div
     className="undefined
+                      
                       ">
     <input
       className={undefined}
@@ -1523,6 +1720,7 @@ exports[`Storyshots Input with focused 1`] = `
   className="input-wrap">
   <div
     className="undefined
+                      
                       ">
     <input
       className={undefined}
@@ -1547,6 +1745,7 @@ exports[`Storyshots Input with placeholder 1`] = `
   className="input-wrap">
   <div
     className="undefined
+                      
                       ">
     <input
       className={undefined}
@@ -1571,6 +1770,7 @@ exports[`Storyshots Input with progress error 1`] = `
   className="input-wrap">
   <div
     className="undefined
+                      
                       ">
     <input
       className={undefined}
@@ -1595,6 +1795,7 @@ exports[`Storyshots Input with progress loading 1`] = `
   className="input-wrap">
   <div
     className="undefined
+                      
                       ">
     <input
       className={undefined}
@@ -1619,6 +1820,7 @@ exports[`Storyshots Input with progress success 1`] = `
   className="input-wrap">
   <div
     className="undefined
+                      
                       ">
     <input
       className={undefined}
@@ -1638,11 +1840,40 @@ exports[`Storyshots Input with progress success 1`] = `
 </div>
 `;
 
+exports[`Storyshots InputtableButton with append className 1`] = `
+<div
+  className="input-wrap">
+  <div
+    className="undefined
+                      
+                      foobar">
+    <button
+      className={undefined}
+      onClick={[Function]}>
+      <i
+        aria-hidden="true"
+        className="undefined undefined" />
+      Search
+    </button>
+    <input
+      className={undefined}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      placeholder="" />
+    <i
+      aria-hidden="true"
+      className="undefined undefined undefined" />
+  </div>
+</div>
+`;
+
 exports[`Storyshots InputtableButton with basic usage 1`] = `
 <div
   className="input-wrap">
   <div
     className="undefined
+                      
                       ">
     <button
       className={undefined}
@@ -1670,6 +1901,7 @@ exports[`Storyshots InputtableButton with customize icon 1`] = `
   className="input-wrap">
   <div
     className="undefined
+                      
                       ">
     <button
       className={undefined}
@@ -1697,6 +1929,7 @@ exports[`Storyshots InputtableButton with customize styles 1`] = `
   className="input-wrap">
   <div
     className="undefined
+                      
                       ">
     <button
       className={undefined}
@@ -1724,6 +1957,7 @@ exports[`Storyshots InputtableButton with default value 1`] = `
   className="input-wrap">
   <div
     className="undefined
+                      
                       ">
     <button
       className={undefined}
@@ -1751,6 +1985,7 @@ exports[`Storyshots InputtableButton with event handler 1`] = `
   className="input-wrap">
   <div
     className="undefined
+                      
                       ">
     <button
       className={undefined}
@@ -1778,7 +2013,8 @@ exports[`Storyshots InputtableButton with focused 1`] = `
   className="input-wrap">
   <div
     className="undefined
-                      undefined">
+                      undefined
+                      ">
     <button
       className={undefined}
       onClick={[Function]}>
@@ -1805,6 +2041,7 @@ exports[`Storyshots InputtableButton with placeholder 1`] = `
   className="input-wrap">
   <div
     className="undefined
+                      
                       ">
     <button
       className={undefined}

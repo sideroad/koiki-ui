@@ -43,6 +43,14 @@ storiesOf('Casets', module)
       />
     </div>
   ))
+  .addWithInfo('with append className', () => (
+    <div className="casets-wrap">
+      <Casets
+        items={items}
+        className="foobar"
+      />
+    </div>
+  ))
   .addWithInfo('with event handling', () => (
     <div className="casets-wrap">
       <Casets

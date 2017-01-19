@@ -33,8 +33,17 @@ Copy CSS to put own publich directory from `node_modules/koiki-ui/build/styles.c
 import 'koiki-ui/build/styles.css'
 ```
 
+#### Customize CSS with append className
+```
+...
+<Button
+  className="foobar"
+/>
+```
+
 #### Customize CSS with using css-loader
 ```
+import fa from 'koiki-ui/less/fa/less/font-awesome.less';
 import buttonStyles from 'koiki-ui/less/button.less';
 import customizedStyles from 'your_own_less';
 ...

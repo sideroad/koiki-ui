@@ -26,6 +26,13 @@ storiesOf('Input', module)
       />
     </div>
   ))
+  .addWithInfo('with append className', () => (
+    <div className="input-wrap">
+      <Input
+        className="foobar"
+      />
+    </div>
+  ))
   .addWithInfo('with customize icon', () => (
     <div className="input-wrap">
       <Input

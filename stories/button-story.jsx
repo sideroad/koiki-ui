@@ -29,6 +29,14 @@ storiesOf('Button', module)
       />
     </div>
   ))
+  .addWithInfo('with append className', () => (
+    <div className="button-wrap">
+      <Button
+        text="Search"
+        className="foobar"
+      />
+    </div>
+  ))
   .addWithInfo('with progress loading', () => (
     <div className="button-wrap">
       <Button

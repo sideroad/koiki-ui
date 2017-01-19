@@ -11,14 +11,16 @@ const Casets = ({
   onReachToBottom,
   nowrap,
   hasSpace,
-  styles
+  styles,
+  className
 }) =>
   <ul
     className={`${styles.casets}
                 ${styles[hover]}
                 ${styles[theme]}
                 ${styles[position]}
-                ${hasSpace ? styles.hasSpace : ''}`}
+                ${hasSpace ? styles.hasSpace : ''}
+                ${className}`}
   >
     {
       items.map(item =>
@@ -70,6 +72,7 @@ const Casets = ({
   </ul>;
 
 Casets.propTypes = {
+  className: PropTypes.string,
   items: PropTypes.array,
   hover: PropTypes.oneOf(['unveil', 'cover']),
   theme: PropTypes.oneOf(['classic', 'pop']),
@@ -83,6 +86,7 @@ Casets.propTypes = {
 };
 
 Casets.defaultProps = {
+  className: '',
   items: [],
   clickable: true,
   hover: 'unveil',

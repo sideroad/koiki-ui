@@ -29,6 +29,14 @@ storiesOf('InputtableButton', module)
       />
     </div>
   ))
+  .addWithInfo('with append className', () => (
+    <div className="input-wrap">
+      <InputtableButton
+        text="Search"
+        className="foobar"
+      />
+    </div>
+  ))
   .addWithInfo('with customize icon', () => (
     <div className="input-wrap">
       <InputtableButton

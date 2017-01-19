@@ -31,7 +31,8 @@ class Input extends Component {
       <div
         className={`${this.props.styles.container}
                     ${this.state.clicked ? this.props.styles.clicked :
-                      this.state.escaped ? this.props.styles.escaped : ''}`}
+                      this.state.escaped ? this.props.styles.escaped : ''}
+                    ${this.props.className}`}
       >
         <input
           ref={(elem) => { this.inputDOM = elem; }}
@@ -61,6 +62,7 @@ class Input extends Component {
 }
 
 Input.propTypes = {
+  className: PropTypes.string,
   fa: PropTypes.object,
   styles: PropTypes.object,
   placeholder: PropTypes.string,
@@ -73,6 +75,7 @@ Input.propTypes = {
 };
 
 Input.defaultProps = {
+  className: '',
   fa: require('../less/fa/less/font-awesome.less'),
   styles: require('../less/input.less'),
   placeholder: '',

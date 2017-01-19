@@ -37,7 +37,8 @@ class InputtableButton extends Component {
         className={`${this.props.styles.container}
                     ${this.state.clicked ? this.props.styles.clicked :
                                            this.state.escaped ? this.props.styles.escaped :
-                                           this.state.focused ? this.props.styles.focused : ''}`}
+                                           this.state.focused ? this.props.styles.focused : ''}
+                    ${this.props.className}`}
       >
         <button
           className={this.props.styles.button}
@@ -74,6 +75,7 @@ class InputtableButton extends Component {
 }
 
 InputtableButton.propTypes = {
+  className: PropTypes.string,
   fa: PropTypes.object,
   styles: PropTypes.object,
   icon: PropTypes.string,
@@ -86,6 +88,7 @@ InputtableButton.propTypes = {
 };
 
 InputtableButton.defaultProps = {
+  className: '',
   fa: require('../less/fa/less/font-awesome.less'),
   icon: 'fa-search',
   placeholder: '',
