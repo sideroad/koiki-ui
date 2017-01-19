@@ -59,6 +59,7 @@
   },
   "main": "build/index.js",
   "files": [
-    "build"
+    "build",
+    "less"
   ]
 }

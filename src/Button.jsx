@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import fa from './less/fa/less/font-awesome.less';
+import fa from '../less/fa/less/font-awesome.less';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class Button extends Component {
@@ -56,7 +56,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  styles: require('./less/button.less'),
+  styles: require('../less/button.less'),
   disabled: false,
   icon: 'fa-search',
   progress: 'none',

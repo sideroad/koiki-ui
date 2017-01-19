@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import fa from './less/fa/less/font-awesome.less';
+import fa from '../less/fa/less/font-awesome.less';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class Input extends Component {
@@ -73,7 +73,7 @@ Input.propTypes = {
 };
 
 Input.defaultProps = {
-  styles: require('./less/input.less'),
+  styles: require('../less/input.less'),
   placeholder: '',
   value: '',
   icon: 'fa-search',

@@ -23,6 +23,29 @@ const SampleComponent = () =>
 See below to know usage
 https://sideroad.github.io/koiki-ui/
 
+### Styling
+
+#### Load CSS file
+Copy CSS to put own publich directory from `node_modules/koiki-ui/build/styles.css`
+
+#### Use css-loader
+```
+import 'koiki-ui/build/styles.css'
+```
+
+#### Customize CSS with using css-loader
+```
+import buttonStyles from 'koiki-ui/less/button.less';
+import customizedStyles from 'your_own_less';
+...
+<Button
+  styles={{
+    ...buttonStyles,
+    ...customizedStyles
+  }}
+/>
+```
+
 ## Contribution
 
 ### Components

@@ -13,7 +13,7 @@ module.exports = {
         exclude: /node_modules/,
         loader: ExtractTextPlugin.extract('style-loader', 'css?modules!less'),
         include: [
-          path.resolve(__dirname, '../src')
+          path.resolve(__dirname, '../less')
         ]
       }
     :
@@ -23,7 +23,7 @@ module.exports = {
         loaders: ['style', 'css-loader?modules', 'less'],
         include: [
           path.resolve(__dirname, '../stories'),
-          path.resolve(__dirname, '../src')
+          path.resolve(__dirname, '../less')
         ]
       },
       {
@@ -48,6 +48,7 @@ module.exports = {
   resolve: {
     modulesDirectories: [
       'src',
+      'less',
       'node_modules'
     ],
     extensions: ['', '.js', '.jsx'],

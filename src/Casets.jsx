@@ -92,7 +92,7 @@ Casets.defaultProps = {
   hasSpace: false,
   onClick: () => {},
   onReachToBottom: () => {},
-  styles: require('./less/casets.less')
+  styles: require('../less/casets.less')
 };
 
 export default Casets;

@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import fa from './less/fa/less/font-awesome.less';
+import fa from '../less/fa/less/font-awesome.less';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class InputtableButton extends Component {
@@ -92,7 +92,7 @@ InputtableButton.defaultProps = {
   onChange: () => {},
   onBlur: () => {},
   focused: false,
-  styles: require('./less/inputtable-button.less')
+  styles: require('../less/inputtable-button.less')
 };
 
 export default InputtableButton;
