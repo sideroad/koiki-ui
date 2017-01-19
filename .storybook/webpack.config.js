@@ -7,17 +7,21 @@ module.exports = {
   context,
   module: {
     loaders: [
+      process.env.NODE_ENV === 'build' ?
+      {
+        test: /\.less$/,
+        exclude: /node_modules/,
+        loader: ExtractTextPlugin.extract('style-loader', 'css?modules!less'),
+        include: [
+          path.resolve(__dirname, '../src')
+        ]
+      }
+    :
       {
         test: /\.less$/,
         exclude: /node_modules/,
         loaders: ['style', 'css-loader?modules', 'less'],
-        include: process.env.NODE_ENV === 'build'
-          ?
-        [
-          path.resolve(__dirname, ('../src'))
-        ]
-          :
-        [
+        include: [
           path.resolve(__dirname, '../stories'),
           path.resolve(__dirname, '../src')
         ]

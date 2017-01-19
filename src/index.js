@@ -1,6 +1,4 @@
-import Button from './Button';
-import Input from './Input';
-import InputtableButton from './InputtableButton';
-import Casets from './Casets';
-
-export { Button, Input, InputtableButton, Casets };
+export { Button } from './Button';
+export { Input } from './Input';
+export { InputtableButton } from './InputtableButton';
+export { Casets } from './Casets';
