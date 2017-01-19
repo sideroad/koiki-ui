@@ -28,7 +28,7 @@
     "no-shadow": 0,
     "no-nested-ternary": 0,
     "no-constant-condition": 0,
-    "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/__test__/*.test.jsx", "**/stories/*.jsx"]}],
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/__test__/*.test.jsx", "**/stories/*.jsx", "**/.storybook/*.js"]}],
     "new-cap": 0,
     "spaced-comment": 0
   },

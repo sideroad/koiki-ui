@@ -1,4 +1,5 @@
 const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const context = path.resolve(__dirname, '../src');
 
@@ -6,13 +7,20 @@ module.exports = {
   context,
   module: {
     loaders: [
+      process.env.NODE_ENV === 'build' ?
       {
         test: /\.less$/,
-        loaders: [
-          'style',
-          'css-loader?modules',
-          'less'
-        ],
+        exclude: /node_modules/,
+        loader: ExtractTextPlugin.extract('style-loader', 'css?modules!less'),
+        include: [
+          path.resolve(__dirname, '../src')
+        ]
+      }
+    :
+      {
+        test: /\.less$/,
+        exclude: /node_modules/,
+        loaders: ['style', 'css-loader?modules', 'less'],
         include: [
           path.resolve(__dirname, '../stories'),
           path.resolve(__dirname, '../src')
@@ -44,4 +52,7 @@ module.exports = {
     ],
     extensions: ['', '.js', '.jsx'],
   },
+  plugins: [
+    new ExtractTextPlugin('styles.css')
+  ]
 };
