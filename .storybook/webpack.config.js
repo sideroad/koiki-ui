@@ -1,4 +1,5 @@
 const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const context = path.resolve(__dirname, '../src');
 
@@ -46,5 +47,8 @@ module.exports = {
       'node_modules'
     ],
     extensions: ['', '.js', '.jsx'],
-  }
+  },
+  plugins: [
+    new ExtractTextPlugin('styles.css')
+  ]
 };
