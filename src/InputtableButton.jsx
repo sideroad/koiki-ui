@@ -32,6 +32,7 @@ class InputtableButton extends Component {
       });
       this.props.onBlur(evt);
     };
+    const progress = `progress-${this.props.progress}-with-middle`;
     return (
       <div
         className={`${this.props.styles.container}
@@ -68,7 +69,15 @@ class InputtableButton extends Component {
           onChange={evt => this.props.onChange(evt)}
           onBlur={evt => blur(evt)}
         />
-        <i className={`${this.props.fa.fa} ${this.props.fa[this.props.icon]} ${this.props.styles.prefix}`} aria-hidden="true" />
+        <i
+          className={`
+            ${this.props.fa.fa}
+            ${this.props.fa[this.props.icon]}
+            ${this.props.styles.prefix}
+            ${this.props.styles[progress]}
+          `}
+          aria-hidden="true"
+        />
       </div>
     );
   }
@@ -81,6 +90,7 @@ InputtableButton.propTypes = {
   icon: PropTypes.string,
   text: PropTypes.string.isRequired,
   placeholder: PropTypes.string,
+  progress: PropTypes.oneOf(['none', 'loading', 'success', 'error']),
   onClick: PropTypes.func,
   onChange: PropTypes.func,
   onBlur: PropTypes.func,
@@ -95,6 +105,7 @@ InputtableButton.defaultProps = {
   onClick: () => {},
   onChange: () => {},
   onBlur: () => {},
+  progress: 'none',
   focused: false,
   styles: require('../less/inputtable-button.less')
 };

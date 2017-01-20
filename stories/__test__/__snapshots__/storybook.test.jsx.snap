@@ -1863,7 +1863,12 @@ exports[`Storyshots InputtableButton with append className 1`] = `
       placeholder="" />
     <i
       aria-hidden="true"
-      className="undefined undefined undefined" />
+      className="
+                undefined
+                undefined
+                undefined
+                undefined
+              " />
   </div>
 </div>
 `;
@@ -1891,7 +1896,12 @@ exports[`Storyshots InputtableButton with basic usage 1`] = `
       placeholder="" />
     <i
       aria-hidden="true"
-      className="undefined undefined undefined" />
+      className="
+                undefined
+                undefined
+                undefined
+                undefined
+              " />
   </div>
 </div>
 `;
@@ -1919,7 +1929,12 @@ exports[`Storyshots InputtableButton with customize icon 1`] = `
       placeholder="" />
     <i
       aria-hidden="true"
-      className="undefined undefined undefined" />
+      className="
+                undefined
+                undefined
+                undefined
+                undefined
+              " />
   </div>
 </div>
 `;
@@ -1947,7 +1962,12 @@ exports[`Storyshots InputtableButton with customize styles 1`] = `
       placeholder="" />
     <i
       aria-hidden="true"
-      className="undefined undefined undefined" />
+      className="
+                undefined
+                undefined
+                undefined
+                undefined
+              " />
   </div>
 </div>
 `;
@@ -1975,7 +1995,12 @@ exports[`Storyshots InputtableButton with default value 1`] = `
       placeholder="" />
     <i
       aria-hidden="true"
-      className="undefined undefined undefined" />
+      className="
+                undefined
+                undefined
+                undefined
+                undefined
+              " />
   </div>
 </div>
 `;
@@ -2003,7 +2028,12 @@ exports[`Storyshots InputtableButton with event handler 1`] = `
       placeholder="" />
     <i
       aria-hidden="true"
-      className="undefined undefined undefined" />
+      className="
+                undefined
+                undefined
+                undefined
+                undefined
+              " />
   </div>
 </div>
 `;
@@ -2031,7 +2061,12 @@ exports[`Storyshots InputtableButton with focused 1`] = `
       placeholder="" />
     <i
       aria-hidden="true"
-      className="undefined undefined undefined" />
+      className="
+                undefined
+                undefined
+                undefined
+                undefined
+              " />
   </div>
 </div>
 `;
@@ -2059,7 +2094,111 @@ exports[`Storyshots InputtableButton with placeholder 1`] = `
       placeholder="Find something" />
     <i
       aria-hidden="true"
-      className="undefined undefined undefined" />
+      className="
+                undefined
+                undefined
+                undefined
+                undefined
+              " />
+  </div>
+</div>
+`;
+
+exports[`Storyshots InputtableButton with progress error 1`] = `
+<div
+  className="input-wrap">
+  <div
+    className="undefined
+                      
+                      ">
+    <button
+      className={undefined}
+      onClick={[Function]}>
+      <i
+        aria-hidden="true"
+        className="undefined undefined" />
+      Search
+    </button>
+    <input
+      className={undefined}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      placeholder="" />
+    <i
+      aria-hidden="true"
+      className="
+                undefined
+                undefined
+                undefined
+                undefined
+              " />
+  </div>
+</div>
+`;
+
+exports[`Storyshots InputtableButton with progress loading 1`] = `
+<div
+  className="input-wrap">
+  <div
+    className="undefined
+                      
+                      ">
+    <button
+      className={undefined}
+      onClick={[Function]}>
+      <i
+        aria-hidden="true"
+        className="undefined undefined" />
+      Search
+    </button>
+    <input
+      className={undefined}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      placeholder="" />
+    <i
+      aria-hidden="true"
+      className="
+                undefined
+                undefined
+                undefined
+                undefined
+              " />
+  </div>
+</div>
+`;
+
+exports[`Storyshots InputtableButton with progress success 1`] = `
+<div
+  className="input-wrap">
+  <div
+    className="undefined
+                      
+                      ">
+    <button
+      className={undefined}
+      onClick={[Function]}>
+      <i
+        aria-hidden="true"
+        className="undefined undefined" />
+      Search
+    </button>
+    <input
+      className={undefined}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      placeholder="" />
+    <i
+      aria-hidden="true"
+      className="
+                undefined
+                undefined
+                undefined
+                undefined
+              " />
   </div>
 </div>
 `;

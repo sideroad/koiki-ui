@@ -61,6 +61,30 @@ storiesOf('InputtableButton', module)
       />
     </div>
   ))
+  .addWithInfo('with progress loading', () => (
+    <div className="input-wrap">
+      <InputtableButton
+        text="Search"
+        progress="loading"
+      />
+    </div>
+  ))
+  .addWithInfo('with progress success', () => (
+    <div className="input-wrap">
+      <InputtableButton
+        text="Search"
+        progress="success"
+      />
+    </div>
+  ))
+  .addWithInfo('with progress error', () => (
+    <div className="input-wrap">
+      <InputtableButton
+        text="Search"
+        progress="error"
+      />
+    </div>
+  ))
   .addWithInfo('with event handler', () => (
     <div className="input-wrap">
       <InputtableButton
