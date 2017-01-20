@@ -32,7 +32,9 @@ class Input extends Component {
         className={`${this.props.styles.container}
                     ${this.state.clicked ? this.props.styles.clicked :
                       this.state.escaped ? this.props.styles.escaped : ''}
-                    ${this.props.className}`}
+                    ${this.props.className}
+                    ${this.props.styles[progress]}
+        `}
       >
         <input
           ref={(elem) => { this.inputDOM = elem; }}
@@ -52,7 +54,6 @@ class Input extends Component {
             ${this.props.fa.fa}
             ${this.props.fa[this.props.icon]}
             ${this.props.styles.prefix}
-            ${this.props.styles[progress]}
           `}
           aria-hidden="true"
         />

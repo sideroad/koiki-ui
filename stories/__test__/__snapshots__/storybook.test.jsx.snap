@@ -4,14 +4,15 @@ exports[`Storyshots Button with append className 1`] = `
   <div
     className="undefined
                       
-                      foobar">
+                      foobar
+                      undefined
+          ">
     <button
       className="undefined "
       onClick={[Function]}>
       <i
         aria-hidden="true"
         className="
-                    undefined
                     undefined
                     undefined
                   " />
@@ -27,14 +28,15 @@ exports[`Storyshots Button with basic usage 1`] = `
   <div
     className="undefined
                       
-                      ">
+                      
+                      undefined
+          ">
     <button
       className="undefined "
       onClick={[Function]}>
       <i
         aria-hidden="true"
         className="
-                    undefined
                     undefined
                     undefined
                   " />
@@ -50,14 +52,15 @@ exports[`Storyshots Button with customize icon 1`] = `
   <div
     className="undefined
                       
-                      ">
+                      
+                      undefined
+          ">
     <button
       className="undefined "
       onClick={[Function]}>
       <i
         aria-hidden="true"
         className="
-                    undefined
                     undefined
                     undefined
                   " />
@@ -73,14 +76,15 @@ exports[`Storyshots Button with customize styles 1`] = `
   <div
     className="undefined
                       
-                      ">
+                      
+                      undefined
+          ">
     <button
       className="undefined "
       onClick={[Function]}>
       <i
         aria-hidden="true"
         className="
-                    undefined
                     undefined
                     undefined
                   " />
@@ -96,14 +100,15 @@ exports[`Storyshots Button with disabled 1`] = `
   <div
     className="undefined
                       
-                      ">
+                      
+                      undefined
+          ">
     <button
       className="undefined undefined"
       onClick={[Function]}>
       <i
         aria-hidden="true"
         className="
-                    undefined
                     undefined
                     undefined
                   " />
@@ -119,14 +124,15 @@ exports[`Storyshots Button with event handling 1`] = `
   <div
     className="undefined
                       
-                      ">
+                      
+                      undefined
+          ">
     <button
       className="undefined "
       onClick={[Function]}>
       <i
         aria-hidden="true"
         className="
-                    undefined
                     undefined
                     undefined
                   " />
@@ -142,14 +148,15 @@ exports[`Storyshots Button with progress error 1`] = `
   <div
     className="undefined
                       
-                      ">
+                      
+                      undefined
+          ">
     <button
       className="undefined "
       onClick={[Function]}>
       <i
         aria-hidden="true"
         className="
-                    undefined
                     undefined
                     undefined
                   " />
@@ -165,14 +172,15 @@ exports[`Storyshots Button with progress loading 1`] = `
   <div
     className="undefined
                       
-                      ">
+                      
+                      undefined
+          ">
     <button
       className="undefined "
       onClick={[Function]}>
       <i
         aria-hidden="true"
         className="
-                    undefined
                     undefined
                     undefined
                   " />
@@ -188,14 +196,15 @@ exports[`Storyshots Button with progress success 1`] = `
   <div
     className="undefined
                       
-                      ">
+                      
+                      undefined
+          ">
     <button
       className="undefined "
       onClick={[Function]}>
       <i
         aria-hidden="true"
         className="
-                    undefined
                     undefined
                     undefined
                   " />
@@ -1571,7 +1580,9 @@ exports[`Storyshots Input with append className 1`] = `
   <div
     className="undefined
                       
-                      foobar">
+                      foobar
+                      undefined
+          ">
     <input
       className={undefined}
       onBlur={[Function]}
@@ -1581,7 +1592,6 @@ exports[`Storyshots Input with append className 1`] = `
     <i
       aria-hidden="true"
       className="
-                undefined
                 undefined
                 undefined
                 undefined
@@ -1596,7 +1606,9 @@ exports[`Storyshots Input with basic usage 1`] = `
   <div
     className="undefined
                       
-                      ">
+                      
+                      undefined
+          ">
     <input
       className={undefined}
       onBlur={[Function]}
@@ -1606,7 +1618,6 @@ exports[`Storyshots Input with basic usage 1`] = `
     <i
       aria-hidden="true"
       className="
-                undefined
                 undefined
                 undefined
                 undefined
@@ -1621,7 +1632,9 @@ exports[`Storyshots Input with customize icon 1`] = `
   <div
     className="undefined
                       
-                      ">
+                      
+                      undefined
+          ">
     <input
       className={undefined}
       onBlur={[Function]}
@@ -1631,7 +1644,6 @@ exports[`Storyshots Input with customize icon 1`] = `
     <i
       aria-hidden="true"
       className="
-                undefined
                 undefined
                 undefined
                 undefined
@@ -1646,7 +1658,9 @@ exports[`Storyshots Input with customize styles 1`] = `
   <div
     className="undefined
                       
-                      ">
+                      
+                      undefined
+          ">
     <input
       className={undefined}
       onBlur={[Function]}
@@ -1656,7 +1670,6 @@ exports[`Storyshots Input with customize styles 1`] = `
     <i
       aria-hidden="true"
       className="
-                undefined
                 undefined
                 undefined
                 undefined
@@ -1671,7 +1684,9 @@ exports[`Storyshots Input with default value 1`] = `
   <div
     className="undefined
                       
-                      ">
+                      
+                      undefined
+          ">
     <input
       className={undefined}
       onBlur={[Function]}
@@ -1681,7 +1696,6 @@ exports[`Storyshots Input with default value 1`] = `
     <i
       aria-hidden="true"
       className="
-                undefined
                 undefined
                 undefined
                 undefined
@@ -1696,7 +1710,9 @@ exports[`Storyshots Input with event handler 1`] = `
   <div
     className="undefined
                       
-                      ">
+                      
+                      undefined
+          ">
     <input
       className={undefined}
       onBlur={[Function]}
@@ -1706,7 +1722,6 @@ exports[`Storyshots Input with event handler 1`] = `
     <i
       aria-hidden="true"
       className="
-                undefined
                 undefined
                 undefined
                 undefined
@@ -1721,7 +1736,9 @@ exports[`Storyshots Input with focused 1`] = `
   <div
     className="undefined
                       
-                      ">
+                      
+                      undefined
+          ">
     <input
       className={undefined}
       onBlur={[Function]}
@@ -1731,7 +1748,6 @@ exports[`Storyshots Input with focused 1`] = `
     <i
       aria-hidden="true"
       className="
-                undefined
                 undefined
                 undefined
                 undefined
@@ -1746,7 +1762,9 @@ exports[`Storyshots Input with placeholder 1`] = `
   <div
     className="undefined
                       
-                      ">
+                      
+                      undefined
+          ">
     <input
       className={undefined}
       onBlur={[Function]}
@@ -1756,7 +1774,6 @@ exports[`Storyshots Input with placeholder 1`] = `
     <i
       aria-hidden="true"
       className="
-                undefined
                 undefined
                 undefined
                 undefined
@@ -1771,7 +1788,9 @@ exports[`Storyshots Input with progress error 1`] = `
   <div
     className="undefined
                       
-                      ">
+                      
+                      undefined
+          ">
     <input
       className={undefined}
       onBlur={[Function]}
@@ -1781,7 +1800,6 @@ exports[`Storyshots Input with progress error 1`] = `
     <i
       aria-hidden="true"
       className="
-                undefined
                 undefined
                 undefined
                 undefined
@@ -1796,7 +1814,9 @@ exports[`Storyshots Input with progress loading 1`] = `
   <div
     className="undefined
                       
-                      ">
+                      
+                      undefined
+          ">
     <input
       className={undefined}
       onBlur={[Function]}
@@ -1806,7 +1826,6 @@ exports[`Storyshots Input with progress loading 1`] = `
     <i
       aria-hidden="true"
       className="
-                undefined
                 undefined
                 undefined
                 undefined
@@ -1821,7 +1840,9 @@ exports[`Storyshots Input with progress success 1`] = `
   <div
     className="undefined
                       
-                      ">
+                      
+                      undefined
+          ">
     <input
       className={undefined}
       onBlur={[Function]}
@@ -1831,7 +1852,6 @@ exports[`Storyshots Input with progress success 1`] = `
     <i
       aria-hidden="true"
       className="
-                undefined
                 undefined
                 undefined
                 undefined
@@ -1846,7 +1866,9 @@ exports[`Storyshots InputtableButton with append className 1`] = `
   <div
     className="undefined
                       
-                      foobar">
+                      foobar
+                      undefined
+          ">
     <button
       className={undefined}
       onClick={[Function]}>
@@ -1864,7 +1886,6 @@ exports[`Storyshots InputtableButton with append className 1`] = `
     <i
       aria-hidden="true"
       className="
-                undefined
                 undefined
                 undefined
                 undefined
@@ -1879,7 +1900,9 @@ exports[`Storyshots InputtableButton with basic usage 1`] = `
   <div
     className="undefined
                       
-                      ">
+                      
+                      undefined
+          ">
     <button
       className={undefined}
       onClick={[Function]}>
@@ -1897,7 +1920,6 @@ exports[`Storyshots InputtableButton with basic usage 1`] = `
     <i
       aria-hidden="true"
       className="
-                undefined
                 undefined
                 undefined
                 undefined
@@ -1912,7 +1934,9 @@ exports[`Storyshots InputtableButton with customize icon 1`] = `
   <div
     className="undefined
                       
-                      ">
+                      
+                      undefined
+          ">
     <button
       className={undefined}
       onClick={[Function]}>
@@ -1930,7 +1954,6 @@ exports[`Storyshots InputtableButton with customize icon 1`] = `
     <i
       aria-hidden="true"
       className="
-                undefined
                 undefined
                 undefined
                 undefined
@@ -1945,7 +1968,9 @@ exports[`Storyshots InputtableButton with customize styles 1`] = `
   <div
     className="undefined
                       
-                      ">
+                      
+                      undefined
+          ">
     <button
       className={undefined}
       onClick={[Function]}>
@@ -1963,7 +1988,6 @@ exports[`Storyshots InputtableButton with customize styles 1`] = `
     <i
       aria-hidden="true"
       className="
-                undefined
                 undefined
                 undefined
                 undefined
@@ -1978,7 +2002,9 @@ exports[`Storyshots InputtableButton with default value 1`] = `
   <div
     className="undefined
                       
-                      ">
+                      
+                      undefined
+          ">
     <button
       className={undefined}
       onClick={[Function]}>
@@ -1996,7 +2022,6 @@ exports[`Storyshots InputtableButton with default value 1`] = `
     <i
       aria-hidden="true"
       className="
-                undefined
                 undefined
                 undefined
                 undefined
@@ -2011,7 +2036,9 @@ exports[`Storyshots InputtableButton with event handler 1`] = `
   <div
     className="undefined
                       
-                      ">
+                      
+                      undefined
+          ">
     <button
       className={undefined}
       onClick={[Function]}>
@@ -2029,7 +2056,6 @@ exports[`Storyshots InputtableButton with event handler 1`] = `
     <i
       aria-hidden="true"
       className="
-                undefined
                 undefined
                 undefined
                 undefined
@@ -2044,7 +2070,9 @@ exports[`Storyshots InputtableButton with focused 1`] = `
   <div
     className="undefined
                       undefined
-                      ">
+                      
+                      undefined
+          ">
     <button
       className={undefined}
       onClick={[Function]}>
@@ -2065,7 +2093,6 @@ exports[`Storyshots InputtableButton with focused 1`] = `
                 undefined
                 undefined
                 undefined
-                undefined
               " />
   </div>
 </div>
@@ -2077,7 +2104,9 @@ exports[`Storyshots InputtableButton with placeholder 1`] = `
   <div
     className="undefined
                       
-                      ">
+                      
+                      undefined
+          ">
     <button
       className={undefined}
       onClick={[Function]}>
@@ -2098,7 +2127,6 @@ exports[`Storyshots InputtableButton with placeholder 1`] = `
                 undefined
                 undefined
                 undefined
-                undefined
               " />
   </div>
 </div>
@@ -2110,7 +2138,9 @@ exports[`Storyshots InputtableButton with progress error 1`] = `
   <div
     className="undefined
                       
-                      ">
+                      
+                      undefined
+          ">
     <button
       className={undefined}
       onClick={[Function]}>
@@ -2128,7 +2158,6 @@ exports[`Storyshots InputtableButton with progress error 1`] = `
     <i
       aria-hidden="true"
       className="
-                undefined
                 undefined
                 undefined
                 undefined
@@ -2143,7 +2172,9 @@ exports[`Storyshots InputtableButton with progress loading 1`] = `
   <div
     className="undefined
                       
-                      ">
+                      
+                      undefined
+          ">
     <button
       className={undefined}
       onClick={[Function]}>
@@ -2161,7 +2192,6 @@ exports[`Storyshots InputtableButton with progress loading 1`] = `
     <i
       aria-hidden="true"
       className="
-                undefined
                 undefined
                 undefined
                 undefined
@@ -2176,7 +2206,9 @@ exports[`Storyshots InputtableButton with progress success 1`] = `
   <div
     className="undefined
                       
-                      ">
+                      
+                      undefined
+          ">
     <button
       className={undefined}
       onClick={[Function]}>
@@ -2194,7 +2226,6 @@ exports[`Storyshots InputtableButton with progress success 1`] = `
     <i
       aria-hidden="true"
       className="
-                undefined
                 undefined
                 undefined
                 undefined

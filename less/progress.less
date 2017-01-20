@@ -1,42 +1,54 @@
 
-.progress-loading{
+.progress-loading i{
 	animation: loading 1s linear;
 	animation-fill-mode: forwards;
 	animation-iteration-count: infinite;
 }
 
-.progress-loading-with-middle{
+.progress-loading-with-middle i{
 	animation: loading-with-middle 1s linear;
 	animation-fill-mode: forwards;
 	animation-iteration-count: infinite;
 }
 
-.progress-loading:before,
-.progress-loading-with-middle:before
+.progress-loading i:before,
+.progress-loading-with-middle i:before
 {
   content: "\f110";
 }
 
-.progress-success-with-middle,
-.progress-error-with-middle{
+.progress-success-with-middle i,
+.progress-error-with-middle i{
 	animation: finished-with-middle 0.5s ease-in-out;
 	animation-fill-mode: forwards;
 }
 
-.progress-success,
-.progress-error{
+.progress-success i,
+.progress-error i{
 	animation: finished 0.5s ease-in-out;
 	animation-fill-mode: forwards;
 }
 
-.progress-success:before,
-.progress-success-with-middle:before{
+.progress-success .button,
+.progress-success-with-middle .input{
+	animation: success-container 0.5s ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+.progress-success i:before,
+.progress-success-with-middle i:before{
 	animation: success 0.5s ease-in-out;
 	animation-fill-mode: forwards;
 }
 
-.progress-error:before,
-.progress-error-with-middle:before{
+.progress-error .button,
+.progress-error-with-middle .input{
+	animation: error-container 0.5s ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+.progress-error i:before,
+.progress-error-with-middle i:before{
 	animation: error 0.5s ease-in-out;
 	animation-fill-mode: forwards;
 }

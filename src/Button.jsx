@@ -17,7 +17,9 @@ class Button extends Component {
         className={`${this.props.styles.container}
                     ${this.state.clicked ? this.props.styles.clicked :
                       this.state.escaped ? this.props.styles.escaped : ''}
-                    ${this.props.className}`}
+                    ${this.props.className}
+                    ${this.props.styles[progress]}
+        `}
       >
         <button
           className={`${this.props.styles.button} ${this.props.disabled ? this.props.styles.disabled : ''}`}
@@ -35,7 +37,6 @@ class Button extends Component {
             className={`
               ${this.props.fa.fa}
               ${this.props.fa[this.props.icon]}
-              ${this.props.styles[progress]}
             `}
             aria-hidden="true"
           />

@@ -32,14 +32,17 @@ class InputtableButton extends Component {
       });
       this.props.onBlur(evt);
     };
-    const progress = `progress-${this.props.progress}-with-middle`;
+    const buttonProgress = `progress-${this.props.progress}`;
+    const inputProgress = `progress-${this.props.progress}-with-middle`;
     return (
       <div
         className={`${this.props.styles.container}
                     ${this.state.clicked ? this.props.styles.clicked :
                                            this.state.escaped ? this.props.styles.escaped :
                                            this.state.focused ? this.props.styles.focused : ''}
-                    ${this.props.className}`}
+                    ${this.props.className}
+                    ${this.state.focused ? this.props.styles[inputProgress] : this.props.styles[buttonProgress]}
+        `}
       >
         <button
           className={this.props.styles.button}
@@ -47,6 +50,9 @@ class InputtableButton extends Component {
             this.setState({
               clicked: true,
               escaped: false
+            });
+            this.setState({
+              focused: true
             });
             this.inputDOM.focus();
             this.props.onClick(evt);
@@ -74,7 +80,6 @@ class InputtableButton extends Component {
             ${this.props.fa.fa}
             ${this.props.fa[this.props.icon]}
             ${this.props.styles.prefix}
-            ${this.props.styles[progress]}
           `}
           aria-hidden="true"
         />
