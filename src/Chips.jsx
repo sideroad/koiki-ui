@@ -52,7 +52,7 @@ class Chips extends Component {
             }
           }
           onFocus={
-            () => console.log('kitemasu') || this.setState({
+            () => this.setState({
               display: true
             })
           }
