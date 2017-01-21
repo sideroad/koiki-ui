@@ -714,6 +714,99 @@ exports[`Storyshots Cards with classic theme 1`] = `
 </div>
 `;
 
+exports[`Storyshots Cards with cover and no title item caset 1`] = `
+<div
+  className="cards-wrap">
+  <ul
+    className="undefined
+                  undefined
+                  undefined
+                  undefined
+                  
+                  ">
+    <li
+      className={undefined}>
+      <button
+        className="undefined
+                              
+                              "
+        onClick={[Function]}>
+        <div
+          className={undefined}
+          style={
+            Object {
+              "backgroundImage": "url(./images/corkboard.jpg)",
+            }
+          } />
+        <div
+          className="undefined undefined" />
+        
+      </button>
+    </li>
+    <li
+      className={undefined}>
+      <button
+        className="undefined
+                              
+                              "
+        onClick={[Function]}>
+        <div
+          className={undefined}
+          style={
+            Object {
+              "backgroundImage": "url(./images/blueboard.jpg)",
+            }
+          } />
+        <div
+          className="undefined undefined" />
+        
+      </button>
+    </li>
+    <li
+      className={undefined}>
+      <button
+        className="undefined
+                              
+                              "
+        onClick={[Function]}>
+        <div
+          className={undefined}
+          style={
+            Object {
+              "backgroundImage": "url(./images/stripe.jpg)",
+            }
+          } />
+        <div
+          className="undefined undefined" />
+        
+      </button>
+    </li>
+    <li
+      className={undefined}>
+      <button
+        className="undefined
+                              
+                              "
+        onClick={[Function]}>
+        <div
+          className={undefined}
+          style={
+            Object {
+              "backgroundImage": "url(./images/goldgrazing.jpg)",
+            }
+          } />
+        <div
+          className="undefined undefined" />
+        
+      </button>
+    </li>
+    <li>
+      <span />
+    </li>
+  </ul>
+</div>
+`;
+
 exports[`Storyshots Cards with cover interaction 1`] = `
 <div
   className="cards-wrap">
