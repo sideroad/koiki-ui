@@ -134,6 +134,19 @@ storiesOf('Cards', module)
       />
     </div>
   ))
+  .addWithInfo('with cover and no title item caset', () => (
+    <div className="cards-wrap">
+      <Cards
+        hover="cover"
+        items={items.map(item =>
+          ({
+            id: item.id,
+            image: item.image
+          })
+        )}
+      />
+    </div>
+  ))
   .addWithInfo('with customize styles', () => (
     <div className="cards-wrap">
       <Cards
