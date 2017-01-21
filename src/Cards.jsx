@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import VisibilitySensor from 'react-visibility-sensor';
 
-const Casets = ({
+const Cards = ({
   hover,
   theme,
   clickable,
@@ -15,7 +15,7 @@ const Casets = ({
   className
 }) =>
   <ul
-    className={`${styles.casets}
+    className={`${styles.cardss}
                 ${styles[hover]}
                 ${styles[theme]}
                 ${styles[position]}
@@ -71,7 +71,7 @@ const Casets = ({
     </li>
   </ul>;
 
-Casets.propTypes = {
+Cards.propTypes = {
   className: PropTypes.string,
   items: PropTypes.array,
   hover: PropTypes.oneOf(['unveil', 'cover']),
@@ -85,7 +85,7 @@ Casets.propTypes = {
   onReachToBottom: PropTypes.func,
 };
 
-Casets.defaultProps = {
+Cards.defaultProps = {
   className: '',
   items: [],
   clickable: true,
@@ -96,7 +96,7 @@ Casets.defaultProps = {
   hasSpace: false,
   onClick: () => {},
   onReachToBottom: () => {},
-  styles: require('../less/casets.less')
+  styles: require('../less/cards.less')
 };
 
-export default Casets;
+export default Cards;

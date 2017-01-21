@@ -21,7 +21,7 @@ class Input extends Component {
 
   componentWillReceiveProps(props) {
     this.setState({
-      value: props.value || this.state.value
+      value: props.value !== undefined ? props.value : this.state.value
     });
   }
 
@@ -48,6 +48,7 @@ class Input extends Component {
             this.props.onChange(evt);
           }}
           onBlur={evt => this.props.onBlur(evt)}
+          onFocus={evt => this.props.onFocus(evt)}
         />
         <i
           className={`
@@ -73,6 +74,7 @@ Input.propTypes = {
   progress: PropTypes.oneOf(['none', 'loading', 'success', 'error']),
   onBlur: PropTypes.func,
   onChange: PropTypes.func,
+  onFocus: PropTypes.func,
 };
 
 Input.defaultProps = {
@@ -85,7 +87,8 @@ Input.defaultProps = {
   focused: false,
   progress: 'none',
   onBlur: () => {},
-  onChange: () => {}
+  onChange: () => {},
+  onFocus: () => {}
 };
 
 export default Input;

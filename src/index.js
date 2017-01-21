@@ -1,6 +1,6 @@
 import Button from './Button';
 import Input from './Input';
 import InputtableButton from './InputtableButton';
-import Casets from './Casets';
+import Card from './Card';
 
-export { Button, Input, InputtableButton, Casets };
+export { Button, Input, InputtableButton, Card };

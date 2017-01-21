@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf, action, setAddon } from '@kadira/storybook';
 import infoAddon from '@kadira/react-storybook-addon-info';
 import mockedInfoAddon from './react-storybook-addon-info-mock';
-import Casets from '../src/Casets';
+import Cards from '../src/Cards';
 import customized from './less/button.less';
 
 if (process.env.NODE_ENV !== 'test') {
@@ -35,25 +35,25 @@ const items = [
   }
 ];
 
-storiesOf('Casets', module)
+storiesOf('Cards', module)
   .addWithInfo('with basic usage', () => (
-    <div className="casets-wrap">
-      <Casets
+    <div className="cardss-wrap">
+      <Cards
         items={items}
       />
     </div>
   ))
   .addWithInfo('with append className', () => (
-    <div className="casets-wrap">
-      <Casets
+    <div className="cardss-wrap">
+      <Cards
         items={items}
         className="foobar"
       />
     </div>
   ))
   .addWithInfo('with event handling', () => (
-    <div className="casets-wrap">
-      <Casets
+    <div className="cardss-wrap">
+      <Cards
         items={items}
         onClick={item => actionLogger('clicked', item)}
         onReachToBottom={() => actionLogger('reach to bottom')}
@@ -61,56 +61,56 @@ storiesOf('Casets', module)
     </div>
   ))
   .addWithInfo('with classic theme', () => (
-    <div className="casets-wrap">
-      <Casets
+    <div className="cardss-wrap">
+      <Cards
         items={items}
         theme="classic"
       />
     </div>
   ))
   .addWithInfo('with cover interaction', () => (
-    <div className="casets-wrap">
-      <Casets
+    <div className="cardss-wrap">
+      <Cards
         items={items}
         hover="cover"
       />
     </div>
   ))
   .addWithInfo('with top position text', () => (
-    <div className="casets-wrap">
-      <Casets
+    <div className="cardss-wrap">
+      <Cards
         items={items}
         position="top"
       />
     </div>
   ))
   .addWithInfo('with bottom position text', () => (
-    <div className="casets-wrap">
-      <Casets
+    <div className="cardss-wrap">
+      <Cards
         items={items}
         position="bottom"
       />
     </div>
   ))
-  .addWithInfo('with spacing casets', () => (
-    <div className="casets-wrap">
-      <Casets
+  .addWithInfo('with spacing cardss', () => (
+    <div className="cardss-wrap">
+      <Cards
         items={items}
         hasSpace
       />
     </div>
   ))
   .addWithInfo('with unclickable', () => (
-    <div className="casets-wrap">
-      <Casets
+    <div className="cardss-wrap">
+      <Cards
         items={items}
         clickable={false}
       />
     </div>
   ))
   .addWithInfo('with selected item caset', () => (
-    <div className="casets-wrap">
-      <Casets
+    <div className="cardss-wrap">
+      <Cards
         items={items.map((item, index) =>
           ({
             id: item.id,
@@ -123,8 +123,8 @@ storiesOf('Casets', module)
     </div>
   ))
   .addWithInfo('with no title item caset', () => (
-    <div className="casets-wrap">
-      <Casets
+    <div className="cardss-wrap">
+      <Cards
         items={items.map(item =>
           ({
             id: item.id,
@@ -135,8 +135,8 @@ storiesOf('Casets', module)
     </div>
   ))
   .addWithInfo('with customize styles', () => (
-    <div className="casets-wrap">
-      <Casets
+    <div className="cardss-wrap">
+      <Cards
         text="Search"
         styles={customized}
       />

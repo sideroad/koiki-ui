@@ -37,8 +37,10 @@
   },
   "dependencies": {
     "babel-plugin-react-css-modules": "^2.1.4",
+    "lodash": "^4.17.4",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
+    "react-tether": "^0.5.5",
     "react-visibility-sensor": "^3.6.2"
   },
   "scripts": {

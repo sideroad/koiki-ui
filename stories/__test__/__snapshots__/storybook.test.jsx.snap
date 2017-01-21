@@ -214,9 +214,9 @@ exports[`Storyshots Button with progress success 1`] = `
 </div>
 `;
 
-exports[`Storyshots Casets with append className 1`] = `
+exports[`Storyshots Cards with append className 1`] = `
 <div
-  className="casets-wrap">
+  className="cardss-wrap">
   <ul
     className="undefined
                   undefined
@@ -339,9 +339,9 @@ exports[`Storyshots Casets with append className 1`] = `
 </div>
 `;
 
-exports[`Storyshots Casets with basic usage 1`] = `
+exports[`Storyshots Cards with basic usage 1`] = `
 <div
-  className="casets-wrap">
+  className="cardss-wrap">
   <ul
     className="undefined
                   undefined
@@ -464,9 +464,9 @@ exports[`Storyshots Casets with basic usage 1`] = `
 </div>
 `;
 
-exports[`Storyshots Casets with bottom position text 1`] = `
+exports[`Storyshots Cards with bottom position text 1`] = `
 <div
-  className="casets-wrap">
+  className="cardss-wrap">
   <ul
     className="undefined
                   undefined
@@ -589,9 +589,9 @@ exports[`Storyshots Casets with bottom position text 1`] = `
 </div>
 `;
 
-exports[`Storyshots Casets with classic theme 1`] = `
+exports[`Storyshots Cards with classic theme 1`] = `
 <div
-  className="casets-wrap">
+  className="cardss-wrap">
   <ul
     className="undefined
                   undefined
@@ -714,9 +714,9 @@ exports[`Storyshots Casets with classic theme 1`] = `
 </div>
 `;
 
-exports[`Storyshots Casets with cover interaction 1`] = `
+exports[`Storyshots Cards with cover interaction 1`] = `
 <div
-  className="casets-wrap">
+  className="cardss-wrap">
   <ul
     className="undefined
                   undefined
@@ -839,9 +839,9 @@ exports[`Storyshots Casets with cover interaction 1`] = `
 </div>
 `;
 
-exports[`Storyshots Casets with customize styles 1`] = `
+exports[`Storyshots Cards with customize styles 1`] = `
 <div
-  className="casets-wrap">
+  className="cardss-wrap">
   <ul
     className="undefined
                   undefined
@@ -856,9 +856,9 @@ exports[`Storyshots Casets with customize styles 1`] = `
 </div>
 `;
 
-exports[`Storyshots Casets with event handling 1`] = `
+exports[`Storyshots Cards with event handling 1`] = `
 <div
-  className="casets-wrap">
+  className="cardss-wrap">
   <ul
     className="undefined
                   undefined
@@ -981,9 +981,9 @@ exports[`Storyshots Casets with event handling 1`] = `
 </div>
 `;
 
-exports[`Storyshots Casets with no title item caset 1`] = `
+exports[`Storyshots Cards with no title item caset 1`] = `
 <div
-  className="casets-wrap">
+  className="cardss-wrap">
   <ul
     className="undefined
                   undefined
@@ -1074,9 +1074,9 @@ exports[`Storyshots Casets with no title item caset 1`] = `
 </div>
 `;
 
-exports[`Storyshots Casets with selected item caset 1`] = `
+exports[`Storyshots Cards with selected item caset 1`] = `
 <div
-  className="casets-wrap">
+  className="cardss-wrap">
   <ul
     className="undefined
                   undefined
@@ -1199,9 +1199,9 @@ exports[`Storyshots Casets with selected item caset 1`] = `
 </div>
 `;
 
-exports[`Storyshots Casets with spacing casets 1`] = `
+exports[`Storyshots Cards with spacing cardss 1`] = `
 <div
-  className="casets-wrap">
+  className="cardss-wrap">
   <ul
     className="undefined
                   undefined
@@ -1324,9 +1324,9 @@ exports[`Storyshots Casets with spacing casets 1`] = `
 </div>
 `;
 
-exports[`Storyshots Casets with top position text 1`] = `
+exports[`Storyshots Cards with top position text 1`] = `
 <div
-  className="casets-wrap">
+  className="cardss-wrap">
   <ul
     className="undefined
                   undefined
@@ -1449,9 +1449,9 @@ exports[`Storyshots Casets with top position text 1`] = `
 </div>
 `;
 
-exports[`Storyshots Casets with unclickable 1`] = `
+exports[`Storyshots Cards with unclickable 1`] = `
 <div
-  className="casets-wrap">
+  className="cardss-wrap">
   <ul
     className="undefined
                   undefined
@@ -1571,6 +1571,48 @@ exports[`Storyshots Casets with unclickable 1`] = `
       <span />
     </li>
   </ul>
+</div>
+`;
+
+exports[`Storyshots Chips with basic usage 1`] = `
+<div
+  className="input-wrap">
+  <div
+    className="">
+    <div
+      className="undefined
+                        
+                        
+                undefined
+                
+              
+                        undefined
+            ">
+      <input
+        className={undefined}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder=""
+        value="" />
+      <i
+        aria-hidden="true"
+        className="
+                  undefined
+                  undefined
+                  undefined
+                " />
+    </div>
+    <div
+      className={undefined}>
+      <ul
+        className={undefined}>
+        
+      </ul>
+    </div>
+    <ul
+      className={undefined} />
+  </div>
 </div>
 `;
 
@@ -1587,6 +1629,7 @@ exports[`Storyshots Input with append className 1`] = `
       className={undefined}
       onBlur={[Function]}
       onChange={[Function]}
+      onFocus={[Function]}
       placeholder=""
       value="" />
     <i
@@ -1613,6 +1656,7 @@ exports[`Storyshots Input with basic usage 1`] = `
       className={undefined}
       onBlur={[Function]}
       onChange={[Function]}
+      onFocus={[Function]}
       placeholder=""
       value="" />
     <i
@@ -1639,6 +1683,7 @@ exports[`Storyshots Input with customize icon 1`] = `
       className={undefined}
       onBlur={[Function]}
       onChange={[Function]}
+      onFocus={[Function]}
       placeholder=""
       value="" />
     <i
@@ -1665,6 +1710,7 @@ exports[`Storyshots Input with customize styles 1`] = `
       className={undefined}
       onBlur={[Function]}
       onChange={[Function]}
+      onFocus={[Function]}
       placeholder=""
       value="" />
     <i
@@ -1691,6 +1737,7 @@ exports[`Storyshots Input with default value 1`] = `
       className={undefined}
       onBlur={[Function]}
       onChange={[Function]}
+      onFocus={[Function]}
       placeholder=""
       value="FooBar" />
     <i
@@ -1717,6 +1764,7 @@ exports[`Storyshots Input with event handler 1`] = `
       className={undefined}
       onBlur={[Function]}
       onChange={[Function]}
+      onFocus={[Function]}
       placeholder=""
       value="" />
     <i
@@ -1743,6 +1791,7 @@ exports[`Storyshots Input with focused 1`] = `
       className={undefined}
       onBlur={[Function]}
       onChange={[Function]}
+      onFocus={[Function]}
       placeholder=""
       value="" />
     <i
@@ -1769,6 +1818,7 @@ exports[`Storyshots Input with placeholder 1`] = `
       className={undefined}
       onBlur={[Function]}
       onChange={[Function]}
+      onFocus={[Function]}
       placeholder="Find something"
       value="" />
     <i
@@ -1795,6 +1845,7 @@ exports[`Storyshots Input with progress error 1`] = `
       className={undefined}
       onBlur={[Function]}
       onChange={[Function]}
+      onFocus={[Function]}
       placeholder=""
       value="" />
     <i
@@ -1821,6 +1872,7 @@ exports[`Storyshots Input with progress loading 1`] = `
       className={undefined}
       onBlur={[Function]}
       onChange={[Function]}
+      onFocus={[Function]}
       placeholder=""
       value="" />
     <i
@@ -1847,6 +1899,7 @@ exports[`Storyshots Input with progress success 1`] = `
       className={undefined}
       onBlur={[Function]}
       onChange={[Function]}
+      onFocus={[Function]}
       placeholder=""
       value="" />
     <i
