@@ -37,14 +37,14 @@ const items = [
 
 storiesOf('Cards', module)
   .addWithInfo('with basic usage', () => (
-    <div className="cardss-wrap">
+    <div className="cards-wrap">
       <Cards
         items={items}
       />
     </div>
   ))
   .addWithInfo('with append className', () => (
-    <div className="cardss-wrap">
+    <div className="cards-wrap">
       <Cards
         items={items}
         className="foobar"
@@ -52,7 +52,7 @@ storiesOf('Cards', module)
     </div>
   ))
   .addWithInfo('with event handling', () => (
-    <div className="cardss-wrap">
+    <div className="cards-wrap">
       <Cards
         items={items}
         onClick={item => actionLogger('clicked', item)}
@@ -61,7 +61,7 @@ storiesOf('Cards', module)
     </div>
   ))
   .addWithInfo('with classic theme', () => (
-    <div className="cardss-wrap">
+    <div className="cards-wrap">
       <Cards
         items={items}
         theme="classic"
@@ -69,7 +69,7 @@ storiesOf('Cards', module)
     </div>
   ))
   .addWithInfo('with cover interaction', () => (
-    <div className="cardss-wrap">
+    <div className="cards-wrap">
       <Cards
         items={items}
         hover="cover"
@@ -77,7 +77,7 @@ storiesOf('Cards', module)
     </div>
   ))
   .addWithInfo('with top position text', () => (
-    <div className="cardss-wrap">
+    <div className="cards-wrap">
       <Cards
         items={items}
         position="top"
@@ -85,15 +85,15 @@ storiesOf('Cards', module)
     </div>
   ))
   .addWithInfo('with bottom position text', () => (
-    <div className="cardss-wrap">
+    <div className="cards-wrap">
       <Cards
         items={items}
         position="bottom"
       />
     </div>
   ))
-  .addWithInfo('with spacing cardss', () => (
-    <div className="cardss-wrap">
+  .addWithInfo('with spacing cards', () => (
+    <div className="cards-wrap">
       <Cards
         items={items}
         hasSpace
@@ -101,7 +101,7 @@ storiesOf('Cards', module)
     </div>
   ))
   .addWithInfo('with unclickable', () => (
-    <div className="cardss-wrap">
+    <div className="cards-wrap">
       <Cards
         items={items}
         clickable={false}
@@ -109,7 +109,7 @@ storiesOf('Cards', module)
     </div>
   ))
   .addWithInfo('with selected item caset', () => (
-    <div className="cardss-wrap">
+    <div className="cards-wrap">
       <Cards
         items={items.map((item, index) =>
           ({
@@ -123,7 +123,7 @@ storiesOf('Cards', module)
     </div>
   ))
   .addWithInfo('with no title item caset', () => (
-    <div className="cardss-wrap">
+    <div className="cards-wrap">
       <Cards
         items={items.map(item =>
           ({
@@ -135,7 +135,7 @@ storiesOf('Cards', module)
     </div>
   ))
   .addWithInfo('with customize styles', () => (
-    <div className="cardss-wrap">
+    <div className="cards-wrap">
       <Cards
         text="Search"
         styles={customized}

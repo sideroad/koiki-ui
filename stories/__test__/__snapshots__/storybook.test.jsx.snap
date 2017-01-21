@@ -216,7 +216,7 @@ exports[`Storyshots Button with progress success 1`] = `
 
 exports[`Storyshots Cards with append className 1`] = `
 <div
-  className="cardss-wrap">
+  className="cards-wrap">
   <ul
     className="undefined
                   undefined
@@ -341,7 +341,7 @@ exports[`Storyshots Cards with append className 1`] = `
 
 exports[`Storyshots Cards with basic usage 1`] = `
 <div
-  className="cardss-wrap">
+  className="cards-wrap">
   <ul
     className="undefined
                   undefined
@@ -466,7 +466,7 @@ exports[`Storyshots Cards with basic usage 1`] = `
 
 exports[`Storyshots Cards with bottom position text 1`] = `
 <div
-  className="cardss-wrap">
+  className="cards-wrap">
   <ul
     className="undefined
                   undefined
@@ -591,7 +591,7 @@ exports[`Storyshots Cards with bottom position text 1`] = `
 
 exports[`Storyshots Cards with classic theme 1`] = `
 <div
-  className="cardss-wrap">
+  className="cards-wrap">
   <ul
     className="undefined
                   undefined
@@ -716,7 +716,7 @@ exports[`Storyshots Cards with classic theme 1`] = `
 
 exports[`Storyshots Cards with cover interaction 1`] = `
 <div
-  className="cardss-wrap">
+  className="cards-wrap">
   <ul
     className="undefined
                   undefined
@@ -841,7 +841,7 @@ exports[`Storyshots Cards with cover interaction 1`] = `
 
 exports[`Storyshots Cards with customize styles 1`] = `
 <div
-  className="cardss-wrap">
+  className="cards-wrap">
   <ul
     className="undefined
                   undefined
@@ -858,7 +858,7 @@ exports[`Storyshots Cards with customize styles 1`] = `
 
 exports[`Storyshots Cards with event handling 1`] = `
 <div
-  className="cardss-wrap">
+  className="cards-wrap">
   <ul
     className="undefined
                   undefined
@@ -983,7 +983,7 @@ exports[`Storyshots Cards with event handling 1`] = `
 
 exports[`Storyshots Cards with no title item caset 1`] = `
 <div
-  className="cardss-wrap">
+  className="cards-wrap">
   <ul
     className="undefined
                   undefined
@@ -1076,7 +1076,7 @@ exports[`Storyshots Cards with no title item caset 1`] = `
 
 exports[`Storyshots Cards with selected item caset 1`] = `
 <div
-  className="cardss-wrap">
+  className="cards-wrap">
   <ul
     className="undefined
                   undefined
@@ -1199,9 +1199,9 @@ exports[`Storyshots Cards with selected item caset 1`] = `
 </div>
 `;
 
-exports[`Storyshots Cards with spacing cardss 1`] = `
+exports[`Storyshots Cards with spacing cards 1`] = `
 <div
-  className="cardss-wrap">
+  className="cards-wrap">
   <ul
     className="undefined
                   undefined
@@ -1326,7 +1326,7 @@ exports[`Storyshots Cards with spacing cardss 1`] = `
 
 exports[`Storyshots Cards with top position text 1`] = `
 <div
-  className="cardss-wrap">
+  className="cards-wrap">
   <ul
     className="undefined
                   undefined
@@ -1451,7 +1451,7 @@ exports[`Storyshots Cards with top position text 1`] = `
 
 exports[`Storyshots Cards with unclickable 1`] = `
 <div
-  className="cardss-wrap">
+  className="cards-wrap">
   <ul
     className="undefined
                   undefined

@@ -15,7 +15,7 @@ const Cards = ({
   className
 }) =>
   <ul
-    className={`${styles.cardss}
+    className={`${styles.cards}
                 ${styles[hover]}
                 ${styles[theme]}
                 ${styles[position]}
