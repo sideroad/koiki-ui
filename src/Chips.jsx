@@ -24,9 +24,10 @@ class Chips extends Component {
     if ((!input || !input.inputDOM || !input.inputDOM.contains(evt.target)) &&
         (!suggestsDOM || !suggestsDOM.contains(evt.target))
     ) {
-      this.setState({
-        display: false
-      });
+      console.log(this);
+      // this.setState({
+      //   display: false
+      // });
     }
   }
 
@@ -79,7 +80,8 @@ class Chips extends Component {
                           evt.preventDefault();
                           this.props.onSelect(suggest);
                           this.setState({
-                            query: ''
+                            query: '',
+                            display: false
                           });
                         }
                       }
