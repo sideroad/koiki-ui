@@ -24,10 +24,9 @@ class Chips extends Component {
     if ((!input || !input.inputDOM || !input.inputDOM.contains(evt.target)) &&
         (!suggestsDOM || !suggestsDOM.contains(evt.target))
     ) {
-      console.log(this);
-      // this.setState({
-      //   display: false
-      // });
+      this.setState({
+        display: false
+      });
     }
   }
 
