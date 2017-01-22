@@ -1686,6 +1686,7 @@ exports[`Storyshots Chips with basic usage 1`] = `
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
+        onKeyDown={[Function]}
         placeholder=""
         value="" />
       <i
@@ -1723,6 +1724,7 @@ exports[`Storyshots Input with append className 1`] = `
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
+      onKeyDown={[Function]}
       placeholder=""
       value="" />
     <i
@@ -1750,6 +1752,7 @@ exports[`Storyshots Input with basic usage 1`] = `
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
+      onKeyDown={[Function]}
       placeholder=""
       value="" />
     <i
@@ -1777,6 +1780,7 @@ exports[`Storyshots Input with customize icon 1`] = `
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
+      onKeyDown={[Function]}
       placeholder=""
       value="" />
     <i
@@ -1804,6 +1808,7 @@ exports[`Storyshots Input with customize styles 1`] = `
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
+      onKeyDown={[Function]}
       placeholder=""
       value="" />
     <i
@@ -1831,6 +1836,7 @@ exports[`Storyshots Input with default value 1`] = `
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
+      onKeyDown={[Function]}
       placeholder=""
       value="FooBar" />
     <i
@@ -1858,6 +1864,7 @@ exports[`Storyshots Input with event handler 1`] = `
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
+      onKeyDown={[Function]}
       placeholder=""
       value="" />
     <i
@@ -1885,6 +1892,7 @@ exports[`Storyshots Input with focused 1`] = `
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
+      onKeyDown={[Function]}
       placeholder=""
       value="" />
     <i
@@ -1912,6 +1920,7 @@ exports[`Storyshots Input with placeholder 1`] = `
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
+      onKeyDown={[Function]}
       placeholder="Find something"
       value="" />
     <i
@@ -1939,6 +1948,7 @@ exports[`Storyshots Input with progress error 1`] = `
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
+      onKeyDown={[Function]}
       placeholder=""
       value="" />
     <i
@@ -1966,6 +1976,7 @@ exports[`Storyshots Input with progress loading 1`] = `
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
+      onKeyDown={[Function]}
       placeholder=""
       value="" />
     <i
@@ -1993,6 +2004,7 @@ exports[`Storyshots Input with progress success 1`] = `
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
+      onKeyDown={[Function]}
       placeholder=""
       value="" />
     <i
