@@ -7,7 +7,8 @@ class Chips extends Component {
     super(props);
     this.state = {
       query: '',
-      display: false
+      display: false,
+      focusedIndex: 0
     };
   }
   componentDidMount() {
@@ -31,6 +32,14 @@ class Chips extends Component {
   }
 
   render() {
+    const select = (suggest) => {
+      this.props.onSelect(suggest);
+      this.setState({
+        query: '',
+        display: false,
+        focusedIndex: 0
+      });
+    };
     return (
       <div className={this.props.className}>
         <Input
@@ -42,6 +51,34 @@ class Chips extends Component {
           icon={this.props.icon}
           placeholder={this.props.placeholder}
           value={this.state.query}
+          onKeyDown={
+            (evt) => {
+              switch (evt.key) {
+                case 'ArrowDown':
+                  if (this.props.suggests.length - 1 > this.state.focusedIndex) {
+                    this.setState({
+                      focusedIndex: this.state.focusedIndex + 1
+                    });
+                  }
+                  break;
+                case 'ArrowUp':
+                  if (this.state.focusedIndex > 0) {
+                    this.setState({
+                      focusedIndex: this.state.focusedIndex - 1
+                    });
+                  }
+                  break;
+                case 'Enter': {
+                  const suggest = this.props.suggests[this.state.focusedIndex];
+                  if (suggest) {
+                    select(suggest);
+                  }
+                  break;
+                }
+                default:
+              }
+            }
+          }
           onChange={
             (evt) => {
               this.setState({
@@ -67,21 +104,20 @@ class Chips extends Component {
               this.state.display &&
               this.state.query ?
               this.props.suggests
-                .map(suggest =>
+                .map((suggest, index) =>
                   <li
                     key={suggest.id}
                   >
                     <a
-                      className={this.props.styles.suggest}
+                      className={`
+                        ${this.props.styles.suggest}
+                        ${index === this.state.focusedIndex ? this.props.styles.focused : ''}
+                      `}
                       href=""
                       onClick={
                         (evt) => {
                           evt.preventDefault();
-                          this.props.onSelect(suggest);
-                          this.setState({
-                            query: '',
-                            display: false
-                          });
+                          select(suggest);
                         }
                       }
                     >

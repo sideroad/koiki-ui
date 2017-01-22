@@ -47,6 +47,7 @@ class Input extends Component {
             });
             this.props.onChange(evt);
           }}
+          onKeyDown={evt => this.props.onKeyDown(evt)}
           onBlur={evt => this.props.onBlur(evt)}
           onFocus={evt => this.props.onFocus(evt)}
         />
@@ -75,6 +76,7 @@ Input.propTypes = {
   onBlur: PropTypes.func,
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
+  onKeyDown: PropTypes.func,
 };
 
 Input.defaultProps = {
@@ -88,7 +90,8 @@ Input.defaultProps = {
   progress: 'none',
   onBlur: () => {},
   onChange: () => {},
-  onFocus: () => {}
+  onFocus: () => {},
+  onKeyDown: () => {},
 };
 
 export default Input;
