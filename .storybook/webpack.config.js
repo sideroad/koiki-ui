@@ -20,7 +20,7 @@ module.exports = {
       {
         test: /\.less$/,
         exclude: /node_modules/,
-        loaders: ['style', 'css-loader?modules', 'less'],
+        loaders: ['style', 'css-loader?modules&localIdentName=[local]___[hash:base64:5]', 'less'],
         include: [
           path.resolve(__dirname, '../stories'),
           path.resolve(__dirname, '../less')
