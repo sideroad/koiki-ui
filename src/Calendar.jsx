@@ -8,7 +8,7 @@ class Calendar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      date: moment.utc(this.props.date),
+      date: moment.utc(this.props.date, 'YYYY-MM-DD'),
       className: '',
       swiping: false
     };
@@ -181,7 +181,7 @@ class Calendar extends Component {
 }
 
 Calendar.propTypes = {
-  date: PropTypes.object,
+  date: PropTypes.string,
   today: PropTypes.string,
   min: PropTypes.string,
   max: PropTypes.string,
@@ -193,7 +193,7 @@ Calendar.propTypes = {
 };
 
 Calendar.defaultProps = {
-  date: moment.utc().startOf('date'),
+  date: moment.utc().startOf('date').format('YYYY-MM-DD'),
   today: moment.utc().format('YYYY-MM-DD'),
   min: undefined,
   max: undefined,
