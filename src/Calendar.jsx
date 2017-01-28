@@ -81,100 +81,104 @@ class Calendar extends Component {
         onSwipingLeft={this.swipingNext}
         onSwipedLeft={this.swiped}
       >
-        <div className={`${this.props.styles.control}`}>
-          <div className={this.props.styles.prev}>
-            {
-              isEnablePrevMonth ?
-                <a
-                  className={this.props.styles.link}
-                  onClick={(evt) => {
-                    evt.preventDefault();
-                    this.prevMonth();
-                  }}
-                  href=""
-                >
-                  <div className={this.props.styles.linkcircle} />
-                  <span><i className={`${this.props.fa.fa} ${this.props.fa['fa-chevron-left']}`} aria-hidden="true" /></span>
-                </a>
-              : null
-            }
+        <div
+          ref={(elem) => { this.calendarDOM = elem; }}
+        >
+          <div className={`${this.props.styles.control}`}>
+            <div className={this.props.styles.prev}>
+              {
+                isEnablePrevMonth ?
+                  <a
+                    className={this.props.styles.link}
+                    onClick={(evt) => {
+                      evt.preventDefault();
+                      this.prevMonth();
+                    }}
+                    href=""
+                  >
+                    <div className={this.props.styles.linkcircle} />
+                    <span><i className={`${this.props.fa.fa} ${this.props.fa['fa-chevron-left']}`} aria-hidden="true" /></span>
+                  </a>
+                : null
+              }
+            </div>
+            <div className={`${this.props.styles.month} ${this.props.styles[this.state.className]}`}>
+              {`${this.state.date.format('MMMM')} ${this.state.date.format('YYYY')}`}
+            </div>
+            <div className={this.props.styles.next}>
+              {
+                isEnableNextMonth ?
+                  <a
+                    className={this.props.styles.link}
+                    onClick={(evt) => {
+                      evt.preventDefault();
+                      this.nextMonth();
+                    }}
+                    href=""
+                  >
+                    <div className={this.props.styles.linkcircle} />
+                    <span><i className={`${this.props.fa.fa} ${this.props.fa['fa-chevron-right']}`} aria-hidden="true" /></span>
+                  </a>
+                : null
+              }
+            </div>
           </div>
-          <div className={`${this.props.styles.month} ${this.props.styles[this.state.className]}`}>
-            {`${this.state.date.format('MMMM')} ${this.state.date.format('YYYY')}`}
-          </div>
-          <div className={this.props.styles.next}>
-            {
-              isEnableNextMonth ?
-                <a
-                  className={this.props.styles.link}
-                  onClick={(evt) => {
-                    evt.preventDefault();
-                    this.nextMonth();
-                  }}
-                  href=""
-                >
-                  <div className={this.props.styles.linkcircle} />
-                  <span><i className={`${this.props.fa.fa} ${this.props.fa['fa-chevron-right']}`} aria-hidden="true" /></span>
-                </a>
-              : null
-            }
-          </div>
-        </div>
-        <table className={`${this.props.styles.table} ${this.props.styles[this.state.className]}`}>
-          <thead>
-            <tr>
-              {__.times(7, index =>
-                <th key={index} className={this.props.styles.weekday}>
-                  {moment().weekday(index).format('ddd')}
-                </th>
-              )}
-            </tr>
-          </thead>
-          <tbody>
-            {
-              __.times(linesOfWeek, week =>
-                <tr key={week}>
-                  {__.times(7, (weekday) => {
-                    const dateOfWeekday = moment.utc(start).add((week * 7) + weekday, 'days');
-                    const timeOfWeekday = dateOfWeekday.toDate().getTime();
-                    const dateClassName = [
-                      (__.some(this.props.selected, item => dateOfWeekday.isSame(moment.utc(item).startOf('date'))) ? this.props.styles.selected : ''),
-                      (dateOfWeekday.isSame(moment.utc(this.props.today, 'YYYY-MM-DD').startOf('date')) ? this.props.styles.today :
-                       __.some(this.props.holidays, item => dateOfWeekday.isSame(moment.utc(item).startOf('date'))) ? this.props.styles.holiday :
-                      !dateOfWeekday.isSame(this.state.date, 'month') ? this.props.styles.outside : ''),
-                      (this.props.styles[dateOfWeekday.format('ddd').toLowerCase()])
-                    ].join(' ');
-                    return (
-                      <td key={timeOfWeekday} className={this.props.styles.col}>
-                        <div className={dateClassName}>
-                          <div className={this.props.styles.date}>
-                            {
-                              (this.props.min &&
-                               moment.utc(this.props.min, 'YYYY-MM-DD').toDate().getTime() > timeOfWeekday) ||
-                              (this.props.max &&
-                               moment.utc(this.props.max, 'YYYY-MM-DD').toDate().getTime() < timeOfWeekday) ?
-                                 <div className={this.props.styles.disabled} >
-                                   <span>{dateOfWeekday.date()}</span>
-                                 </div>
-                               :
-                                 <a
-                                   className={this.props.styles.link}
-                                   href=""
-                                   onClick={evt => this.select(evt, dateOfWeekday)}
-                                 >
-                                   <div className={this.props.styles.linkcircle} />
-                                   <span>{dateOfWeekday.date()}</span>
-                                 </a>
-                            }
+          <table className={`${this.props.styles.table} ${this.props.styles[this.state.className]}`}>
+            <thead>
+              <tr>
+                {__.times(7, index =>
+                  <th key={index} className={this.props.styles.weekday}>
+                    {moment().weekday(index).format('ddd')}
+                  </th>
+                )}
+              </tr>
+            </thead>
+            <tbody>
+              {
+                __.times(linesOfWeek, week =>
+                  <tr key={week}>
+                    {__.times(7, (weekday) => {
+                      const dateOfWeekday = moment.utc(start).add((week * 7) + weekday, 'days');
+                      const timeOfWeekday = dateOfWeekday.toDate().getTime();
+                      const dateClassName = [
+                        (__.some(this.props.selected, item => dateOfWeekday.isSame(moment.utc(item).startOf('date'))) ? this.props.styles.selected : ''),
+                        (dateOfWeekday.isSame(moment.utc(this.props.today, 'YYYY-MM-DD').startOf('date')) ? this.props.styles.today :
+                         __.some(this.props.holidays, item => dateOfWeekday.isSame(moment.utc(item).startOf('date'))) ? this.props.styles.holiday :
+                        !dateOfWeekday.isSame(this.state.date, 'month') ? this.props.styles.outside : ''),
+                        (this.props.styles[dateOfWeekday.format('ddd').toLowerCase()])
+                      ].join(' ');
+                      return (
+                        <td key={timeOfWeekday} className={this.props.styles.col}>
+                          <div className={dateClassName}>
+                            <div className={this.props.styles.date}>
+                              {
+                                (this.props.min &&
+                                 moment.utc(this.props.min, 'YYYY-MM-DD').toDate().getTime() > timeOfWeekday) ||
+                                (this.props.max &&
+                                 moment.utc(this.props.max, 'YYYY-MM-DD').toDate().getTime() < timeOfWeekday) ?
+                                   <div className={this.props.styles.disabled} >
+                                     <span>{dateOfWeekday.date()}</span>
+                                   </div>
+                                 :
+                                   <a
+                                     className={this.props.styles.link}
+                                     href=""
+                                     onClick={evt => this.select(evt, dateOfWeekday)}
+                                   >
+                                     <div className={this.props.styles.linkcircle} />
+                                     <span>{dateOfWeekday.date()}</span>
+                                   </a>
+                              }
+                            </div>
                           </div>
-                        </div>
-                      </td>);
-                  })}
-                </tr>
-              )
-            }
-          </tbody>
-        </table>
+                        </td>);
+                    })}
+                  </tr>
+                )
+              }
+            </tbody>
+          </table>
+        </div>
       </Swipeable>
     );
   }

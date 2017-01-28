@@ -13,6 +13,25 @@ class Datepicker extends Component {
       selected: props.selected
     };
   }
+  componentDidMount() {
+    this.wrappedHandleClickOutside = evt =>
+      this.handleClickOutside(evt, this.containerDOM, this.calendar);
+    document.addEventListener('click', this.wrappedHandleClickOutside, true);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('click', this.wrappedHandleClickOutside, true);
+  }
+
+  handleClickOutside(evt, containerDOM, calendar) {
+    if (
+        (!containerDOM || !containerDOM.contains(evt.target)) &&
+        (!calendar || !calendar.calendarDOM || !calendar.calendarDOM.contains(evt.target))) {
+      this.setState({
+        opened: false
+      });
+    }
+  }
 
   render() {
     return (
@@ -24,6 +43,7 @@ class Datepicker extends Component {
         targetAttachment="bottom left"
       >
         <div
+          ref={(elem) => { this.containerDOM = elem; }}
           className={`${this.props.styles.container} ${this.props.className}`}
         >
           <button
@@ -58,6 +78,7 @@ class Datepicker extends Component {
         {
           this.state.opened ?
             <Calendar
+              ref={(elem) => { this.calendar = elem; }}
               className={this.props.styles.calendar}
               selected={this.state.selected}
               onSelect={
