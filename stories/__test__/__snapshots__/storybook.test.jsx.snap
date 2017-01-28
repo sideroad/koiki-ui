@@ -4792,21 +4792,24 @@ exports[`Storyshots Datepicker with basic usage 1`] = `
 <div
   className="button-wrap">
   <div
-    className="undefined ">
-    <button
-      className={undefined}
-      onClick={[Function]}>
-      <i
-        aria-hidden="true"
-        className="
-                      undefined
-                      undefined
-                    " />
-      <span
-        className={undefined}>
-        Jan 1
-      </span>
-    </button>
+    className="">
+    <div
+      className={undefined}>
+      <button
+        className={undefined}
+        onClick={[Function]}>
+        <i
+          aria-hidden="true"
+          className="
+                          undefined
+                          undefined
+                        " />
+        <span
+          className={undefined}>
+          Jan 1
+        </span>
+      </button>
+    </div>
   </div>
 </div>
 `;

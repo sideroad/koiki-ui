@@ -35,69 +35,73 @@ class Datepicker extends Component {
 
   render() {
     return (
-      <TetherComponent
-        classes={{
-          element: this.props.styles.tether
-        }}
-        attachment="top left"
-        targetAttachment="bottom left"
+      <div
+        className={this.props.className}
       >
-        <div
-          ref={(elem) => { this.containerDOM = elem; }}
-          className={`${this.props.styles.container} ${this.props.className}`}
+        <TetherComponent
+          classes={{
+            element: this.props.styles.tether
+          }}
+          attachment="top left"
+          targetAttachment="bottom left"
         >
-          <button
-            className={this.props.styles.button}
-            onClick={() => {
-              this.setState({
-                opened: !this.state.opened
-              });
-              this.props.onClick();
-            }}
+          <div
+            ref={(elem) => { this.containerDOM = elem; }}
+            className={this.props.styles.container}
           >
-            <i
-              className={`
-                ${this.props.fa.fa}
-                ${this.props.fa[this.props.icon]}
-              `}
-              aria-hidden="true"
-            />
-            <span
-              className={this.state.selected.length ? this.props.styles.date
-                                                    : this.props.styles.placeholder}
+            <button
+              className={this.props.styles.button}
+              onClick={() => {
+                this.setState({
+                  opened: !this.state.opened
+                });
+                this.props.onClick();
+              }}
             >
-              {
-                this.state.selected
-                  .sort()
-                  .map(date => moment(date).format(this.props.format))
-                  .join(', ') || this.props.placeholder
-              }
-            </span>
-          </button>
-        </div>
-        {
-          this.state.opened ?
-            <Calendar
-              ref={(elem) => { this.calendar = elem; }}
-              className={this.props.styles.calendar}
-              selected={this.state.selected}
-              onSelect={
-                (date) => {
-                  if (this.state.selected.indexOf(date) === -1) {
-                    this.setState({
-                      selected: this.state.selected.concat([date])
-                    });
-                  } else {
-                    this.setState({
-                      selected: _.pull(this.state.selected, date)
-                    });
+              <i
+                className={`
+                  ${this.props.fa.fa}
+                  ${this.props.fa[this.props.icon]}
+                `}
+                aria-hidden="true"
+              />
+              <span
+                className={this.state.selected.length ? this.props.styles.date
+                                                      : this.props.styles.placeholder}
+              >
+                {
+                  this.state.selected
+                    .sort()
+                    .map(date => moment(date).format(this.props.format))
+                    .join(', ') || this.props.placeholder
+                }
+              </span>
+            </button>
+          </div>
+          {
+            this.state.opened ?
+              <Calendar
+                ref={(elem) => { this.calendar = elem; }}
+                className={this.props.styles.calendar}
+                selected={this.state.selected}
+                onSelect={
+                  (date) => {
+                    if (this.state.selected.indexOf(date) === -1) {
+                      this.setState({
+                        selected: this.state.selected.concat([date])
+                      });
+                    } else {
+                      this.setState({
+                        selected: _.pull(this.state.selected, date)
+                      });
+                    }
                   }
                 }
-              }
-            />
-          : null
-        }
-      </TetherComponent>
+              />
+            : null
+          }
+        </TetherComponent>
+      </div>
     );
   }
 }
