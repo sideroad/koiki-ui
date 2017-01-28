@@ -4745,6 +4745,49 @@ exports[`Storyshots Chips with basic usage 1`] = `
 </div>
 `;
 
+exports[`Storyshots Chips with no image suggest 1`] = `
+<div
+  className="input-wrap">
+  <div
+    className="">
+    <div
+      className="undefined
+                        
+                        
+                undefined
+                
+              
+                        undefined
+            ">
+      <input
+        className={undefined}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        placeholder=""
+        value="" />
+      <i
+        aria-hidden="true"
+        className="
+                  undefined
+                  undefined
+                  undefined
+                " />
+    </div>
+    <div
+      className={undefined}>
+      <ul
+        className={undefined}>
+        
+      </ul>
+    </div>
+    <ul
+      className={undefined} />
+  </div>
+</div>
+`;
+
 exports[`Storyshots Datepicker with basic usage 1`] = `
 <div
   className="button-wrap">

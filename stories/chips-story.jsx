@@ -11,6 +11,7 @@ if (process.env.NODE_ENV !== 'test') {
 }
 const actionLogger = action();
 const suggests = [];
+const suggestsNoImage = [];
 const chips = [];
 
 const handleChange = (evt) => {
@@ -23,6 +24,19 @@ const handleChange = (evt) => {
   } else {
     suggests.shift();
     suggests.shift();
+  }
+};
+
+const handleChangeNoImage = (evt) => {
+  actionLogger('handleChange');
+  if (evt.target.value) {
+    if (!suggestsNoImage.length) {
+      suggestsNoImage.push({ id: 'sideroad', name: 'sideroad' });
+      suggestsNoImage.push({ id: 'koikijs', name: 'koikijs' });
+    }
+  } else {
+    suggestsNoImage.shift();
+    suggestsNoImage.shift();
   }
 };
 
@@ -44,6 +58,17 @@ storiesOf('Chips', module)
         onSelect={handleSelect}
         onDelete={handleDelete}
         suggests={suggests}
+        chips={chips}
+      />
+    </div>
+  ))
+  .addWithInfo('with no image suggest', () => (
+    <div className="input-wrap">
+      <Chips
+        onChange={handleChangeNoImage}
+        onSelect={handleSelect}
+        onDelete={handleDelete}
+        suggests={suggestsNoImage}
         chips={chips}
       />
     </div>

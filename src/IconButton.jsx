@@ -9,7 +9,11 @@ const IconButton = ({ item, onClick, type, styles, fa }) =>
       () => onClick(item)
     }
   >
-    <img className={styles.icon} alt={item.name} src={item.image} />
+    {
+      item.image ?
+        <img className={styles.icon} alt={item.name} src={item.image} />
+      : null
+    }
     <div className={styles.text} >{item.name}</div>
     <div className={styles[type]} >
       <i className={`${fa.fa} ${type === 'add' ? fa['fa-plus'] : fa['fa-trash']}`} />

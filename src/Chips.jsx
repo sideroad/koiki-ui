@@ -121,11 +121,15 @@ class Chips extends Component {
                         }
                       }
                     >
-                      <img
-                        className={this.props.styles.icon}
-                        src={suggest.image}
-                        alt={suggest.name}
-                      />
+                      {
+                        suggest.image ?
+                          <img
+                            className={this.props.styles.icon}
+                            src={suggest.image}
+                            alt={suggest.name}
+                          />
+                        : null
+                      }
                       <div className={this.props.styles.text} >{suggest.name}</div>
                     </a>
                   </li>
