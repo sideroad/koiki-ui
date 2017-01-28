@@ -218,7 +218,7 @@ exports[`Storyshots Calendar with basic usage 1`] = `
 <div
   className="calendar-wrap">
   <div
-    className={undefined}
+    className="undefined "
     onMouseDown={[Function]}
     onMouseMove={[Function]}
     onMouseUp={[Function]}
@@ -982,7 +982,7 @@ exports[`Storyshots Calendar with event handler 1`] = `
 <div
   className="calendar-wrap">
   <div
-    className={undefined}
+    className="undefined "
     onMouseDown={[Function]}
     onMouseMove={[Function]}
     onMouseUp={[Function]}
@@ -1746,7 +1746,7 @@ exports[`Storyshots Calendar with min and max 1`] = `
 <div
   className="calendar-wrap">
   <div
-    className={undefined}
+    className="undefined "
     onMouseDown={[Function]}
     onMouseMove={[Function]}
     onMouseUp={[Function]}
@@ -2481,7 +2481,7 @@ exports[`Storyshots Calendar with selected 1`] = `
 <div
   className="calendar-wrap">
   <div
-    className={undefined}
+    className="undefined "
     onMouseDown={[Function]}
     onMouseMove={[Function]}
     onMouseUp={[Function]}
@@ -4733,6 +4733,29 @@ exports[`Storyshots Chips with basic usage 1`] = `
     </div>
     <ul
       className={undefined} />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Datepicker with basic usage 1`] = `
+<div
+  className="button-wrap">
+  <div
+    className={undefined}>
+    <button
+      className={undefined}
+      onClick={[Function]}>
+      <i
+        aria-hidden="true"
+        className="
+                      undefined
+                      undefined
+                    " />
+      <span
+        className={undefined}>
+        Jan 1, 2017
+      </span>
+    </button>
   </div>
 </div>
 `;
