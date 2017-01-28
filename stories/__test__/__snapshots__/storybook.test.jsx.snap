@@ -4741,7 +4741,7 @@ exports[`Storyshots Datepicker with basic usage 1`] = `
 <div
   className="button-wrap">
   <div
-    className={undefined}>
+    className="undefined ">
     <button
       className={undefined}
       onClick={[Function]}>

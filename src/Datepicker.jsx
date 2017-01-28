@@ -19,12 +19,9 @@ class Datepicker extends Component {
       <TetherComponent
         attachment="top left"
         targetAttachment="bottom left"
-        className={`
-          ${this.props.className}
-        `}
       >
         <div
-          className={this.props.styles.container}
+          className={`${this.props.styles.container} ${this.props.className}`}
         >
           <button
             className={this.props.styles.button}
