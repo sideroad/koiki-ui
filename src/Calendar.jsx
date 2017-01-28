@@ -75,7 +75,7 @@ class Calendar extends Component {
 
     return (
       <Swipeable
-        className={this.props.styles.calendar}
+        className={`${this.props.styles.calendar} ${this.props.className}`}
         onSwipingRight={this.swipingPrev}
         onSwipedRight={this.swiped}
         onSwipingLeft={this.swipingNext}
@@ -181,6 +181,7 @@ class Calendar extends Component {
 }
 
 Calendar.propTypes = {
+  className: PropTypes.string,
   date: PropTypes.string,
   today: PropTypes.string,
   min: PropTypes.string,
@@ -193,6 +194,7 @@ Calendar.propTypes = {
 };
 
 Calendar.defaultProps = {
+  className: '',
   date: moment.utc().startOf('date').format('YYYY-MM-DD'),
   today: moment.utc().format('YYYY-MM-DD'),
   min: undefined,
