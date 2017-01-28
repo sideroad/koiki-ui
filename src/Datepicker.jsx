@@ -17,6 +17,9 @@ class Datepicker extends Component {
   render() {
     return (
       <TetherComponent
+        classes={{
+          element: this.props.styles.tether
+        }}
         attachment="top left"
         targetAttachment="bottom left"
       >
