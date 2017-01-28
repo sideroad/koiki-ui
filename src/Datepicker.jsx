@@ -49,7 +49,7 @@ class Datepicker extends Component {
               {
                 this.state.selected
                   .sort()
-                  .map(date => moment(date).format('ll'))
+                  .map(date => moment(date).format(this.props.format))
                   .join(', ') || this.props.placeholder
               }
             </span>
@@ -85,6 +85,7 @@ Datepicker.propTypes = {
   className: PropTypes.string,
   fa: PropTypes.object,
   date: PropTypes.string,
+  format: PropTypes.string,
   placeholder: PropTypes.string,
   icon: PropTypes.string,
   onClick: PropTypes.func,
@@ -95,6 +96,7 @@ Datepicker.propTypes = {
 Datepicker.defaultProps = {
   className: '',
   date: '',
+  format: 'MMM D',
   selected: [],
   placeholder: '',
   fa: require('../less/fa/less/font-awesome.less'),

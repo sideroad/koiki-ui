@@ -4753,7 +4753,7 @@ exports[`Storyshots Datepicker with basic usage 1`] = `
                     " />
       <span
         className={undefined}>
-        Jan 1, 2017
+        Jan 1
       </span>
     </button>
   </div>
