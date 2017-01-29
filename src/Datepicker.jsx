@@ -1,8 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import TetherComponent from 'react-tether';
 import _ from 'lodash';
-import moment from 'moment';
 import Calendar from './Calendar';
+import format from './dates-format';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class Datepicker extends Component {
@@ -70,36 +70,36 @@ class Datepicker extends Component {
                                                       : this.props.styles.placeholder}
               >
                 {
-                  this.state.selected
-                    .sort()
-                    .map(date => moment(date).format(this.props.format))
-                    .join(', ') || this.props.placeholder
+                  format({
+                    dates: this.state.selected.sort(),
+                    format: this.props.format,
+                    delimiter: this.props.delimiter,
+                    range: this.props.range
+                  }) || this.props.placeholder
                 }
               </span>
             </button>
           </div>
-          {
-            this.state.opened ?
-              <Calendar
-                ref={(elem) => { this.calendar = elem; }}
-                className={this.props.styles.calendar}
-                selected={this.state.selected}
-                onSelect={
-                  (date) => {
-                    if (this.state.selected.indexOf(date) === -1) {
-                      this.setState({
-                        selected: this.state.selected.concat([date])
-                      });
-                    } else {
-                      this.setState({
-                        selected: _.pull(this.state.selected, date)
-                      });
-                    }
-                  }
+          <Calendar
+            ref={(elem) => { this.calendar = elem; }}
+            className={`
+              ${this.props.styles.calendar}
+              ${this.state.opened ? this.props.styles.opened : this.props.styles.closed}`}
+            selected={this.state.selected}
+            onSelect={
+              (date) => {
+                if (this.state.selected.indexOf(date) === -1) {
+                  this.setState({
+                    selected: this.state.selected.concat([date])
+                  });
+                } else {
+                  this.setState({
+                    selected: _.pull(this.state.selected, date)
+                  });
                 }
-              />
-            : null
-          }
+              }
+            }
+          />
         </TetherComponent>
       </div>
     );
@@ -111,6 +111,8 @@ Datepicker.propTypes = {
   fa: PropTypes.object,
   date: PropTypes.string,
   format: PropTypes.string,
+  delimiter: PropTypes.string,
+  range: PropTypes.string,
   placeholder: PropTypes.string,
   icon: PropTypes.string,
   onClick: PropTypes.func,
@@ -122,6 +124,8 @@ Datepicker.defaultProps = {
   className: '',
   date: '',
   format: 'MMM D',
+  delimiter: ', ',
+  range: ' - ',
   selected: [],
   placeholder: '',
   fa: require('../less/fa/less/font-awesome.less'),
