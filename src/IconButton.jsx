@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 
 
-const IconButton = ({ item, onClick, type, styles, fa }) =>
+const IconButton = ({ item, onClick, type, styles }) =>
   <button
     className={styles.iconButton.item}
     key={item.id}
@@ -16,12 +16,11 @@ const IconButton = ({ item, onClick, type, styles, fa }) =>
     }
     <div className={styles.iconButton.text} >{item.name}</div>
     <div className={styles.iconButton[type]} >
-      <i className={`${fa.fa} ${type === 'add' ? fa['fa-plus'] : fa['fa-trash']}`} />
+      <i className={`${styles.fa.fa} ${type === 'add' ? styles.fa['fa-plus'] : styles.fa['fa-trash']}`} />
     </div>
   </button>;
 
 IconButton.propTypes = {
-  fa: PropTypes.object,
   item: PropTypes.object.isRequired,
   onClick: PropTypes.func,
   type: PropTypes.oneOf(['add', 'delete']).isRequired,
@@ -29,8 +28,8 @@ IconButton.propTypes = {
 };
 
 IconButton.defaultProps = {
-  fa: require('../less/fa/less/font-awesome.less'),
   styles: {
+    fa: require('../less/fa/less/font-awesome.less'),
     iconButton: require('../less/icon-button.less'),
   },
   onClick: () => {}

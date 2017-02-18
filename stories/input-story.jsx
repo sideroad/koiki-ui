@@ -3,6 +3,7 @@ import { storiesOf, action, setAddon } from '@kadira/storybook';
 import infoAddon from '@kadira/react-storybook-addon-info';
 import mockedInfoAddon from './react-storybook-addon-info-mock';
 import Input from '../src/Input';
+import fa from './less/fa/less/font-awesome.less';
 import customized from './less/input.less';
 
 if (process.env.NODE_ENV !== 'test') {
@@ -87,6 +88,7 @@ storiesOf('Input', module)
     <div className="input-wrap">
       <Input
         styles={{
+          fa,
           input: customized
         }}
       />

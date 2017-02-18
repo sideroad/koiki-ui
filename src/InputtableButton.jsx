@@ -58,7 +58,7 @@ class InputtableButton extends Component {
             this.props.onClick(evt);
           }}
         >
-          <i className={`${this.props.fa.fa} ${this.props.fa[this.props.icon]}`} aria-hidden="true" />{this.props.text}
+          <i className={`${this.props.styles.fa.fa} ${this.props.styles.fa[this.props.icon]}`} aria-hidden="true" />{this.props.text}
         </button>
         <input
           ref={(elem) => { this.inputDOM = elem; }}
@@ -77,8 +77,8 @@ class InputtableButton extends Component {
         />
         <i
           className={`
-            ${this.props.fa.fa}
-            ${this.props.fa[this.props.icon]}
+            ${this.props.styles.fa.fa}
+            ${this.props.styles.fa[this.props.icon]}
             ${this.props.styles.inputtableButton.prefix}
           `}
           aria-hidden="true"
@@ -90,7 +90,6 @@ class InputtableButton extends Component {
 
 InputtableButton.propTypes = {
   className: PropTypes.string,
-  fa: PropTypes.object,
   styles: PropTypes.object,
   icon: PropTypes.string,
   text: PropTypes.string.isRequired,
@@ -104,7 +103,6 @@ InputtableButton.propTypes = {
 
 InputtableButton.defaultProps = {
   className: '',
-  fa: require('../less/fa/less/font-awesome.less'),
   icon: 'fa-search',
   placeholder: '',
   onClick: () => {},
@@ -113,6 +111,7 @@ InputtableButton.defaultProps = {
   progress: 'none',
   focused: false,
   styles: {
+    fa: require('../less/fa/less/font-awesome.less'),
     inputtableButton: require('../less/inputtable-button.less')
   }
 };

@@ -35,8 +35,8 @@ class Button extends Component {
         >
           <i
             className={`
-              ${this.props.fa.fa}
-              ${this.props.fa[this.props.icon]}
+              ${this.props.styles.fa.fa}
+              ${this.props.styles.fa[this.props.icon]}
             `}
             aria-hidden="true"
           />
@@ -49,7 +49,6 @@ class Button extends Component {
 
 Button.propTypes = {
   className: PropTypes.string,
-  fa: PropTypes.object,
   disabled: PropTypes.bool,
   icon: PropTypes.string,
   text: PropTypes.string.isRequired,
@@ -60,8 +59,8 @@ Button.propTypes = {
 
 Button.defaultProps = {
   className: '',
-  fa: require('../less/fa/less/font-awesome.less'),
   styles: {
+    fa: require('../less/fa/less/font-awesome.less'),
     button: require('../less/button.less'),
   },
   disabled: false,

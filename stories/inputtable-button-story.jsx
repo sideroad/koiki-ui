@@ -3,6 +3,7 @@ import { storiesOf, action, setAddon } from '@kadira/storybook';
 import infoAddon from '@kadira/react-storybook-addon-info';
 import mockedInfoAddon from './react-storybook-addon-info-mock';
 import InputtableButton from '../src/InputtableButton';
+import fa from './less/fa/less/font-awesome.less';
 import customized from './less/inputtable-button.less';
 
 if (process.env.NODE_ENV !== 'test') {
@@ -99,6 +100,7 @@ storiesOf('InputtableButton', module)
       <InputtableButton
         text="Search"
         styles={{
+          fa,
           inputtableButton: customized
         }}
       />

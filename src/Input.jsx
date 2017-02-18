@@ -53,8 +53,8 @@ class Input extends Component {
         />
         <i
           className={`
-            ${this.props.fa.fa}
-            ${this.props.fa[this.props.icon]}
+            ${this.props.styles.fa.fa}
+            ${this.props.styles.fa[this.props.icon]}
             ${this.props.styles.input.prefix}
           `}
           aria-hidden="true"
@@ -66,7 +66,6 @@ class Input extends Component {
 
 Input.propTypes = {
   className: PropTypes.string,
-  fa: PropTypes.object,
   styles: PropTypes.object,
   placeholder: PropTypes.string,
   value: PropTypes.string,
@@ -81,8 +80,8 @@ Input.propTypes = {
 
 Input.defaultProps = {
   className: '',
-  fa: require('../less/fa/less/font-awesome.less'),
   styles: {
+    fa: require('../less/fa/less/font-awesome.less'),
     input: require('../less/input.less'),
   },
   placeholder: '',

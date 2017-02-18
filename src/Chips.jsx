@@ -185,6 +185,7 @@ Chips.defaultProps = {
   chips: [],
   placeholder: '',
   styles: {
+    fa: require('../less/fa/less/font-awesome.less'),
     chips: require('../less/chips.less'),
     input: require('../less/input.less'),
     iconButton: require('../less/icon-button.less')

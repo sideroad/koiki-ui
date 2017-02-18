@@ -58,6 +58,9 @@ import customizedStyles from 'your_own_less';
 Change styles structure to be one more deeper.
 This change can be handle children styles
 
+#### 0.0.50
+Move fa property to under styles object
+
 ## Contribution
 
 ### Components

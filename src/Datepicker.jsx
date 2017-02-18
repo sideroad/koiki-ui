@@ -60,8 +60,8 @@ class Datepicker extends Component {
             >
               <i
                 className={`
-                  ${this.props.fa.fa}
-                  ${this.props.fa[this.props.icon]}
+                  ${this.props.styles.fa.fa}
+                  ${this.props.styles.fa[this.props.icon]}
                 `}
                 aria-hidden="true"
               />
@@ -109,7 +109,6 @@ class Datepicker extends Component {
 
 Datepicker.propTypes = {
   className: PropTypes.string,
-  fa: PropTypes.object,
   date: PropTypes.string,
   format: PropTypes.string,
   delimiter: PropTypes.string,
@@ -129,8 +128,8 @@ Datepicker.defaultProps = {
   range: ' - ',
   selected: [],
   placeholder: '',
-  fa: require('../less/fa/less/font-awesome.less'),
   styles: {
+    fa: require('../less/fa/less/font-awesome.less'),
     datepicker: require('../less/datepicker.less'),
     calendar: require('../less/calendar.less')
   },

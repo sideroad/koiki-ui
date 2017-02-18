@@ -3,6 +3,7 @@ import { storiesOf, action, setAddon } from '@kadira/storybook';
 import infoAddon from '@kadira/react-storybook-addon-info';
 import mockedInfoAddon from './react-storybook-addon-info-mock';
 import Button from '../src/Button';
+import fa from './less/fa/less/font-awesome.less';
 import customized from './less/button.less';
 
 if (process.env.NODE_ENV !== 'test') {
@@ -82,6 +83,7 @@ storiesOf('Button', module)
       <Button
         text="Search"
         styles={{
+          fa,
           button: customized
         }}
       />

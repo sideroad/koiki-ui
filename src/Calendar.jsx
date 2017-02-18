@@ -97,7 +97,7 @@ class Calendar extends Component {
                     href=""
                   >
                     <div className={this.props.styles.calendar.linkcircle} />
-                    <span><i className={`${this.props.fa.fa} ${this.props.fa['fa-chevron-left']}`} aria-hidden="true" /></span>
+                    <span><i className={`${this.props.styles.fa.fa} ${this.props.styles.fa['fa-chevron-left']}`} aria-hidden="true" /></span>
                   </a>
                 : null
               }
@@ -117,7 +117,7 @@ class Calendar extends Component {
                     href=""
                   >
                     <div className={this.props.styles.calendar.linkcircle} />
-                    <span><i className={`${this.props.fa.fa} ${this.props.fa['fa-chevron-right']}`} aria-hidden="true" /></span>
+                    <span><i className={`${this.props.styles.fa.fa} ${this.props.styles.fa['fa-chevron-right']}`} aria-hidden="true" /></span>
                   </a>
                 : null
               }
@@ -194,7 +194,6 @@ Calendar.propTypes = {
   selected: PropTypes.array,
   onSelect: PropTypes.func,
   styles: PropTypes.object,
-  fa: PropTypes.object,
 };
 
 Calendar.defaultProps = {
@@ -207,9 +206,9 @@ Calendar.defaultProps = {
   selected: [],
   onSelect: () => {},
   styles: {
+    fa: require('../less/fa/less/font-awesome.less'),
     calendar: require('../less/calendar.less'),
   },
-  fa: require('../less/fa/less/font-awesome.less')
 };
 
 export default Calendar;
