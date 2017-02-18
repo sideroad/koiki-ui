@@ -50,6 +50,15 @@ const handleDelete = () => {
   chips.pop();
 };
 
+const handleFocus = () => {
+  actionLogger('handleFocus');
+};
+
+const handleBlur = () => {
+  actionLogger('handleBlur');
+  chips.pop();
+};
+
 storiesOf('Chips', module)
   .addWithInfo('with basic usage', () => (
     <div className="input-wrap">
@@ -57,6 +66,8 @@ storiesOf('Chips', module)
         onChange={handleChange}
         onSelect={handleSelect}
         onDelete={handleDelete}
+        onFocus={handleFocus}
+        onBlur={handleBlur}
         suggests={suggests}
         chips={chips}
       />
@@ -68,6 +79,8 @@ storiesOf('Chips', module)
         onChange={handleChangeNoImage}
         onSelect={handleSelect}
         onDelete={handleDelete}
+        onFocus={handleFocus}
+        onBlur={handleBlur}
         suggests={suggestsNoImage}
         chips={chips}
       />

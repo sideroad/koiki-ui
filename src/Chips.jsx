@@ -90,9 +90,12 @@ class Chips extends Component {
             }
           }
           onFocus={
-            () => this.setState({
-              display: true
-            })
+            (evt) => {
+              this.setState({
+                display: true
+              });
+              this.props.onFocus(evt);
+            }
           }
           onBlur={this.props.onBlur}
         />
@@ -166,6 +169,7 @@ Chips.propTypes = {
   icon: PropTypes.string,
   onSelect: PropTypes.func,
   onChange: PropTypes.func,
+  onFocus: PropTypes.func,
   onBlur: PropTypes.func,
   onDelete: PropTypes.func,
   chips: PropTypes.array.isRequired,
@@ -180,6 +184,7 @@ Chips.defaultProps = {
   onSelect: () => {},
   onDelete: () => {},
   onChange: () => {},
+  onFocus: () => {},
   onBlur: () => {},
   suggests: [],
   chips: [],
