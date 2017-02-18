@@ -57,6 +57,11 @@ class Input extends Component {
             ${this.props.styles.fa[this.props.icon]}
             ${this.props.styles.input.prefix}
           `}
+          onClick={
+            () => {
+              this.inputDOM.focus();
+            }
+          }
           aria-hidden="true"
         />
       </div>
