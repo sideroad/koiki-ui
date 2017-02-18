@@ -86,7 +86,9 @@ storiesOf('Input', module)
   .addWithInfo('with customize styles', () => (
     <div className="input-wrap">
       <Input
-        styles={customized}
+        styles={{
+          input: customized
+        }}
       />
     </div>
   ));

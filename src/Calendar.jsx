@@ -75,7 +75,7 @@ class Calendar extends Component {
 
     return (
       <Swipeable
-        className={`${this.props.styles.calendar} ${this.props.className}`}
+        className={`${this.props.styles.calendar.calendar} ${this.props.className}`}
         onSwipingRight={this.swipingPrev}
         onSwipedRight={this.swiped}
         onSwipingLeft={this.swipingNext}
@@ -84,50 +84,50 @@ class Calendar extends Component {
         <div
           ref={(elem) => { this.calendarDOM = elem; }}
         >
-          <div className={`${this.props.styles.control}`}>
-            <div className={this.props.styles.prev}>
+          <div className={`${this.props.styles.calendar.control}`}>
+            <div className={this.props.styles.calendar.prev}>
               {
                 isEnablePrevMonth ?
                   <a
-                    className={this.props.styles.link}
+                    className={this.props.styles.calendar.link}
                     onClick={(evt) => {
                       evt.preventDefault();
                       this.prevMonth();
                     }}
                     href=""
                   >
-                    <div className={this.props.styles.linkcircle} />
+                    <div className={this.props.styles.calendar.linkcircle} />
                     <span><i className={`${this.props.fa.fa} ${this.props.fa['fa-chevron-left']}`} aria-hidden="true" /></span>
                   </a>
                 : null
               }
             </div>
-            <div className={`${this.props.styles.month} ${this.props.styles[this.state.className]}`}>
+            <div className={`${this.props.styles.calendar.month} ${this.props.styles.calendar[this.state.className]}`}>
               {`${this.state.date.format('MMMM')} ${this.state.date.format('YYYY')}`}
             </div>
-            <div className={this.props.styles.next}>
+            <div className={this.props.styles.calendar.next}>
               {
                 isEnableNextMonth ?
                   <a
-                    className={this.props.styles.link}
+                    className={this.props.styles.calendar.link}
                     onClick={(evt) => {
                       evt.preventDefault();
                       this.nextMonth();
                     }}
                     href=""
                   >
-                    <div className={this.props.styles.linkcircle} />
+                    <div className={this.props.styles.calendar.linkcircle} />
                     <span><i className={`${this.props.fa.fa} ${this.props.fa['fa-chevron-right']}`} aria-hidden="true" /></span>
                   </a>
                 : null
               }
             </div>
           </div>
-          <table className={`${this.props.styles.table} ${this.props.styles[this.state.className]}`}>
+          <table className={`${this.props.styles.calendar.table} ${this.props.styles.calendar[this.state.className]}`}>
             <thead>
               <tr>
                 {__.times(7, index =>
-                  <th key={index} className={this.props.styles.weekday}>
+                  <th key={index} className={this.props.styles.calendar.weekday}>
                     {moment().weekday(index).format('ddd')}
                   </th>
                 )}
@@ -141,31 +141,31 @@ class Calendar extends Component {
                       const dateOfWeekday = moment.utc(start).add((week * 7) + weekday, 'days');
                       const timeOfWeekday = dateOfWeekday.toDate().getTime();
                       const dateClassName = [
-                        (__.some(this.props.selected, item => dateOfWeekday.isSame(moment.utc(item).startOf('date'))) ? this.props.styles.selected : ''),
-                        (dateOfWeekday.isSame(moment.utc(this.props.today, 'YYYY-MM-DD').startOf('date')) ? this.props.styles.today :
-                         __.some(this.props.holidays, item => dateOfWeekday.isSame(moment.utc(item).startOf('date'))) ? this.props.styles.holiday :
-                        !dateOfWeekday.isSame(this.state.date, 'month') ? this.props.styles.outside : ''),
-                        (this.props.styles[dateOfWeekday.format('ddd').toLowerCase()])
+                        (__.some(this.props.selected, item => dateOfWeekday.isSame(moment.utc(item).startOf('date'))) ? this.props.styles.calendar.selected : ''),
+                        (dateOfWeekday.isSame(moment.utc(this.props.today, 'YYYY-MM-DD').startOf('date')) ? this.props.styles.calendar.today :
+                         __.some(this.props.holidays, item => dateOfWeekday.isSame(moment.utc(item).startOf('date'))) ? this.props.styles.calendar.holiday :
+                        !dateOfWeekday.isSame(this.state.date, 'month') ? this.props.styles.calendar.outside : ''),
+                        (this.props.styles.calendar[dateOfWeekday.format('ddd').toLowerCase()])
                       ].join(' ');
                       return (
-                        <td key={timeOfWeekday} className={this.props.styles.col}>
+                        <td key={timeOfWeekday} className={this.props.styles.calendar.col}>
                           <div className={dateClassName}>
-                            <div className={this.props.styles.date}>
+                            <div className={this.props.styles.calendar.date}>
                               {
                                 (this.props.min &&
                                  moment.utc(this.props.min, 'YYYY-MM-DD').toDate().getTime() > timeOfWeekday) ||
                                 (this.props.max &&
                                  moment.utc(this.props.max, 'YYYY-MM-DD').toDate().getTime() < timeOfWeekday) ?
-                                   <div className={this.props.styles.disabled} >
+                                   <div className={this.props.styles.calendar.disabled} >
                                      <span>{dateOfWeekday.date()}</span>
                                    </div>
                                  :
                                    <a
-                                     className={this.props.styles.link}
+                                     className={this.props.styles.calendar.link}
                                      href=""
                                      onClick={evt => this.select(evt, dateOfWeekday)}
                                    >
-                                     <div className={this.props.styles.linkcircle} />
+                                     <div className={this.props.styles.calendar.linkcircle} />
                                      <span>{dateOfWeekday.date()}</span>
                                    </a>
                               }
@@ -206,7 +206,9 @@ Calendar.defaultProps = {
   holidays: [],
   selected: [],
   onSelect: () => {},
-  styles: require('../less/calendar.less'),
+  styles: {
+    calendar: require('../less/calendar.less'),
+  },
   fa: require('../less/fa/less/font-awesome.less')
 };
 

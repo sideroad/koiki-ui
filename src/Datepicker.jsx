@@ -40,17 +40,17 @@ class Datepicker extends Component {
       >
         <TetherComponent
           classes={{
-            element: this.props.styles.tether
+            element: this.props.styles.datepicker.tether
           }}
           attachment="top left"
           targetAttachment="bottom left"
         >
           <div
             ref={(elem) => { this.containerDOM = elem; }}
-            className={this.props.styles.container}
+            className={this.props.styles.datepicker.container}
           >
             <button
-              className={this.props.styles.button}
+              className={this.props.styles.datepicker.button}
               onClick={() => {
                 this.setState({
                   opened: !this.state.opened
@@ -66,8 +66,8 @@ class Datepicker extends Component {
                 aria-hidden="true"
               />
               <span
-                className={this.state.selected.length ? this.props.styles.date
-                                                      : this.props.styles.placeholder}
+                className={this.state.selected.length ? this.props.styles.datepicker.date
+                                                      : this.props.styles.datepicker.placeholder}
               >
                 {
                   format({
@@ -81,10 +81,11 @@ class Datepicker extends Component {
             </button>
           </div>
           <Calendar
+            styles={this.props.styles}
             ref={(elem) => { this.calendar = elem; }}
             className={`
-              ${this.props.styles.calendar}
-              ${this.state.opened ? this.props.styles.opened : this.props.styles.closed}`}
+              ${this.props.styles.datepicker.calendar}
+              ${this.state.opened ? this.props.styles.datepicker.opened : this.props.styles.datepicker.closed}`}
             selected={this.state.selected}
             onSelect={
               (date) => {
@@ -129,7 +130,10 @@ Datepicker.defaultProps = {
   selected: [],
   placeholder: '',
   fa: require('../less/fa/less/font-awesome.less'),
-  styles: require('../less/datepicker.less'),
+  styles: {
+    datepicker: require('../less/datepicker.less'),
+    calendar: require('../less/calendar.less')
+  },
   icon: 'fa-calendar',
   onClick: () => {}
 };

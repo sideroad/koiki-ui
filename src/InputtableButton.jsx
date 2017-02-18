@@ -36,16 +36,16 @@ class InputtableButton extends Component {
     const inputProgress = `progress-${this.props.progress}-with-middle`;
     return (
       <div
-        className={`${this.props.styles.container}
-                    ${this.state.clicked ? this.props.styles.clicked :
-                                           this.state.escaped ? this.props.styles.escaped :
-                                           this.state.focused ? this.props.styles.focused : ''}
+        className={`${this.props.styles.inputtableButton.container}
+                    ${this.state.clicked ? this.props.styles.inputtableButton.clicked :
+                      this.state.escaped ? this.props.styles.inputtableButton.escaped :
+                      this.state.focused ? this.props.styles.inputtableButton.focused : ''}
                     ${this.props.className}
-                    ${this.state.focused ? this.props.styles[inputProgress] : this.props.styles[buttonProgress]}
+                    ${this.state.focused ? this.props.styles.inputtableButton[inputProgress] : this.props.styles.inputtableButton[buttonProgress]}
         `}
       >
         <button
-          className={this.props.styles.button}
+          className={this.props.styles.inputtableButton.button}
           onClick={(evt) => {
             this.setState({
               clicked: true,
@@ -62,7 +62,7 @@ class InputtableButton extends Component {
         </button>
         <input
           ref={(elem) => { this.inputDOM = elem; }}
-          className={this.props.styles.input}
+          className={this.props.styles.inputtableButton.input}
           placeholder={this.props.placeholder}
           onKeyDown={(evt) => {
             switch (evt.key) {
@@ -79,7 +79,7 @@ class InputtableButton extends Component {
           className={`
             ${this.props.fa.fa}
             ${this.props.fa[this.props.icon]}
-            ${this.props.styles.prefix}
+            ${this.props.styles.inputtableButton.prefix}
           `}
           aria-hidden="true"
         />
@@ -112,7 +112,9 @@ InputtableButton.defaultProps = {
   onBlur: () => {},
   progress: 'none',
   focused: false,
-  styles: require('../less/inputtable-button.less')
+  styles: {
+    inputtableButton: require('../less/inputtable-button.less')
+  }
 };
 
 export default InputtableButton;

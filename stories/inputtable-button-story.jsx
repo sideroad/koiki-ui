@@ -98,7 +98,9 @@ storiesOf('InputtableButton', module)
     <div className="input-wrap">
       <InputtableButton
         text="Search"
-        styles={customized}
+        styles={{
+          inputtableButton: customized
+        }}
       />
     </div>
   ));

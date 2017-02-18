@@ -14,15 +14,15 @@ class Button extends Component {
     const progress = `progress-${this.props.progress}`;
     return (
       <div
-        className={`${this.props.styles.container}
-                    ${this.state.clicked ? this.props.styles.clicked :
-                      this.state.escaped ? this.props.styles.escaped : ''}
+        className={`${this.props.styles.button.container}
+                    ${this.state.clicked ? this.props.styles.button.clicked :
+                      this.state.escaped ? this.props.styles.button.escaped : ''}
                     ${this.props.className}
-                    ${this.props.styles[progress]}
+                    ${this.props.styles.button[progress]}
         `}
       >
         <button
-          className={`${this.props.styles.button} ${this.props.disabled ? this.props.styles.disabled : ''}`}
+          className={`${this.props.styles.button.button} ${this.props.disabled ? this.props.styles.button.disabled : ''}`}
           onClick={() => {
             if (!this.props.disabled) {
               this.setState({
@@ -61,7 +61,9 @@ Button.propTypes = {
 Button.defaultProps = {
   className: '',
   fa: require('../less/fa/less/font-awesome.less'),
-  styles: require('../less/button.less'),
+  styles: {
+    button: require('../less/button.less'),
+  },
   disabled: false,
   icon: 'fa-search',
   progress: 'none',

@@ -81,7 +81,9 @@ storiesOf('Button', module)
     <div className="button-wrap">
       <Button
         text="Search"
-        styles={customized}
+        styles={{
+          button: customized
+        }}
       />
     </div>
   ));

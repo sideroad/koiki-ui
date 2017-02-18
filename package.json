@@ -46,7 +46,7 @@
     "react-visibility-sensor": "^3.6.2"
   },
   "scripts": {
-    "start": "start-storybook -p 9009 -s public",
+    "start": "npm run storybook",
     "test": "jest --config .jestrc",
     "test-update": "jest --config .jestrc -u",
     "lint": "eslint src",

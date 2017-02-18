@@ -43,17 +43,20 @@ import 'koiki-ui/build/styles.css'
 
 #### Customize CSS with using css-loader
 ```
-import fa from 'koiki-ui/less/fa/less/font-awesome.less';
-import buttonStyles from 'koiki-ui/less/button.less';
 import customizedStyles from 'your_own_less';
 ...
 <Button
   styles={{
-    ...buttonStyles,
-    ...customizedStyles
+    button: customizedStyles
   }}
 />
 ```
+
+## Change Log
+
+#### 0.0.49
+Change styles structure to be one more deeper.
+This change can be handle children styles
 
 ## Contribution
 

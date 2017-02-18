@@ -29,16 +29,16 @@ class Input extends Component {
     const progress = `progress-${this.props.progress}-with-middle`;
     return (
       <div
-        className={`${this.props.styles.container}
-                    ${this.state.clicked ? this.props.styles.clicked :
-                      this.state.escaped ? this.props.styles.escaped : ''}
+        className={`${this.props.styles.input.container}
+                    ${this.state.clicked ? this.props.styles.input.clicked :
+                      this.state.escaped ? this.props.styles.input.escaped : ''}
                     ${this.props.className}
-                    ${this.props.styles[progress]}
+                    ${this.props.styles.input[progress]}
         `}
       >
         <input
           ref={(elem) => { this.inputDOM = elem; }}
-          className={this.props.styles.input}
+          className={this.props.styles.input.input}
           placeholder={this.props.placeholder}
           value={this.state.value}
           onChange={(evt) => {
@@ -55,7 +55,7 @@ class Input extends Component {
           className={`
             ${this.props.fa.fa}
             ${this.props.fa[this.props.icon]}
-            ${this.props.styles.prefix}
+            ${this.props.styles.input.prefix}
           `}
           aria-hidden="true"
         />
@@ -82,7 +82,9 @@ Input.propTypes = {
 Input.defaultProps = {
   className: '',
   fa: require('../less/fa/less/font-awesome.less'),
-  styles: require('../less/input.less'),
+  styles: {
+    input: require('../less/input.less'),
+  },
   placeholder: '',
   value: '',
   icon: 'fa-search',

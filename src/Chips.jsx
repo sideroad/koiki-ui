@@ -43,9 +43,10 @@ class Chips extends Component {
     return (
       <div className={this.props.className}>
         <Input
+          styles={this.props.styles}
           className={`
-            ${this.props.styles.input}
-            ${this.props.suggests.length ? this.props.styles.hasSuggest : ''}
+            ${this.props.styles.chips.input}
+            ${this.props.suggests.length ? this.props.styles.chips.hasSuggest : ''}
           `}
           ref={(elem) => { this.input = elem; }}
           icon={this.props.icon}
@@ -95,10 +96,10 @@ class Chips extends Component {
           }
           onBlur={this.props.onBlur}
         />
-        <div className={this.props.styles.container}>
+        <div className={this.props.styles.chips.container}>
           <ul
             ref={(elem) => { this.suggestsDOM = elem; }}
-            className={this.props.styles.suggests}
+            className={this.props.styles.chips.suggests}
           >
             {
               this.state.display &&
@@ -110,8 +111,8 @@ class Chips extends Component {
                   >
                     <a
                       className={`
-                        ${this.props.styles.suggest}
-                        ${index === this.state.focusedIndex ? this.props.styles.focused : ''}
+                        ${this.props.styles.chips.suggest}
+                        ${index === this.state.focusedIndex ? this.props.styles.chips.focused : ''}
                       `}
                       href=""
                       onClick={
@@ -124,13 +125,13 @@ class Chips extends Component {
                       {
                         suggest.image ?
                           <img
-                            className={this.props.styles.icon}
+                            className={this.props.styles.chips.icon}
                             src={suggest.image}
                             alt={suggest.name}
                           />
                         : null
                       }
-                      <div className={this.props.styles.text} >{suggest.name}</div>
+                      <div className={this.props.styles.chips.text} >{suggest.name}</div>
                     </a>
                   </li>
                 ) : ''
@@ -138,12 +139,13 @@ class Chips extends Component {
           </ul>
         </div>
         <ul
-          className={this.props.styles.chips}
+          className={this.props.styles.chips.chips}
         >
           {
             this.props.chips
               .map(tag =>
                 <IconButton
+                  styles={this.props.styles}
                   key={tag.id}
                   item={tag}
                   onClick={
@@ -182,7 +184,11 @@ Chips.defaultProps = {
   suggests: [],
   chips: [],
   placeholder: '',
-  styles: require('../less/chips.less')
+  styles: {
+    chips: require('../less/chips.less'),
+    input: require('../less/input.less'),
+    iconButton: require('../less/icon-button.less')
+  }
 };
 
 export default Chips;

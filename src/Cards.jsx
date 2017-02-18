@@ -15,23 +15,23 @@ const Cards = ({
   className
 }) =>
   <ul
-    className={`${styles.cards}
-                ${styles[hover]}
-                ${styles[theme]}
-                ${styles[position]}
-                ${hasSpace ? styles.hasSpace : ''}
+    className={`${styles.cards.cards}
+                ${styles.cards[hover]}
+                ${styles.cards[theme]}
+                ${styles.cards[position]}
+                ${hasSpace ? styles.cards.hasSpace : ''}
                 ${className}`}
   >
     {
       items.map(item =>
         <li
           key={item.id}
-          className={styles.item}
+          className={styles.cards.item}
         >
           <button
-            className={`${styles.link}
-                        ${item.selected ? styles.selected : ''}
-                        ${!clickable ? styles.unclickable : ''}`}
+            className={`${styles.cards.link}
+                        ${item.selected ? styles.cards.selected : ''}
+                        ${!clickable ? styles.cards.unclickable : ''}`}
             onClick={() => {
               if (onClick) {
                 onClick(item, !item.selected);
@@ -39,16 +39,16 @@ const Cards = ({
             }}
           >
             <div
-              className={styles.back}
+              className={styles.cards.back}
               style={{ backgroundImage: `url(${item.image})` }}
             />
             <div
-              className={`${styles.outline} ${item.title ? '' : styles.none}`}
+              className={`${styles.cards.outline} ${item.title ? '' : styles.cards.none}`}
             />
             {
               item.title ?
                 <div
-                  className={styles.text}
+                  className={styles.cards.text}
                   style={{
                     whiteSpace: nowrap ? 'nowrap' : ''
                   }}
@@ -96,7 +96,9 @@ Cards.defaultProps = {
   hasSpace: false,
   onClick: () => {},
   onReachToBottom: () => {},
-  styles: require('../less/cards.less')
+  styles: {
+    cards: require('../less/cards.less')
+  }
 };
 
 export default Cards;

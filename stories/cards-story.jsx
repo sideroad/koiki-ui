@@ -151,7 +151,9 @@ storiesOf('Cards', module)
     <div className="cards-wrap">
       <Cards
         text="Search"
-        styles={customized}
+        styles={{
+          cards: customized
+        }}
       />
     </div>
   ));
