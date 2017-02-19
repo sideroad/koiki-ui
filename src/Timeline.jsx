@@ -12,13 +12,13 @@ class Timeline extends Component {
     super(props);
     this.state = {
       displayed: 0,
-      x: 0
+      x: (props.widthOfDate / DATE_OF_MINUTES) * props.offsetMinutes
     };
   }
   render() {
     moment.locale(this.props.lang);
     const width = moment(this.props.end).diff(moment(this.props.start), 'days') * this.props.widthOfDate;
-    const timeWidth = (this.props.widthOfDate / DATE_OF_MINUTES) * this.props.separationMinutes;
+    const timeWidth = (this.props.widthOfDate / DATE_OF_MINUTES) * this.props.ticksMinutes;
     return (
       <div
         className={this.props.styles.timeline.container}
@@ -44,7 +44,7 @@ class Timeline extends Component {
         >
           {
             _.times(moment(this.props.end).diff(moment(this.props.start), 'days'), daysIndex =>
-              _.times(DATE_OF_MINUTES / this.props.separationMinutes, timesIndex =>
+              _.times(DATE_OF_MINUTES / this.props.ticksMinutes, timesIndex =>
                 <li
                   key={`${daysIndex}-${timesIndex}`}
                   className={this.props.styles.timeline.time}
@@ -55,7 +55,7 @@ class Timeline extends Component {
                   {
                     moment()
                       .startOf('date')
-                      .add(timesIndex * this.props.separationMinutes, 'minutes')
+                      .add(timesIndex * this.props.ticksMinutes, 'minutes')
                       .format(this.props.timeFormat)
                   }
                 </li>
@@ -64,6 +64,7 @@ class Timeline extends Component {
           }
         </ul>
         <ElementPan
+          startX={this.state.x}
           className={this.props.styles.timeline.pan}
           onPan={({ x }) => {
             const displayed = Math.floor(x / this.props.widthOfDate);
@@ -118,17 +119,19 @@ Timeline.propTypes = {
   end: PropTypes.string.isRequired,
   items: PropTypes.array,
   widthOfDate: PropTypes.number,
-  separationMinutes: PropTypes.number,
+  offsetMinutes: PropTypes.number,
+  ticksMinutes: PropTypes.number,
   timeFormat: PropTypes.string,
   dateFormat: PropTypes.string,
-  styles: PropTypes.object
+  styles: PropTypes.object,
 };
 
 Timeline.defaultProps = {
   lang: moment.locale(),
   items: [],
   widthOfDate: 800,
-  separationMinutes: 180,
+  offsetMinutes: 0,
+  ticksMinutes: 180,
   timeFormat: 'HH:mm',
   dateFormat: 'll',
   styles: {
