@@ -5559,7 +5559,7 @@ exports[`Storyshots Timeline with basic usage 1`] = `
       className={undefined}
       style={
         Object {
-          "marginLeft": -0,
+          "marginLeft": -283.33333333333337,
           "width": 4800,
         }
       }>
