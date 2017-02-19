@@ -41,6 +41,7 @@
     "moment": "^2.17.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
+    "react-element-pan": "^1.0.9",
     "react-swipeable": "^3.8.0",
     "react-tether": "^0.5.5",
     "react-visibility-sensor": "^3.6.2"

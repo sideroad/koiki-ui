@@ -5,3 +5,4 @@ import './cards-story';
 import './chips-story';
 import './calendar-story';
 import './datepicker-story';
+import './timeline-story';

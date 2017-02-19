@@ -1,0 +1,63 @@
+@import "variables.less";
+
+.container {
+  overflow: hidden;
+}
+.line {
+  position: relative;
+  height: 50px;
+  background-color: @unohana;
+  margin: 5px 0;
+  border-radius: 3px;
+}
+
+.pan {
+  margin-left: 1.5em;
+}
+
+.dates,
+.times {
+  color: @hai;
+  display: flex;
+  font-size: 1.25em;
+}
+
+.date,
+.time {
+  display: block;
+}
+
+.times {
+  margin-top: 0.5em;
+}
+
+.displayed.date {
+  opacity: 0;
+}
+
+.period {
+  position: absolute;
+  top: 22.5px;
+  height: 5px;
+  background-color: @secondary-forward-color;
+  box-shadow: @small-shadow;
+}
+
+.start,
+.end {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: @secondary-forward-color;
+  border-radius: 50%;
+  transform: translateY(-7.5px);
+  box-shadow: @small-shadow;
+}
+
+.start {
+  left: -10px;
+}
+
+.end {
+  right: -10px;
+}

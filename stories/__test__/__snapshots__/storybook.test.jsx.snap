@@ -5537,3 +5537,465 @@ exports[`Storyshots InputtableButton with progress success 1`] = `
   </div>
 </div>
 `;
+
+exports[`Storyshots Timeline with basic usage 1`] = `
+<div
+  className="timeline-wrap">
+  <div
+    className={undefined}>
+    <ul
+      className={undefined}
+      style={
+        Object {
+          "width": 4800,
+        }
+      }>
+      <li
+        className={undefined}>
+        Feb 19, 2017
+      </li>
+    </ul>
+    <ul
+      className={undefined}
+      style={
+        Object {
+          "marginLeft": -0,
+          "width": 4800,
+        }
+      }>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        00:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        03:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        06:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        09:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        12:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        15:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        18:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        21:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        00:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        03:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        06:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        09:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        12:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        15:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        18:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        21:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        00:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        03:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        06:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        09:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        12:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        15:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        18:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        21:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        00:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        03:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        06:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        09:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        12:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        15:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        18:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        21:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        00:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        03:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        06:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        09:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        12:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        15:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        18:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        21:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        00:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        03:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        06:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        09:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        12:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        15:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        18:00
+      </li>
+      <li
+        className={undefined}
+        style={
+          Object {
+            "width": 100,
+          }
+        }>
+        21:00
+      </li>
+    </ul>
+  </div>
+</div>
+`;
