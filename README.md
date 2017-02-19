@@ -43,10 +43,12 @@ import 'koiki-ui/build/styles.css'
 
 #### Customize CSS with using css-loader
 ```
-import customizedStyles from 'your_own_less';
+import faStyles from 'your_own_less';
+import buttonStyles from 'your_own_less';
 ...
 <Button
   styles={{
+    fa: faStyles,
     button: customizedStyles
   }}
 />
