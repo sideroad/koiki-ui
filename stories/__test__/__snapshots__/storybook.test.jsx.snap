@@ -4734,8 +4734,9 @@ exports[`Storyshots Cards with unclickable 1`] = `
 exports[`Storyshots Chips with basic usage 1`] = `
 <div
   className="input-wrap">
-  <div
-    className="">
+  <form
+    className=""
+    onSubmit={[Function]}>
     <div
       className="undefined
                         
@@ -4771,15 +4772,16 @@ exports[`Storyshots Chips with basic usage 1`] = `
     </div>
     <ul
       className={undefined} />
-  </div>
+  </form>
 </div>
 `;
 
 exports[`Storyshots Chips with no image suggest 1`] = `
 <div
   className="input-wrap">
-  <div
-    className="">
+  <form
+    className=""
+    onSubmit={[Function]}>
     <div
       className="undefined
                         
@@ -4815,7 +4817,7 @@ exports[`Storyshots Chips with no image suggest 1`] = `
     </div>
     <ul
       className={undefined} />
-  </div>
+  </form>
 </div>
 `;
 

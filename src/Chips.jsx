@@ -41,7 +41,18 @@ class Chips extends Component {
       });
     };
     return (
-      <div className={this.props.className}>
+      <form
+        className={this.props.className}
+        onSubmit={
+          (evt) => {
+            const suggest = this.props.suggests[this.state.focusedIndex];
+            if (suggest) {
+              select(suggest);
+            }
+            evt.preventDefault();
+          }
+        }
+      >
         <Input
           styles={this.props.styles}
           className={`
@@ -69,13 +80,6 @@ class Chips extends Component {
                     });
                   }
                   break;
-                case 'Enter': {
-                  const suggest = this.props.suggests[this.state.focusedIndex];
-                  if (suggest) {
-                    select(suggest);
-                  }
-                  break;
-                }
                 default:
               }
             }
@@ -159,7 +163,7 @@ class Chips extends Component {
               )
           }
         </ul>
-      </div>
+      </form>
     );
   }
 }
