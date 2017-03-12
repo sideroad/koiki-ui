@@ -86,7 +86,7 @@ class Timeline extends Component {
                   key={item.id}
                   className={this.props.styles.timeline.line}
                 >
-                  <ul>
+                  <ul className={this.props.styles.timeline.periods}>
                     {
                       item.periods.map(period =>
                         <li
