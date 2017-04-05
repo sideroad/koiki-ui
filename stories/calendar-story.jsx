@@ -11,6 +11,11 @@ if (process.env.NODE_ENV !== 'test') {
 }
 
 const selected = ['2017-01-01', '2017-01-02', '2017-01-03'];
+const selectedWithStyle = [
+  { date: '2017-01-01', style: { opacity: 0.2 } },
+  { date: '2017-01-02', style: { opacity: 0.5 } },
+  { date: '2017-01-03', style: { opacity: 1 } },
+];
 
 const actionLogger = action();
 
@@ -27,6 +32,14 @@ storiesOf('Calendar', module)
       <Calendar
         today={'2017-01-15'}
         selected={selected}
+      />
+    </div>
+  ))
+  .addWithInfo('with selected and style', () => (
+    <div className="calendar-wrap">
+      <Calendar
+        today={'2017-01-15'}
+        selected={selectedWithStyle}
       />
     </div>
   ))

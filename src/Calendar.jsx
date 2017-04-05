@@ -141,15 +141,26 @@ class Calendar extends Component {
                       const dateOfWeekday = moment.utc(start).add((week * 7) + weekday, 'days');
                       const timeOfWeekday = dateOfWeekday.toDate().getTime();
                       const dateClassName = [
-                        (__.some(this.props.selected, item => dateOfWeekday.isSame(moment.utc(item).startOf('date'))) ? this.props.styles.calendar.selected : ''),
+                        (__.some(this.props.selected, item =>
+                          dateOfWeekday.isSame(moment.utc(__.isString(item) ? item : item.date).startOf('date'))) ? this.props.styles.calendar.selected : ''
+                        ),
                         (dateOfWeekday.isSame(moment.utc(this.props.today, 'YYYY-MM-DD').startOf('date')) ? this.props.styles.calendar.today :
-                         __.some(this.props.holidays, item => dateOfWeekday.isSame(moment.utc(item).startOf('date'))) ? this.props.styles.calendar.holiday :
+                         __.some(this.props.holidays, item =>
+                          dateOfWeekday.isSame(moment.utc(item).startOf('date'))) ? this.props.styles.calendar.holiday :
                         !dateOfWeekday.isSame(this.state.date, 'month') ? this.props.styles.calendar.outside : ''),
                         (this.props.styles.calendar[dateOfWeekday.format('ddd').toLowerCase()])
                       ].join(' ');
+                      const selected = __.find(this.props.selected, item =>
+                        !__.isString(item) && dateOfWeekday.isSame(moment.utc(item.date).startOf('date'))
+                      ) || {};
                       return (
                         <td key={timeOfWeekday} className={this.props.styles.calendar.col}>
-                          <div className={dateClassName}>
+                          <div
+                            className={dateClassName}
+                            style={
+                               selected.style || {}
+                            }
+                          >
                             <div className={this.props.styles.calendar.date}>
                               {
                                 (this.props.min &&
