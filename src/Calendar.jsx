@@ -157,9 +157,6 @@ class Calendar extends Component {
                         <td key={timeOfWeekday} className={this.props.styles.calendar.col}>
                           <div
                             className={dateClassName}
-                            style={
-                               selected.style || {}
-                            }
                           >
                             <div className={this.props.styles.calendar.date}>
                               {
@@ -176,7 +173,12 @@ class Calendar extends Component {
                                      href=""
                                      onClick={evt => this.select(evt, dateOfWeekday)}
                                    >
-                                     <div className={this.props.styles.calendar.linkcircle} />
+                                     <div
+                                       className={this.props.styles.calendar.linkcircle}
+                                       style={
+                                          selected.style || {}
+                                       }
+                                     />
                                      <span>{dateOfWeekday.date()}</span>
                                    </a>
                               }
