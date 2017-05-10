@@ -22,7 +22,9 @@ class Button extends Component {
         `}
       >
         <button
-          className={`${this.props.styles.button.button} ${this.props.disabled ? this.props.styles.button.disabled : ''}`}
+          className={`${this.props.styles.button.button}
+                      ${this.props.styles.button[this.props.color]}
+                      ${this.props.disabled ? this.props.styles.button.disabled : ''}`}
           onClick={() => {
             if (!this.props.disabled) {
               this.setState({
@@ -53,6 +55,7 @@ Button.propTypes = {
   icon: PropTypes.string,
   text: PropTypes.string.isRequired,
   onClick: PropTypes.func,
+  color: PropTypes.oneOf(['primary', 'secondary', 'third']),
   progress: PropTypes.oneOf(['none', 'loading', 'success', 'error']),
   styles: PropTypes.object
 };
@@ -63,6 +66,7 @@ Button.defaultProps = {
     fa: require('../less/fa/less/font-awesome.less'),
     button: require('../less/button.less'),
   },
+  color: 'primary',
   disabled: false,
   icon: 'fa-search',
   progress: 'none',

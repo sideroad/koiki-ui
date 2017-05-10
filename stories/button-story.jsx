@@ -30,6 +30,22 @@ storiesOf('Button', module)
       />
     </div>
   ))
+  .addWithInfo('with colors', () => (
+    <div className="button-wrap">
+      <Button
+        text="Search"
+        color="primary"
+      />
+      <Button
+        text="Search"
+        color="secondary"
+      />
+      <Button
+        text="Search"
+        color="third"
+      />
+    </div>
+  ))
   .addWithInfo('with append className', () => (
     <div className="button-wrap">
       <Button
