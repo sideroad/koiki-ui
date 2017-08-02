@@ -1,0 +1,12 @@
+{
+  "core": {
+    "workingDir": ".reg",
+    "actualDir": "directory_contains_actual_images",
+    "threshold": 0
+  },
+  "plugins": {
+    "reg-notify-github-plugin": {
+      "clientId": "M7ewNDY0MjTQz87PzM7ULc3UNzE2NTXUL85MSS3KT0wBAA=="
+    }
+  }
+}

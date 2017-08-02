@@ -329,7 +329,7 @@ exports[`Storyshots Calendar with basic usage 1`] = `
         </div>
         <div
           className="undefined undefined">
-          May 2017
+          August 2017
         </div>
         <div
           className={undefined}>
@@ -398,6 +398,26 @@ exports[`Storyshots Calendar with basic usage 1`] = `
                       style={Object {}} />
                     <span>
                       30
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </td>
+            <td
+              className={undefined}>
+              <div
+                className="  ">
+                <div
+                  className={undefined}>
+                  <a
+                    className={undefined}
+                    href=""
+                    onClick={[Function]}>
+                    <div
+                      className={undefined}
+                      style={Object {}} />
+                    <span>
+                      31
                     </span>
                   </a>
                 </div>
@@ -503,6 +523,8 @@ exports[`Storyshots Calendar with basic usage 1`] = `
                 </div>
               </div>
             </td>
+          </tr>
+          <tr>
             <td
               className={undefined}>
               <div
@@ -523,8 +545,6 @@ exports[`Storyshots Calendar with basic usage 1`] = `
                 </div>
               </div>
             </td>
-          </tr>
-          <tr>
             <td
               className={undefined}>
               <div
@@ -645,6 +665,8 @@ exports[`Storyshots Calendar with basic usage 1`] = `
                 </div>
               </div>
             </td>
+          </tr>
+          <tr>
             <td
               className={undefined}>
               <div
@@ -665,8 +687,6 @@ exports[`Storyshots Calendar with basic usage 1`] = `
                 </div>
               </div>
             </td>
-          </tr>
-          <tr>
             <td
               className={undefined}>
               <div
@@ -787,6 +807,8 @@ exports[`Storyshots Calendar with basic usage 1`] = `
                 </div>
               </div>
             </td>
+          </tr>
+          <tr>
             <td
               className={undefined}>
               <div
@@ -807,8 +829,6 @@ exports[`Storyshots Calendar with basic usage 1`] = `
                 </div>
               </div>
             </td>
-          </tr>
-          <tr>
             <td
               className={undefined}>
               <div
@@ -929,6 +949,8 @@ exports[`Storyshots Calendar with basic usage 1`] = `
                 </div>
               </div>
             </td>
+          </tr>
+          <tr>
             <td
               className={undefined}>
               <div
@@ -949,8 +971,6 @@ exports[`Storyshots Calendar with basic usage 1`] = `
                 </div>
               </div>
             </td>
-          </tr>
-          <tr>
             <td
               className={undefined}>
               <div
@@ -1066,26 +1086,6 @@ exports[`Storyshots Calendar with basic usage 1`] = `
                       style={Object {}} />
                     <span>
                       2
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </td>
-            <td
-              className={undefined}>
-              <div
-                className="  ">
-                <div
-                  className={undefined}>
-                  <a
-                    className={undefined}
-                    href=""
-                    onClick={[Function]}>
-                    <div
-                      className={undefined}
-                      style={Object {}} />
-                    <span>
-                      3
                     </span>
                   </a>
                 </div>
@@ -1130,7 +1130,7 @@ exports[`Storyshots Calendar with event handler 1`] = `
         </div>
         <div
           className="undefined undefined">
-          May 2017
+          August 2017
         </div>
         <div
           className={undefined}>
@@ -1199,6 +1199,26 @@ exports[`Storyshots Calendar with event handler 1`] = `
                       style={Object {}} />
                     <span>
                       30
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </td>
+            <td
+              className={undefined}>
+              <div
+                className="  ">
+                <div
+                  className={undefined}>
+                  <a
+                    className={undefined}
+                    href=""
+                    onClick={[Function]}>
+                    <div
+                      className={undefined}
+                      style={Object {}} />
+                    <span>
+                      31
                     </span>
                   </a>
                 </div>
@@ -1304,6 +1324,8 @@ exports[`Storyshots Calendar with event handler 1`] = `
                 </div>
               </div>
             </td>
+          </tr>
+          <tr>
             <td
               className={undefined}>
               <div
@@ -1324,8 +1346,6 @@ exports[`Storyshots Calendar with event handler 1`] = `
                 </div>
               </div>
             </td>
-          </tr>
-          <tr>
             <td
               className={undefined}>
               <div
@@ -1446,6 +1466,8 @@ exports[`Storyshots Calendar with event handler 1`] = `
                 </div>
               </div>
             </td>
+          </tr>
+          <tr>
             <td
               className={undefined}>
               <div
@@ -1466,8 +1488,6 @@ exports[`Storyshots Calendar with event handler 1`] = `
                 </div>
               </div>
             </td>
-          </tr>
-          <tr>
             <td
               className={undefined}>
               <div
@@ -1588,6 +1608,8 @@ exports[`Storyshots Calendar with event handler 1`] = `
                 </div>
               </div>
             </td>
+          </tr>
+          <tr>
             <td
               className={undefined}>
               <div
@@ -1608,8 +1630,6 @@ exports[`Storyshots Calendar with event handler 1`] = `
                 </div>
               </div>
             </td>
-          </tr>
-          <tr>
             <td
               className={undefined}>
               <div
@@ -1730,6 +1750,8 @@ exports[`Storyshots Calendar with event handler 1`] = `
                 </div>
               </div>
             </td>
+          </tr>
+          <tr>
             <td
               className={undefined}>
               <div
@@ -1750,8 +1772,6 @@ exports[`Storyshots Calendar with event handler 1`] = `
                 </div>
               </div>
             </td>
-          </tr>
-          <tr>
             <td
               className={undefined}>
               <div
@@ -1872,26 +1892,6 @@ exports[`Storyshots Calendar with event handler 1`] = `
                 </div>
               </div>
             </td>
-            <td
-              className={undefined}>
-              <div
-                className="  ">
-                <div
-                  className={undefined}>
-                  <a
-                    className={undefined}
-                    href=""
-                    onClick={[Function]}>
-                    <div
-                      className={undefined}
-                      style={Object {}} />
-                    <span>
-                      3
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </td>
           </tr>
         </tbody>
       </table>
@@ -1931,7 +1931,7 @@ exports[`Storyshots Calendar with min and max 1`] = `
         </div>
         <div
           className="undefined undefined">
-          May 2017
+          August 2017
         </div>
         <div
           className={undefined} />
@@ -1996,6 +1996,21 @@ exports[`Storyshots Calendar with min and max 1`] = `
                   <div
                     className={undefined}>
                     <span>
+                      31
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td
+              className={undefined}>
+              <div
+                className="  ">
+                <div
+                  className={undefined}>
+                  <div
+                    className={undefined}>
+                    <span>
                       1
                     </span>
                   </div>
@@ -2062,6 +2077,8 @@ exports[`Storyshots Calendar with min and max 1`] = `
                 </div>
               </div>
             </td>
+          </tr>
+          <tr>
             <td
               className={undefined}>
               <div
@@ -2077,8 +2094,6 @@ exports[`Storyshots Calendar with min and max 1`] = `
                 </div>
               </div>
             </td>
-          </tr>
-          <tr>
             <td
               className={undefined}>
               <div
@@ -2169,6 +2184,8 @@ exports[`Storyshots Calendar with min and max 1`] = `
                 </div>
               </div>
             </td>
+          </tr>
+          <tr>
             <td
               className={undefined}>
               <div
@@ -2184,8 +2201,6 @@ exports[`Storyshots Calendar with min and max 1`] = `
                 </div>
               </div>
             </td>
-          </tr>
-          <tr>
             <td
               className={undefined}>
               <div
@@ -2276,6 +2291,8 @@ exports[`Storyshots Calendar with min and max 1`] = `
                 </div>
               </div>
             </td>
+          </tr>
+          <tr>
             <td
               className={undefined}>
               <div
@@ -2291,8 +2308,6 @@ exports[`Storyshots Calendar with min and max 1`] = `
                 </div>
               </div>
             </td>
-          </tr>
-          <tr>
             <td
               className={undefined}>
               <div
@@ -2383,6 +2398,8 @@ exports[`Storyshots Calendar with min and max 1`] = `
                 </div>
               </div>
             </td>
+          </tr>
+          <tr>
             <td
               className={undefined}>
               <div
@@ -2398,8 +2415,6 @@ exports[`Storyshots Calendar with min and max 1`] = `
                 </div>
               </div>
             </td>
-          </tr>
-          <tr>
             <td
               className={undefined}>
               <div
@@ -2485,21 +2500,6 @@ exports[`Storyshots Calendar with min and max 1`] = `
                     className={undefined}>
                     <span>
                       2
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </td>
-            <td
-              className={undefined}>
-              <div
-                className="  ">
-                <div
-                  className={undefined}>
-                  <div
-                    className={undefined}>
-                    <span>
-                      3
                     </span>
                   </div>
                 </div>
@@ -2544,7 +2544,7 @@ exports[`Storyshots Calendar with selected 1`] = `
         </div>
         <div
           className="undefined undefined">
-          May 2017
+          August 2017
         </div>
         <div
           className={undefined}>
@@ -2613,6 +2613,26 @@ exports[`Storyshots Calendar with selected 1`] = `
                       style={Object {}} />
                     <span>
                       30
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </td>
+            <td
+              className={undefined}>
+              <div
+                className="  ">
+                <div
+                  className={undefined}>
+                  <a
+                    className={undefined}
+                    href=""
+                    onClick={[Function]}>
+                    <div
+                      className={undefined}
+                      style={Object {}} />
+                    <span>
+                      31
                     </span>
                   </a>
                 </div>
@@ -2718,6 +2738,8 @@ exports[`Storyshots Calendar with selected 1`] = `
                 </div>
               </div>
             </td>
+          </tr>
+          <tr>
             <td
               className={undefined}>
               <div
@@ -2738,8 +2760,6 @@ exports[`Storyshots Calendar with selected 1`] = `
                 </div>
               </div>
             </td>
-          </tr>
-          <tr>
             <td
               className={undefined}>
               <div
@@ -2860,6 +2880,8 @@ exports[`Storyshots Calendar with selected 1`] = `
                 </div>
               </div>
             </td>
+          </tr>
+          <tr>
             <td
               className={undefined}>
               <div
@@ -2880,8 +2902,6 @@ exports[`Storyshots Calendar with selected 1`] = `
                 </div>
               </div>
             </td>
-          </tr>
-          <tr>
             <td
               className={undefined}>
               <div
@@ -3002,6 +3022,8 @@ exports[`Storyshots Calendar with selected 1`] = `
                 </div>
               </div>
             </td>
+          </tr>
+          <tr>
             <td
               className={undefined}>
               <div
@@ -3022,8 +3044,6 @@ exports[`Storyshots Calendar with selected 1`] = `
                 </div>
               </div>
             </td>
-          </tr>
-          <tr>
             <td
               className={undefined}>
               <div
@@ -3144,6 +3164,8 @@ exports[`Storyshots Calendar with selected 1`] = `
                 </div>
               </div>
             </td>
+          </tr>
+          <tr>
             <td
               className={undefined}>
               <div
@@ -3164,8 +3186,6 @@ exports[`Storyshots Calendar with selected 1`] = `
                 </div>
               </div>
             </td>
-          </tr>
-          <tr>
             <td
               className={undefined}>
               <div
@@ -3281,26 +3301,6 @@ exports[`Storyshots Calendar with selected 1`] = `
                       style={Object {}} />
                     <span>
                       2
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </td>
-            <td
-              className={undefined}>
-              <div
-                className="  ">
-                <div
-                  className={undefined}>
-                  <a
-                    className={undefined}
-                    href=""
-                    onClick={[Function]}>
-                    <div
-                      className={undefined}
-                      style={Object {}} />
-                    <span>
-                      3
                     </span>
                   </a>
                 </div>
@@ -3345,7 +3345,7 @@ exports[`Storyshots Calendar with selected and style 1`] = `
         </div>
         <div
           className="undefined undefined">
-          May 2017
+          August 2017
         </div>
         <div
           className={undefined}>
@@ -3414,6 +3414,26 @@ exports[`Storyshots Calendar with selected and style 1`] = `
                       style={Object {}} />
                     <span>
                       30
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </td>
+            <td
+              className={undefined}>
+              <div
+                className="  ">
+                <div
+                  className={undefined}>
+                  <a
+                    className={undefined}
+                    href=""
+                    onClick={[Function]}>
+                    <div
+                      className={undefined}
+                      style={Object {}} />
+                    <span>
+                      31
                     </span>
                   </a>
                 </div>
@@ -3519,6 +3539,8 @@ exports[`Storyshots Calendar with selected and style 1`] = `
                 </div>
               </div>
             </td>
+          </tr>
+          <tr>
             <td
               className={undefined}>
               <div
@@ -3539,8 +3561,6 @@ exports[`Storyshots Calendar with selected and style 1`] = `
                 </div>
               </div>
             </td>
-          </tr>
-          <tr>
             <td
               className={undefined}>
               <div
@@ -3661,6 +3681,8 @@ exports[`Storyshots Calendar with selected and style 1`] = `
                 </div>
               </div>
             </td>
+          </tr>
+          <tr>
             <td
               className={undefined}>
               <div
@@ -3681,8 +3703,6 @@ exports[`Storyshots Calendar with selected and style 1`] = `
                 </div>
               </div>
             </td>
-          </tr>
-          <tr>
             <td
               className={undefined}>
               <div
@@ -3803,6 +3823,8 @@ exports[`Storyshots Calendar with selected and style 1`] = `
                 </div>
               </div>
             </td>
+          </tr>
+          <tr>
             <td
               className={undefined}>
               <div
@@ -3823,8 +3845,6 @@ exports[`Storyshots Calendar with selected and style 1`] = `
                 </div>
               </div>
             </td>
-          </tr>
-          <tr>
             <td
               className={undefined}>
               <div
@@ -3945,6 +3965,8 @@ exports[`Storyshots Calendar with selected and style 1`] = `
                 </div>
               </div>
             </td>
+          </tr>
+          <tr>
             <td
               className={undefined}>
               <div
@@ -3965,8 +3987,6 @@ exports[`Storyshots Calendar with selected and style 1`] = `
                 </div>
               </div>
             </td>
-          </tr>
-          <tr>
             <td
               className={undefined}>
               <div
@@ -4082,26 +4102,6 @@ exports[`Storyshots Calendar with selected and style 1`] = `
                       style={Object {}} />
                     <span>
                       2
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </td>
-            <td
-              className={undefined}>
-              <div
-                className="  ">
-                <div
-                  className={undefined}>
-                  <a
-                    className={undefined}
-                    href=""
-                    onClick={[Function]}>
-                    <div
-                      className={undefined}
-                      style={Object {}} />
-                    <span>
-                      3
                     </span>
                   </a>
                 </div>
@@ -5565,6 +5565,36 @@ exports[`Storyshots Cards with unclickable 1`] = `
       <span />
     </li>
   </ul>
+</div>
+`;
+
+exports[`Storyshots Checkbox with basic usage 1`] = `
+<div
+  className="checkbox-wrap">
+  <div
+    className={undefined}>
+    <label
+      className={undefined}>
+      <input
+        checked={false}
+        className={undefined}
+        onClick={[Function]}
+        readOnly={true}
+        type="checkbox" />
+    </label>
+  </div>
+  <div
+    className={undefined}>
+    <label
+      className={undefined}>
+      <input
+        checked={true}
+        className={undefined}
+        onClick={[Function]}
+        readOnly={true}
+        type="checkbox" />
+    </label>
+  </div>
 </div>
 `;
 
