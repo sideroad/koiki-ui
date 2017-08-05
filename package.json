@@ -1,6 +1,6 @@
 {
   "name": "koiki-ui",
-  "version": "0.0.63",
+  "version": "0.0.64",
   "devDependencies": {
     "@kadira/react-storybook-addon-info": "^3.3.0",
     "@kadira/storybook": "^2.21.0",
