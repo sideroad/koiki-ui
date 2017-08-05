@@ -1,0 +1,104 @@
+@import "variables.less";
+
+.container {
+	position: relative;
+	z-index: 1;
+}
+
+.selectbox {
+	position: relative;
+	color: @primary-text-color;
+  height: 2.75em;
+	border-style: solid;
+	border-color: @primary-border-color;
+	border-radius: 3px;
+	border-width: 2px;
+	background-color: @primary-backward-color;
+	width: 100%;
+	z-index: 0;
+	box-sizing: border-box;
+	transition-property: border;
+  transition-duration: 0.4s;
+	outline: none;
+	font-size: 1.25em;
+	text-align: left;
+	display: flex;
+  align-items: center;
+}
+
+.selectbox:focus{
+	border-color: @primary-focused-border-color;
+	transition-property: border, transform;
+	transition-duration: 0.4s;
+	border-bottom: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.caset {
+	position: absolute;
+	right: 1em;
+	transform: rotateX(0deg);
+	transition-property: transform;
+	transition-duration: 0.4s;
+}
+
+.selectbox:focus .caset{
+	color: @primary-focused-color;
+	transform: rotateX(360deg);
+}
+
+.options {
+	position: absolute;
+	top: -1px;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	box-sizing: border-box;
+	border-style: solid;
+	border-color: @primary-focused-border-color;
+	border-radius: 3px;
+	border-width: 2px;
+	border-top: none;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.option {
+	width: 100%;
+	color: @primary-focused-color;
+	background-color: @primary-backward-color;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	font-size: 1.25em;
+	padding: 5px;
+	transition-property: color, background-color;
+	transition-duration: 0.2s;
+	box-sizing: border-box;
+}
+
+.option:hover,
+.option.focused{
+	background-color: @primary-focused-color;
+	color: @primary-backward-color;
+	transition-property: color, background-color;
+	transition-duration: 0.2s;
+
+}
+
+.icon {
+	width: 2em;
+	height: 2em;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+
+.text {
+	line-height: 2em;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}

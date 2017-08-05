@@ -6407,6 +6407,68 @@ exports[`Storyshots InputtableButton with progress success 1`] = `
 </div>
 `;
 
+exports[`Storyshots Selectbox with basic usage 1`] = `
+<div
+  className="input-wrap">
+  <form
+    className=""
+    onSubmit={[Function]}>
+    <button
+      className="
+                undefined
+                undefined
+              "
+      icon="fa-search"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      placeholder="">
+      
+      <div
+        className={undefined}>
+        <i
+          className="undefined undefined" />
+      </div>
+    </button>
+    <div
+      className={undefined}>
+      
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots Selectbox with no image suggest 1`] = `
+<div
+  className="input-wrap">
+  <form
+    className=""
+    onSubmit={[Function]}>
+    <button
+      className="
+                undefined
+                undefined
+              "
+      icon="fa-search"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      placeholder="">
+      
+      <div
+        className={undefined}>
+        <i
+          className="undefined undefined" />
+      </div>
+    </button>
+    <div
+      className={undefined}>
+      
+    </div>
+  </form>
+</div>
+`;
+
 exports[`Storyshots Timeline with basic usage 1`] = `
 <div
   className="timeline-wrap">
