@@ -69,6 +69,9 @@ class InputtableButton extends Component {
               case 'Escape':
                 blur(evt);
                 break;
+              case 'Enter':
+                this.props.onSubmit(evt);
+                break;
               default:
             }
           }}
@@ -98,6 +101,7 @@ InputtableButton.propTypes = {
   onClick: PropTypes.func,
   onChange: PropTypes.func,
   onBlur: PropTypes.func,
+  onSubmit: PropTypes.func,
   focused: PropTypes.bool
 };
 
@@ -108,6 +112,7 @@ InputtableButton.defaultProps = {
   onClick: () => {},
   onChange: () => {},
   onBlur: () => {},
+  onSubmit: () => {},
   progress: 'none',
   focused: false,
   styles: {
