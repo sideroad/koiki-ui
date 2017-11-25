@@ -41,6 +41,7 @@ class Input extends Component {
           className={this.props.styles.input.input}
           placeholder={this.props.placeholder}
           value={this.state.value}
+          type={this.props.type}
           onChange={(evt) => {
             this.setState({
               value: evt.target.value
@@ -93,6 +94,7 @@ Input.propTypes = {
   onFocus: PropTypes.func,
   onKeyDown: PropTypes.func,
   onSubmit: PropTypes.func,
+  type: PropTypes.string,
 };
 
 Input.defaultProps = {
@@ -106,6 +108,7 @@ Input.defaultProps = {
   icon: 'fa-search',
   focused: false,
   progress: 'none',
+  type: 'text',
   onBlur: () => {},
   onChange: () => {},
   onFocus: () => {},
