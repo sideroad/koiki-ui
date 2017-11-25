@@ -6411,7 +6411,7 @@ exports[`Storyshots Selectbox with basic usage 1`] = `
 <div
   className="input-wrap">
   <form
-    className=""
+    className=" undefined"
     onSubmit={[Function]}>
     <button
       className="
@@ -6442,7 +6442,7 @@ exports[`Storyshots Selectbox with no image suggest 1`] = `
 <div
   className="input-wrap">
   <form
-    className=""
+    className=" undefined"
     onSubmit={[Function]}>
     <button
       className="

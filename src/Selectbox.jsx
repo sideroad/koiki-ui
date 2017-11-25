@@ -42,7 +42,7 @@ class Selectbox extends Component {
     };
     return (
       <form
-        className={this.props.className}
+        className={`${this.props.className} ${this.props.styles.selectbox.form}`}
         onSubmit={
           (evt) => {
             evt.preventDefault();
