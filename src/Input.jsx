@@ -47,7 +47,18 @@ class Input extends Component {
             });
             this.props.onChange(evt);
           }}
-          onKeyDown={evt => this.props.onKeyDown(evt)}
+          onKeyDown={(evt) => {
+            switch (evt.key) {
+              case 'Escape':
+                blur(evt);
+                break;
+              case 'Enter':
+                this.props.onSubmit(evt);
+                break;
+              default:
+            }
+            this.props.onKeyDown(evt);
+          }}
           onBlur={evt => this.props.onBlur(evt)}
           onFocus={evt => this.props.onFocus(evt)}
         />
@@ -81,6 +92,7 @@ Input.propTypes = {
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
   onKeyDown: PropTypes.func,
+  onSubmit: PropTypes.func,
 };
 
 Input.defaultProps = {
@@ -98,6 +110,7 @@ Input.defaultProps = {
   onChange: () => {},
   onFocus: () => {},
   onKeyDown: () => {},
+  onSubmit: () => {},
 };
 
 export default Input;
