@@ -76,6 +76,20 @@ storiesOf('Input', module)
       />
     </div>
   ))
+  .addWithInfo('with number type', () => (
+    <div className="input-wrap">
+      <Input
+        type="number"
+      />
+    </div>
+  ))
+  .addWithInfo('with right align', () => (
+    <div className="input-wrap">
+      <Input
+        align="right"
+      />
+    </div>
+  ))
   .addWithInfo('with event handler', () => (
     <div className="input-wrap">
       <Input

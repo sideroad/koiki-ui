@@ -24,6 +24,7 @@
 	z-index: 0;
 	box-sizing: border-box;
 	padding-left: 2em;
+	padding-right: 0.5em;
 	transition-property: border;
   transition-duration: 0.4s;
 	outline: none;
@@ -64,4 +65,16 @@
 .input:focus + .prefix{
 	color: @primary-focused-color;
 	transform: translateY(-50%) rotateX(360deg);
+}
+
+.left {
+	text-align: left;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
 }

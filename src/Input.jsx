@@ -38,7 +38,7 @@ class Input extends Component {
       >
         <input
           ref={(elem) => { this.inputDOM = elem; }}
-          className={this.props.styles.input.input}
+          className={`${this.props.styles.input.input} ${this.props.styles.input[this.props.align]}`}
           placeholder={this.props.placeholder}
           value={this.state.value}
           type={this.props.type}
@@ -95,6 +95,7 @@ Input.propTypes = {
   onKeyDown: PropTypes.func,
   onSubmit: PropTypes.func,
   type: PropTypes.string,
+  align: PropTypes.oneOf(['left', 'center', 'right']),
 };
 
 Input.defaultProps = {
@@ -109,6 +110,7 @@ Input.defaultProps = {
   focused: false,
   progress: 'none',
   type: 'text',
+  align: 'left',
   onBlur: () => {},
   onChange: () => {},
   onFocus: () => {},

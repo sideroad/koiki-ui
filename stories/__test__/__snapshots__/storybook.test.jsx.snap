@@ -5614,7 +5614,7 @@ exports[`Storyshots Chips with basic usage 1`] = `
                         undefined
             ">
       <input
-        className={undefined}
+        className="undefined undefined"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
@@ -5678,7 +5678,7 @@ exports[`Storyshots Chips with no image suggest 1`] = `
                         undefined
             ">
       <input
-        className={undefined}
+        className="undefined undefined"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
@@ -5762,7 +5762,7 @@ exports[`Storyshots Input with append className 1`] = `
                       undefined
           ">
     <input
-      className={undefined}
+      className="undefined undefined"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -5792,7 +5792,7 @@ exports[`Storyshots Input with basic usage 1`] = `
                       undefined
           ">
     <input
-      className={undefined}
+      className="undefined undefined"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -5822,7 +5822,7 @@ exports[`Storyshots Input with customize icon 1`] = `
                       undefined
           ">
     <input
-      className={undefined}
+      className="undefined undefined"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -5852,7 +5852,7 @@ exports[`Storyshots Input with customize styles 1`] = `
                       undefined
           ">
     <input
-      className={undefined}
+      className="undefined undefined"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -5882,7 +5882,7 @@ exports[`Storyshots Input with default value 1`] = `
                       undefined
           ">
     <input
-      className={undefined}
+      className="undefined undefined"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -5912,7 +5912,7 @@ exports[`Storyshots Input with event handler 1`] = `
                       undefined
           ">
     <input
-      className={undefined}
+      className="undefined undefined"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -5942,13 +5942,43 @@ exports[`Storyshots Input with focused 1`] = `
                       undefined
           ">
     <input
-      className={undefined}
+      className="undefined undefined"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
       placeholder=""
       type="text"
+      value="" />
+    <i
+      aria-hidden="true"
+      className="
+                undefined
+                undefined
+                undefined
+              "
+      onClick={[Function]} />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Input with number type 1`] = `
+<div
+  className="input-wrap">
+  <div
+    className="undefined
+                      
+                      
+                      undefined
+          ">
+    <input
+      className="undefined undefined"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      placeholder=""
+      type="number"
       value="" />
     <i
       aria-hidden="true"
@@ -5972,7 +6002,7 @@ exports[`Storyshots Input with placeholder 1`] = `
                       undefined
           ">
     <input
-      className={undefined}
+      className="undefined undefined"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -6002,7 +6032,7 @@ exports[`Storyshots Input with progress error 1`] = `
                       undefined
           ">
     <input
-      className={undefined}
+      className="undefined undefined"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -6032,7 +6062,7 @@ exports[`Storyshots Input with progress loading 1`] = `
                       undefined
           ">
     <input
-      className={undefined}
+      className="undefined undefined"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -6062,7 +6092,37 @@ exports[`Storyshots Input with progress success 1`] = `
                       undefined
           ">
     <input
-      className={undefined}
+      className="undefined undefined"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      placeholder=""
+      type="text"
+      value="" />
+    <i
+      aria-hidden="true"
+      className="
+                undefined
+                undefined
+                undefined
+              "
+      onClick={[Function]} />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Input with right align 1`] = `
+<div
+  className="input-wrap">
+  <div
+    className="undefined
+                      
+                      
+                      undefined
+          ">
+    <input
+      className="undefined undefined"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
