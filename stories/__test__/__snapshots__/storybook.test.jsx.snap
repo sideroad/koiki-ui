@@ -5609,7 +5609,7 @@ exports[`Storyshots Chips with basic usage 1`] = `
                         
                         
                 undefined
-                
+                undefined
               
                         undefined
             ">
@@ -5639,7 +5639,25 @@ exports[`Storyshots Chips with basic usage 1`] = `
       </ul>
     </div>
     <ul
-      className={undefined} />
+      className={undefined}>
+      <button
+        className={undefined}
+        onClick={[Function]}>
+        <img
+          alt="koicam"
+          className={undefined}
+          src="https://avatars0.githubusercontent.com/u/29654764?v=4&s=460" />
+        <div
+          className={undefined}>
+          koicam
+        </div>
+        <div
+          className={undefined}>
+          <i
+            className="undefined undefined" />
+        </div>
+      </button>
+    </ul>
   </form>
 </div>
 `;
@@ -5655,7 +5673,7 @@ exports[`Storyshots Chips with no image suggest 1`] = `
                         
                         
                 undefined
-                
+                undefined
               
                         undefined
             ">
@@ -5685,7 +5703,25 @@ exports[`Storyshots Chips with no image suggest 1`] = `
       </ul>
     </div>
     <ul
-      className={undefined} />
+      className={undefined}>
+      <button
+        className={undefined}
+        onClick={[Function]}>
+        <img
+          alt="koicam"
+          className={undefined}
+          src="https://avatars0.githubusercontent.com/u/29654764?v=4&s=460" />
+        <div
+          className={undefined}>
+          koicam
+        </div>
+        <div
+          className={undefined}>
+          <i
+            className="undefined undefined" />
+        </div>
+      </button>
+    </ul>
   </form>
 </div>
 `;

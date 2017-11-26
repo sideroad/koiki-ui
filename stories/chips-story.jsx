@@ -10,9 +10,15 @@ if (process.env.NODE_ENV !== 'test') {
   setAddon(mockedInfoAddon);
 }
 const actionLogger = action();
-const suggests = [];
-const suggestsNoImage = [];
-const chips = [];
+const suggests = [
+  { id: 'koicam', name: 'koicam', image: 'https://avatars0.githubusercontent.com/u/29654764?v=4&s=460' }
+];
+const suggestsNoImage = [
+  { id: 'koicam', name: 'koicam', image: 'https://avatars0.githubusercontent.com/u/29654764?v=4&s=460' }
+];
+const chips = [
+  { id: 'koicam', name: 'koicam', image: 'https://avatars0.githubusercontent.com/u/29654764?v=4&s=460' }
+];
 
 const handleChange = (evt) => {
   actionLogger('handleChange');
