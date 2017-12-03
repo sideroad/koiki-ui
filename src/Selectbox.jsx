@@ -5,13 +5,13 @@ class Selectbox extends Component {
     super(props);
     this.state = {
       display: false,
-      focusedIndex: props.options.reduce((memo, option, index) =>
-        (props.selected && option.value === props.selected.value ? index : memo), 0),
       selected: props.selected || props.options[0] || {
         text: '',
         value: '',
       }
     };
+    this.state.focusedIndex = props.options.reduce((memo, option, index) =>
+      (props.selected && option.value === props.selected.value ? index : memo), 0);
   }
   componentDidMount() {
     this.wrappedHandleClickOutside = evt =>
