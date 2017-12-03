@@ -28,13 +28,23 @@ class Input extends Component {
   render() {
     const progress = `progress-${this.props.progress}-with-middle`;
     return (
-      <div
+      <form
         className={`${this.props.styles.input.container}
                     ${this.state.clicked ? this.props.styles.input.clicked :
                       this.state.escaped ? this.props.styles.input.escaped : ''}
                     ${this.props.className}
                     ${this.props.styles.input[progress]}
         `}
+        onSubmit={
+          (evt) => {
+            evt.preventDefault();
+            this.props.onSubmit({
+              target: {
+                value: this.inputDOM.value,
+              }
+            });
+          }
+        }
       >
         <input
           ref={(elem) => { this.inputDOM = elem; }}
@@ -52,9 +62,6 @@ class Input extends Component {
             switch (evt.key) {
               case 'Escape':
                 blur(evt);
-                break;
-              case 'Enter':
-                this.props.onSubmit(evt);
                 break;
               default:
             }
@@ -76,7 +83,7 @@ class Input extends Component {
           }
           aria-hidden="true"
         />
-      </div>
+      </form>
     );
   }
 }
