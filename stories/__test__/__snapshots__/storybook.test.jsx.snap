@@ -7220,7 +7220,11 @@ exports[`Storyshots Selectbox with basic usage 1`] = `
       onClick={[Function]}
       onKeyDown={[Function]}
       placeholder="">
-      
+      <img
+        alt="sideroad"
+        className={undefined}
+        src="https://avatars2.githubusercontent.com/u/411486?v=3&s=460" />
+      sideroad
       <div
         className={undefined}>
         <i
@@ -7251,7 +7255,7 @@ exports[`Storyshots Selectbox with no image suggest 1`] = `
       onClick={[Function]}
       onKeyDown={[Function]}
       placeholder="">
-      
+      sideroad
       <div
         className={undefined}>
         <i

@@ -6,8 +6,11 @@ class Selectbox extends Component {
     this.state = {
       display: false,
       focusedIndex: props.options.reduce((memo, option, index) =>
-        (option.value === props.selected.value ? index : memo), 0),
-      selected: props.selected
+        (props.selected && option.value === props.selected.value ? index : memo), 0),
+      selected: props.selected || props.options[0] || {
+        text: '',
+        value: '',
+      }
     };
   }
   componentDidMount() {
@@ -180,10 +183,7 @@ Selectbox.propTypes = {
 
 Selectbox.defaultProps = {
   className: '',
-  selected: {
-    text: '',
-    value: ''
-  },
+  selected: null,
   icon: 'fa-search',
   onSelect: () => {},
   onFocus: () => {},
