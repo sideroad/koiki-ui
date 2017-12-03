@@ -85,7 +85,7 @@ class Selectbox extends Component {
               }
             }
           }
-          onFocus={
+          onClick={
             (evt) => {
               this.setState({
                 display: true
