@@ -44,6 +44,7 @@ class Input extends Component {
           placeholder={this.props.placeholder}
           value={this.state.value}
           type={this.props.type}
+          pattern={this.props.type === 'number' ? '\\d*' : undefined}
           autoFocus={this.props.focused}
           onChange={(evt) => {
             this.setState({
