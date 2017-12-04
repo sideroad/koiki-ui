@@ -6318,7 +6318,8 @@ exports[`Storyshots Chips with basic usage 1`] = `
       className={undefined}>
       <button
         className={undefined}
-        onClick={[Function]}>
+        onClick={[Function]}
+        tabIndex="-1">
         <img
           alt="koicam"
           className={undefined}
@@ -6383,7 +6384,8 @@ exports[`Storyshots Chips with focused 1`] = `
       className={undefined}>
       <button
         className={undefined}
-        onClick={[Function]}>
+        onClick={[Function]}
+        tabIndex="-1">
         <img
           alt="koicam"
           className={undefined}
@@ -6448,7 +6450,8 @@ exports[`Storyshots Chips with no image suggest 1`] = `
       className={undefined}>
       <button
         className={undefined}
-        onClick={[Function]}>
+        onClick={[Function]}
+        tabIndex="-1">
         <img
           alt="koicam"
           className={undefined}

@@ -8,6 +8,7 @@ const IconButton = ({ item, onClick, type, styles }) =>
     onClick={
       () => onClick(item)
     }
+    tabIndex="-1"
   >
     {
       item.image ?
