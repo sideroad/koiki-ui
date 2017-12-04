@@ -7309,6 +7309,7 @@ exports[`Storyshots Selectbox with basic usage 1`] = `
       icon="fa-search"
       onBlur={[Function]}
       onClick={[Function]}
+      onFocus={[Function]}
       onKeyDown={[Function]}
       placeholder="">
       <img
@@ -7344,6 +7345,7 @@ exports[`Storyshots Selectbox with no image suggest 1`] = `
       icon="fa-search"
       onBlur={[Function]}
       onClick={[Function]}
+      onFocus={[Function]}
       onKeyDown={[Function]}
       placeholder="">
       sideroad

@@ -12,6 +12,7 @@ class Selectbox extends Component {
     };
     this.state.focusedIndex = props.options.reduce((memo, option, index) =>
       (props.selected && option.value === props.selected.value ? index : memo), 0);
+    this.onFocus = this.onFocus.bind(this);
   }
   componentDidMount() {
     this.wrappedHandleClickOutside = evt =>
@@ -21,6 +22,13 @@ class Selectbox extends Component {
 
   componentWillUnmount() {
     document.removeEventListener('click', this.wrappedHandleClickOutside, true);
+  }
+
+  onFocus(evt) {
+    this.setState({
+      display: true
+    });
+    this.props.onFocus(evt);
   }
 
   handleClickOutside(evt, selectboxDOM, optionsDOM) {
@@ -88,14 +96,8 @@ class Selectbox extends Component {
               }
             }
           }
-          onClick={
-            (evt) => {
-              this.setState({
-                display: true
-              });
-              this.props.onFocus(evt);
-            }
-          }
+          onClick={this.onFocus}
+          onFocus={this.onFocus}
           onBlur={this.props.onBlur}
         >
           {
