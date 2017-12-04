@@ -54,6 +54,7 @@ class Chips extends Component {
           icon={this.props.icon}
           placeholder={this.props.placeholder}
           value={this.state.query}
+          focused={this.props.focused}
           onSubmit={
             () => {
               const suggest = this.props.suggests[this.state.focusedIndex];
@@ -178,7 +179,8 @@ Chips.propTypes = {
   chips: PropTypes.array.isRequired,
   suggests: PropTypes.array,
   placeholder: PropTypes.string,
-  styles: PropTypes.object
+  styles: PropTypes.object,
+  focused: PropTypes.bool,
 };
 
 Chips.defaultProps = {
@@ -191,6 +193,7 @@ Chips.defaultProps = {
   onBlur: () => {},
   suggests: [],
   chips: [],
+  focused: false,
   placeholder: '',
   styles: {
     fa: require('../less/fa/less/font-awesome.less'),

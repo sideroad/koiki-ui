@@ -11,13 +11,6 @@ class InputtableButton extends Component {
     };
   }
 
-  componentDidMount() {
-    if (this.props.focused &&
-        this.inputDOM) {
-      this.inputDOM.focus();
-    }
-  }
-
   componentWillReceiveProps(props) {
     this.setState({
       value: props.value || this.state.value
@@ -64,6 +57,7 @@ class InputtableButton extends Component {
           ref={(elem) => { this.inputDOM = elem; }}
           className={this.props.styles.inputtableButton.input}
           placeholder={this.props.placeholder}
+          autoFocus={this.props.focused}
           onKeyDown={(evt) => {
             switch (evt.key) {
               case 'Escape':

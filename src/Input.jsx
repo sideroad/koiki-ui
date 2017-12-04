@@ -7,16 +7,8 @@ class Input extends Component {
     this.state = {
       clicked: false,
       escaped: false,
-      focused: props.focused,
       value: props.value
     };
-  }
-
-  componentDidMount() {
-    if (this.props.focused &&
-        this.inputDOM) {
-      this.inputDOM.focus();
-    }
   }
 
   componentWillReceiveProps(props) {
@@ -52,6 +44,7 @@ class Input extends Component {
           placeholder={this.props.placeholder}
           value={this.state.value}
           type={this.props.type}
+          autoFocus={this.props.focused}
           onChange={(evt) => {
             this.setState({
               value: evt.target.value
@@ -94,7 +87,6 @@ Input.propTypes = {
   placeholder: PropTypes.string,
   value: PropTypes.string,
   icon: PropTypes.string,
-  focused: PropTypes.bool,
   progress: PropTypes.oneOf(['none', 'loading', 'success', 'error']),
   onBlur: PropTypes.func,
   onChange: PropTypes.func,
@@ -102,6 +94,7 @@ Input.propTypes = {
   onKeyDown: PropTypes.func,
   onSubmit: PropTypes.func,
   type: PropTypes.string,
+  focused: PropTypes.bool,
   align: PropTypes.oneOf(['left', 'center', 'right']),
 };
 
@@ -113,8 +106,8 @@ Input.defaultProps = {
   },
   placeholder: '',
   value: '',
-  icon: 'fa-search',
   focused: false,
+  icon: 'fa-search',
   progress: 'none',
   type: 'text',
   align: 'left',

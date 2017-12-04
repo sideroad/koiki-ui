@@ -91,4 +91,18 @@ storiesOf('Chips', module)
         chips={chips}
       />
     </div>
+  ))
+  .addWithInfo('with focused', () => (
+    <div className="input-wrap">
+      <Chips
+        focused
+        onChange={handleChange}
+        onSelect={handleSelect}
+        onDelete={handleDelete}
+        onFocus={handleFocus}
+        onBlur={handleBlur}
+        suggests={suggests}
+        chips={chips}
+      />
+    </div>
   ));
