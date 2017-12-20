@@ -16,7 +16,7 @@ storiesOf('Effect', module)
       <Effect
         liquid
         strength={10}
-        src="/images/blueboard.jpg"
+        src="./images/blueboard.jpg"
       />
     </div>
   ))
@@ -29,7 +29,7 @@ storiesOf('Effect', module)
         speed={500}
         amplitude={20}
         interval={5000}
-        src="/images/goldgrazing.jpg"
+        src="./images/goldgrazing.jpg"
       />
     </div>
   ))
@@ -44,7 +44,7 @@ storiesOf('Effect', module)
         speed={500}
         amplitude={20}
         interval={5000}
-        src="/images/goldgrazing.jpg"
+        src="./images/goldgrazing.jpg"
       />
     </div>
   ));
