@@ -82,3 +82,7 @@ html {
 .timeline-wrap {
 	width: 100%;
 }
+.effect-wrap {
+	width: 600px;
+	height: 400px;
+}

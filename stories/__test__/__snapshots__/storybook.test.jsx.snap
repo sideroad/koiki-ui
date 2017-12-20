@@ -6500,6 +6500,36 @@ exports[`Storyshots Datepicker with basic usage 1`] = `
 </div>
 `;
 
+exports[`Storyshots Effect with liquid and ripple effect 1`] = `
+<div
+  className="effect-wrap">
+  <canvas
+    className={undefined}
+    height="0"
+    width="0" />
+</div>
+`;
+
+exports[`Storyshots Effect with liquid effect 1`] = `
+<div
+  className="effect-wrap">
+  <canvas
+    className={undefined}
+    height="0"
+    width="0" />
+</div>
+`;
+
+exports[`Storyshots Effect with ripple effect 1`] = `
+<div
+  className="effect-wrap">
+  <canvas
+    className={undefined}
+    height="0"
+    width="0" />
+</div>
+`;
+
 exports[`Storyshots Input with append className 1`] = `
 <div
   className="input-wrap">

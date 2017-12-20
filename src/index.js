@@ -8,6 +8,7 @@ import Selectbox from './Selectbox';
 import Calendar from './Calendar';
 import Datepicker from './Datepicker';
 import Timeline from './Timeline';
+import Effect from './Effect';
 
 export {
   Button,
@@ -19,5 +20,6 @@ export {
   Calendar,
   Datepicker,
   Timeline,
-  Checkbox
+  Checkbox,
+  Effect,
 };

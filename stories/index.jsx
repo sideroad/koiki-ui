@@ -8,3 +8,4 @@ import './selectbox-story';
 import './calendar-story';
 import './datepicker-story';
 import './timeline-story';
+import './effect-story';

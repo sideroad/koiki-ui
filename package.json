@@ -39,9 +39,12 @@
     "webpack-dev-server": "1.16.2"
   },
   "dependencies": {
+    "@pixi/filter-shockwave": "^2.4.0",
     "babel-plugin-react-css-modules": "^2.1.4",
     "lodash": "^4.17.4",
     "moment": "^2.17.1",
+    "pixi.js": "^4.6.2",
+    "prop-types": "^15.6.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-element-pan": "^1.0.9",
